@@ -1,0 +1,33 @@
+a. 
+select ename,sal
+from empl
+where sal >=2200;
+b.
+select *
+from empl
+where comm is null;
+c.
+select ename,sal
+from empl
+where sal not between 2500 and 4000;
+d.
+select ename,job,sal
+from empl
+where mgr in null;
+e.
+select ename
+from empl
+where ename like '__A%';
+f.
+select ename
+from empl
+where ename like '%T';
+g.
+select ename
+from empl
+where ename like in('M%','__L');
+h.
+select *
+from empl
+where comm is null or comm==0.00;
+    
