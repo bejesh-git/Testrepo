@@ -1,1 +1,1 @@
-Git Repository for my Training Files.
+MySQL Notes.
