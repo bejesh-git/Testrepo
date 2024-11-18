@@ -12,6 +12,7 @@ create table student (
 	dob date
 );
 
+
 insert into student values 
 (1001, 'AKSHRA AGARWAL', 'female', 70, 11, 'a', 'science', '1996-11-10'),
 (1002, 'ANJANI SHARMA', 'female', 75, 11, 'a', 'COMMERCE', '1996-09-18'),
