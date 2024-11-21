@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="9207ac4b-57e7-4c90-8616-ef3126a5bc21" activeEnvironment="Default" name="SoapUIAssignment" soapui-version="5.7.2" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="25ddfb42-9466-402c-b299-047f11405936" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://quiz-be-test.hematitecorp.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://quiz-be-test.hematitecorp.com</con:endpoint></con:endpoints><con:resource name="Token" path="/api/token/" id="3af8e541-61b0-4910-b1d5-faab9e18a591"><con:settings/><con:parameters/><con:method name="Token 1" id="932385fe-b516-4470-8a36-7061c8cd6cf3" method="POST"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>405</con:status><con:params/><con:element xmlns:tok="http://quiz-be-test.hematitecorp.com/api/token/">tok:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:tok="http://quiz-be-test.hematitecorp.com/api/token/">tok:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="Request 1" id="329f3450-e3c8-479a-b871-670273e1bce5" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://quiz-be-test.hematitecorp.com</con:endpoint><con:request>{
+  "email": "admin@gmail.com",
+  "password": "Admin@1234"
+}</con:request><con:originalUri>http://quiz-be-test.hematitecorp.com/api/token/</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="c27ea5c3-1211-4eb7-b24c-a0ca4d0ba991" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://quiz-be-test.hematitecorp.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings><con:setting id="CreateWadlDocumentationAction@report-directory">E:\Gits\SoapUIAssignment</con:setting></con:settings><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://quiz-be-test.hematitecorp.com</con:endpoint></con:endpoints><con:resource name="Voucher" path="/api/voucher/" id="baf3c285-f068-4596-a0c1-63859e38d5fb"><con:settings/><con:parameters/><con:method name="Voucher 1" id="adeb05e7-b786-4e5d-a017-e144d9b9afb1" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>401</con:status><con:params/><con:element xmlns:vouc="http://quiz-be-test.hematitecorp.com/api/voucher/">vouc:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:vouc="http://quiz-be-test.hematitecorp.com/api/voucher/">vouc:Response</con:element></con:representation><con:request name="Request 1" id="d6e5d4f9-c416-4ab3-bbfd-03fb4dd4ed99" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMyMjE3OTUwLCJpYXQiOjE3MzIyMDIzNTAsImp0aSI6IjBjYTBhY2Y2ZTc4OTQ2ODc5NjJhOTk2MGI4YTI3NjEzIiwidXNlcl9pZCI6MTF9.ZJLTh6pLRRtRYZSSQOsLzYJrVIezE7NAoYiA70LkRg0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://quiz-be-test.hematitecorp.com</con:endpoint><con:request/><con:originalUri>http://quiz-be-test.hematitecorp.com/api/voucher/</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method></con:resource></con:interface><con:testSuite id="4c244c54-1228-455e-88af-cbd14d721070" name="Voucher Code TestSuite"><con:description>TestSuite generated for REST Service [http://quiz-be-test.hematitecorp.com]</con:description><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="49f5376f-676d-482b-b632-6a40ffbd54b9" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Voucher TestCase" searchProperties="true"><con:description>TestCase generated for REST Resource [Voucher] located at [/api/voucher/]</con:description><con:settings/><con:testStep type="restrequest" name="Request 1" id="b664c87e-7504-4b27-8aeb-dc977bb281b5"><con:settings/><con:config service="http://quiz-be-test.hematitecorp.com" resourcePath="/api/voucher/" methodName="Voucher 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Request 1" id="d6e5d4f9-c416-4ab3-bbfd-03fb4dd4ed99" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMyMjE3OTUwLCJpYXQiOjE3MzIyMDIzNTAsImp0aSI6IjBjYTBhY2Y2ZTc4OTQ2ODc5NjJhOTk2MGI4YTI3NjEzIiwidXNlcl9pZCI6MTF9.ZJLTh6pLRRtRYZSSQOsLzYJrVIezE7NAoYiA70LkRg0" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>http://quiz-be-test.hematitecorp.com</con:endpoint><con:request/><con:originalUri>http://quiz-be-test.hematitecorp.com/api/voucher/</con:originalUri><con:assertion type="Simple NotContains" id="3fe39278-9b36-442c-8f8d-33d3f4655e36" name="Not Contains"><con:configuration><token>Authentication credentials were not provided</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:tearDownScript>// Code to execute the GenerateCSVReport test step
+testRunner.testCase.testSuite.project.testSuites["Library"].testCases["Reporting_Utility"].
+testSteps["GenerateCSVReport"].run(testRunner, context);</con:tearDownScript><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite id="cf7fcc91-8d5f-4624-9999-57bcd7db4449" name="Library" disabled="true"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="f82970b8-6650-4f21-90e5-70a219b2630a" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Reporting_Utility" searchProperties="true"><con:settings/><con:testStep type="groovy" name="GenerateCSVReport" id="49740d82-cd84-4fc0-b79f-5e38a3142271"><con:settings/><con:config><script>// Try-catch block to handle exceptions
+try {
+
+// 1. Create a "SoapUIResults" folder in the project path 
+      // Retrieve the project root folder
+      def projectPath = new com.eviware.soapui.support.GroovyUtils(context).projectPath
+
+      // Specify a folder inside project root to store the results
+      String folderPath = projectPath + "/SoapUIResults";
+
+      // Create a File object for the specified path
+      def resultFolder = new File(folderPath);
+
+      // Check for existence of folder and create a folder
+      if(!resultFolder.exists())
+      {
+        resultFolder.mkdirs();
+      }
+
+/* ------------------------------------------------------------------------------- */
+
+// 2. Create a subfolder (with timestamp) to store the request-response local copy 
+      // Retrieve the latest execution date-time
+      Date d = new Date();
+      def executionDate = d.format("dd-MMM-yyyy HH_mm");
+
+      // Specify the subfolder path with name Request-Response_CurrentTimeStamp
+      String subfolderPath1 = folderPath+ "/Request-Response_"+executionDate;
+
+      // Create this sub-folder
+      new File(subfolderPath1).mkdirs();
+
+/* ------------------------------------------------------------------------------- */
+
+// 3. Create another subfolder "CSV Reports" to store the reports file 
+      // Specify the subfolder path with name CSV Reports
+      String subfolderPath2 = folderPath+ "/CSV Reports";
+
+      // Create this sub-folder
+      new File(subfolderPath2).mkdirs();
+
+/* ------------------------------------------------------------------------------- */
+
+// 4. Create a Report.csv file inside the CSV Reports folder 
+      // Create a File object for Report csv file (with timestamp)
+      def reportFile = new File(subfolderPath2, "Report_"+executionDate+".csv");
+
+      // Check for existence of report file and create a file
+      if(!reportFile.exists())
+      {
+        reportFile.createNewFile();
+        // Create required column names in the report file
+        reportFile.write('"Test Suite","Test Case","Test Step","Step Type","Step Status",'
+                        +'"Result message","Execution Date"');
+      }
+/* ------------------------------------------------------------------------------- */
+// 5. Inserting data in the file
+      // Iterate over all the test steps results
+  for(stepResult in testRunner.getResults())
+  {
+    // Retrieve Test Suite name
+   def testSuite = testRunner.testCase.testSuite.name;
+   // Retrieve Test Case name
+   def testCase = testRunner.testCase.name;
+   // Retrieve Test Step
+   def testStep = stepResult.getTestStep();
+   // Retrieve Test Step name
+   def testStepName = testStep.name
+   // Retrieve Test Step type
+   def type = testStep.config.type
+   // Retrieve Test Step status
+   def status = stepResult.getStatus()
+
+   // Creating new line in report file
+   reportFile.append('\n');
+
+   // Write all the necessary information in the file
+   reportFile.append('"' + testSuite + '",');
+   reportFile.append('"' + testCase + '",');
+   reportFile.append('"' + testStepName + '",');
+   reportFile.append('"' + type + '",');
+   reportFile.append('"' + status + '",');
+
+   // Retrieve the test result messages
+   reportFile.append('"');
+   for(resMessage in stepResult.getMessages())
+   {
+     // Write messages and separate multiple messages by new line
+     reportFile.append('Message:' + resMessage + '\n');
+   }
+   reportFile.append('",');
+
+   //Write executionDate in the file
+   reportFile.append('"' + executionDate + '",');
+/* ------------------------------------------------------------------------------- */
+// 6. Extract the request and response and save it to external file
+      // Verify if the test step type is request: SOAP project or restrequest: REST project
+        if((type=="request").or(type=="restrequest"))
+        {
+          // Extract the request from the test step
+          def extRequest = testStep.properties["Request"].value;    
+
+      // Create a file in the reports folder and write the request
+      // Naming convention: request_TestSuiteName_TestCaseName_TestStepName.txt
+      def requestFile=subfolderPath1+"/request_"+testSuite+"_"+testCase+"_"+testStepName+".txt";
+      def rqfile = new File(requestFile);
+      rqfile.write(extRequest, "UTF-8");
+
+      // Extract the response from the test step
+      def extResponse = stepResult.getResponseContent();    
+
+      // Create a file in the reports folder and write the response
+      // Naming convention: response_TestSuiteName_TestCaseName_TestStepName.txt
+      def responseFile=subfolderPath1+"/response_"+testSuite+"_"+testCase+"_"+testStepName+".txt";
+      def rsfile = new File(responseFile);
+      rsfile.write(extResponse, "UTF-8");
+     }
+   }
+ }
+catch(exc)
+{
+   log.error("Exception happened: " + exc.toString());
+}</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
