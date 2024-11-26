@@ -1,0 +1,36 @@
+26/11/2024
+
+*HTML :
+-it is used to create structure of web app.
+-it is use to display data to use on browser.
+-it stand for Hyper Text Markup Language.
+-the latest version of html is HTML%
+
+-it is tag basis language.
+<tag>
+-in html we have two types tag.
+1. paired tag: <startTag> </endingTag>
+2. unpaired tag: <singleTag>
+
+
+*steps to create html file
+step1: create html file filename.html or filename.htm
+step2: write code in it
+step3: execute it on browser
+
+
+
+DOCTYPE html : it tell search engine this is html type of document belongs to version 5
+
+head : it contain external links and meta data in it
+body : write code to display on browser
+
+meta data : meta tag gives us information about data.
+            unicode transformation format in 8 but "UTF-8"
+
+*Element: it ocntains starting tag, ending tag, content in it.
+<startingTag attribute="value> content </endingTag>
+
+*attribute : it provide additional information about tag.
+                -it always written in strating startTag
+                -it comes with key and value pair format.
