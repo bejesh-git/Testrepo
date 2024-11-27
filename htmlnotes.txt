@@ -94,3 +94,36 @@ Nested List
 -----------------------------------------------------
 Table Creation
 -----------------------------------------------------
+
+
+
+
+
+##########
+27/11/2024
+##########
+
+
+*form : it is used to get data form user
+        -to submit forms data we have two method
+                1. get method:  -form data will be visible in browser URL
+                                -with getmethod we cannot send confidencial data
+                                -there is character limitation with get method to send data through URL
+
+                2. post method: -form data will not be visible to user it will save it in a body object
+                                -with post method we can submit or share confidencial data
+                                -there is no character limitation
+
+
+*Bookmark :     -it will redirect you to a particular part of the webpage
+
+
+
+
+
+
+HTML TASKS:
+
+-----------------------------------------------------
+7 wonders using bookmark
+-----------------------------------------------------
