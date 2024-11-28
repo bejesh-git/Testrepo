@@ -1,0 +1,31 @@
+**********
+28/11/2024
+**********
+
+
+*javascript
+- it is used to add funcationally into webapp
+- it is interpreted language
+- it is loosely typed language:
+    -when we crate a varible in javascriptwe cannot determine what type data it contain, until and unless it is initialized
+    -in javascript variable we can store a multiple type of value sin a variable, that's why javascript is called loosytypes language
+
+Q. Why javascript is a loosely typed language
+
+
+*2 ways to use javascript
+1. internal javascript :  in html file we use script tah and in that we write js code.
+2. external javascript :    in this we cerate a seprate js file and import that js file and import that js file in html file by using script tag
+
+
+
+*How to get output in js
+1. document.write() :   it will display output in html page
+2.window.alert()    :   it will display output in modal poppup window
+3.console.log()     :   it will diaplay output in browser console or in terminal
+4.innerHTML()       :   it will display output inside an element
+
+
+
+
+

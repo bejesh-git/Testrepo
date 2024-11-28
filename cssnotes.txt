@@ -78,3 +78,38 @@ TASKS:
 -----------------------------------------------------
 Position 
 -----------------------------------------------------
+
+
+##########
+28/11/2024
+##########
+
+*box-sizing: it include element border size and element size in its actual width
+            box-sizing:border-box;
+
+
+
+*float  :   it is used to move block element side by side
+            float : left, right, none
+
+
+
+*container classes
+*color classes
+*bg-color classes
+*button classes
+*spinner-border classes
+*image classes
+*table classes
+*how to use carousel
+*how to use nav
+*how to use accordian
+
+
+*Grid : it is use to manage layout of webapp by using inbuilt classes
+- in bootstrap grid provides mainly two classes
+1. row class
+2. col class
+
+
+-in bootstrap grid row we can crate columns with size 12, if column size is exceded more than 12, then column will start from new row.
