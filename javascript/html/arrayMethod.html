@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+
+</head>
+<body>
+    
+    <iframe src="../../Index.html" frameborder="0" width="100%" height="50px"></iframe>
+    <iframe src="./navigation.html" frameborder="0" width="100%" height="100px"></iframe>
+
+
+
+
+
+
+
+
+    <script>
+
+        let courses = ['java', 'python', 'c', 'cpp', 'html']
+        document.write(courses);
+        document.write('<br>');
+
+        for(let i=0; i<courses.length; i++){
+            document.write(courses[i]);
+        }
+        document.write('<br>');
+
+        for(let c of courses){
+            document.write(c)
+        }
+        document.write('<br>');
+
+        for(let c in courses){
+            document.write(c)
+        }
+        document.write('<br>--------------------------<br><br>');
+
+
+        
+        // PUSH -> append value
+        courses.push('css')
+        document.write("PUSH : ", courses)
+        document.write('<br>');
+        
+        // POP -> remove last element
+        courses.pop()
+        document.write("POP : ", courses)
+        document.write('<br>');
+
+        //UNSHIFT -> first value
+        courses.unshift('css')
+        document.write("UNSHIFR : ", courses)
+        document.write('<br>');
+        
+        // SPLICE -> replace value
+        courses.splice(2, 0, 'NODEJS', 'REACTJS')
+        document.write("SPLICE : ", courses)
+        document.write('<br>');
+        
+        courses.splice(2, 2, 'nodejs', 'reactjs')
+        document.write("SPLICE : ", courses)
+        document.write('<br>');
+        
+        courses.splice(2, 2)
+        document.write("SPLICE : ", courses)
+        document.write('<br>');
+        
+
+        document.write("To String : ", courses.toString() ,'<br>')
+        document.write("JOIN : ", courses.join() ,'<br>')
+        document.write("JOIN : ", courses.join('-') ,'<br>')
+
+
+
+        
+
+    </script>
+
+</body>
+
+</html>
