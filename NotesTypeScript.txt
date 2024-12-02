@@ -3,4 +3,12 @@
 
 *Install typescript
 npm i -g typescript
-tsc -v
+npx tsc -v
+
+
+*how to execute typescript file
+npx tcs fileName.ts
+
+
+*run js file
+node fileName.js
