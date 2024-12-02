@@ -112,3 +112,63 @@ Array of Objects with id, name, post, salary, gender, age,city, state
 -----------------------------------------------------
 passpord , email, contact, gender Validation
 -----------------------------------------------------
+
+
+
+
+
+**********
+02/12/2024
+**********
+
+*String and Methods
+        -string is a collection of character.
+        -in string every character has index value and its start from zero.
+        -in string blank space is also taken in to account
+
+PROPERTY:
+        -length
+
+METHODS:
+        -toUpperCase()
+        -toLowerCase()
+        -indexof(searchinf string[, starIndex]) 
+                -it will search string form left to right and return the first occurence of string-
+                -if not found it return -1
+                -Case Sensitive
+        -lastIndexOf(searchingString[, startIndex])
+                -it will search string form right to left` and return the first occurence of string-
+                -if not found it return -1
+                -Case Sensitive
+        -search(searchString)
+                -it will search string form left to right and return the first occurence of string-
+                -if not found it return -1
+                -it is faster than indexOf()
+                -Case Sensitive
+
+        -slice(startIndex[, endIndex])
+                -it will return part of string from begining string
+                -it will return part of string from begining string
+        -substring
+        -substr
+
+
+
+*ES-5
+        -map
+        -filter
+        -every
+        -some
+        -redure/reduceright
+
+*ES-6
+        -let
+        -const
+        -**
+
+*how to merge two or more arrays
+
+*destructuring : creating constant variable to store data in it
+- we can destructure array and object values;
+
+                

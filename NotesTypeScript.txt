@@ -1,0 +1,6 @@
+-it is compile language
+-it is strict typed language
+
+*Install typescript
+npm i -g typescript
+tsc -v

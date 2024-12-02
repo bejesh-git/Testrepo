@@ -5,6 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Validation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../css/AssignmnetFormValidation.css">
+    <script src="../javascript/AssignmentFormValidation.js"></script>
 </head>
 
 <body>
@@ -12,88 +20,103 @@
     <iframe src="./navigation.html" frameborder="0" width="100%" height="100px"></iframe>
 
 
-    <form onsubmit="return validateData()" name="myform">
+    <div class="container">
+        <form onsubmit="return validateData()" name="myform">
 
-        <div>
-            <label for="fname">Enter Your Name: </label>
-            <input type="text" name='fname' id="'fname">
-        </div>
+            <div class="fname row">
+                <div class="col-6">
+                    <label  for="fname" >Enter Your Name: </label>
+                </div>
+                <div class="col-6">
+                    <input  type="text" name='fname' id="'fname">
+                </div>
+            </div>
+    
+            <div class="gender row">
+                <div class="col-6">
+                    <label for="gender">Gender: </label>
+                </div>
+                <div class="col-3">
+                    <input type="radio" name='gender' id="gender" value="male">Male
+                </div>
+                <div class="col-3">
+                    <input type="radio" name='gender' id="gender" value="female">Female
+                </div>
+            </div>
+    
+            <div class="edu row">
+                <div class="col-12">
+                    <label for="edu">Select Your Qualification: </label>
+                </div>
+            
 
-        <div>
-            <label for="gender">Gender: </label>
-            <input type="radio" name='gender' id="gender" value="male">Male
-            <input type="radio" name='gender' id="gender" value="female">Female
-        </div>
+                <div class="col-3">
+                    <input type="checkbox" name='edu' id="edu" value="ssc">SSC
+                </div>
+                <div class="col-3">
+                    <input type="checkbox" name='edu' id="edu" value="hsc">HSC
+                </div>
+                <div class="col-3">
+                    <input type="checkbox" name='edu' id="edu" value="ug">UG
+                </div>
+                <div class="col-3">
+                    <input type="checkbox" name='edu' id="edu" value="pg">PG
+                </div>
+            </div>
+            
+    
+            <div class="pswd row">
+                <div class="col-6">
+                    <label for="pswd">Password: </label>
+                </div>
+                <div class="col-6">
+                    <input type="text" name='pswd' id="pswd" >
+                </div>
 
-        <div>
-            <label for="edu">Select Your Qualifica: </label>
-            <input type="checkbox" name='edu' id="edu" value="ssc">SSC
-            <input type="checkbox" name='edu' id="edu" value="hsc">HSC
-            <input type="checkbox" name='edu' id="edu" value="ug">UG
-            <input type="checkbox" name='edu' id="edu" value="pg">PG
-        </div>
-
-        <div>
-            <label for="pswd">Password: </label>
-            <input type="text" name='pswd' id="pswd" >
-        </div>
-
-        <div>
-            <label for="email">Email: </label>
-            <input type="text" name='email' id="email" >
-        </div>
-
-        <div>
-            <label for="contact">Contact: </label>
-            <input type="text" name='contact' id="contact" value="">
-        </div>
-
-
-
-
-        <button type="submit">submit</button>
-
-    </form>
+                
+                    <div class="col-12">
+                        <ul>
+                            <div class="cond1" id="cond1"><li>One Digit</li></div>
+                            <div class="cond2" id="cond2"><li>One Lower Case</li></div>
+                            <div class="cond3" id="cond3"><li>One Upper Case</li></div>
+                            <div class="cond4" id="cond4"><li>One Special Character</li></div>
+                            <div class="cond5" id="cond5"><li>No Space</li></div>
+                            <div class="cond6" id="cond6"><li>8 - 20 Characters</li></div>
+                        </ul>
+                    </div>
+            </div>
+    
+            <div class="email row">
+                <div class="col-6">
+                    <label for="email">Email: </label>
+                </div>
+                <div class="col-6">
+                    <input type="text" name='email' id="email" >
+                </div>
+            </div>
+    
+            <div class="contact row">
+                <div class="col-6">
+                    <label for="contact">Contact: </label>
+                </div>
+                <div class="col-6">
+                    <input type="text" name='contact' id="contact" value="">
+                </div>
+            </div>
+    
+    
+    
+    
+            <div class="row">
+                <div class="col-12 sub-btn">
+                    <button type="submit" class="btn btn-primary">submit</button>
+                </div>
+            </div>
+    
+        </form>
+    </div>
 
    
-
-    <script>
-        function validateData() {
-
-            let fname = document.myform.fname;
-            let gender = document.myform.gender;
-            let pswd = document.myform.pswd
-            let email = document.myform.email;
-            let contact = document.myform.contact;
-            let uedu = document.myform.edu;
-
-            let regName = "^[a-zA-Z ]{3,20}$"
-            let uname = fname.value;
-            if (uname.trim() === "") {
-                window.alert("fullname required");
-                return false;
-            }
-            if (!uname.trim().match(regName)) {
-                window.alert("full name must contain only charater min-3 and max-20");
-                return false;
-            }
-
-
-            let isChecked = false; 
-            for (let i = 0; i < uedu.length; i++) { 
-                if (uedu[i].checked) { 
-                    isChecked = true; break; 
-                } 
-            }
-            if (!isChecked) { 
-                window.alert("Please select your qualification"); 
-                return false; 
-            }
-
-            return true;
-
-        }
-    </script>
 
 </body>
 
