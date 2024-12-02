@@ -1,0 +1,47 @@
+
+.outercontainer1 {
+    width: auto;
+    height: 600px;
+    border: 1px solid black;
+    align-content: center;
+    background-image: url("../asserts/images/blurbird.JPG");
+    background-position: center;
+    background-size: 100%;
+}
+
+.container1 {
+    width: fit-content;
+    margin: 100px auto;
+}
+
+#cyclebutton {
+    display: block;
+    margin: auto;
+}
+
+#cycleimage {
+    height: 300px;
+    border: 2px solid;
+}
+
+
+
+.container {
+    width: 500px;
+}
+
+.container button {
+    width: 100px;
+}
+
+.con2-img {
+    height: 300px;
+    width: inherit;
+    padding: 0px;
+}
+
+.center-row {
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+}

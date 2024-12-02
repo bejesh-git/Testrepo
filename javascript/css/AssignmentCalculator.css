@@ -1,0 +1,44 @@
+
+.container {
+    width: 400px;
+}
+
+.btn {
+    margin: 2px;
+    width: 90px;
+    padding: 3px 2px;
+}
+
+.row {
+    justify-content: center;
+    margin: 5px 0px;
+}
+
+@media screen and (max-width:576px) {
+    .container {
+        width: 300px;
+    }
+}
+
+
+
+#num1:hover{
+    transform: translate(-2%, -2%);
+    border: 2px solid black;
+    box-shadow: 0px 0px 10px grey;
+}
+#num2:hover{
+    transform: translate(-2%, -2%);
+    border: 2px solid black;
+    box-shadow: 0px 0px 10px grey;
+}
+
+
+
+.result{
+    padding-left: 15px;
+}
+
+#value{
+    color:blueviolet;
+}
