@@ -12,3 +12,26 @@ npx tcs fileName.ts
 
 *run js file
 node fileName.js
+
+
+*OOPS
+1-class: 
+    -it is collection of data member and member function
+    -it is template which we re-use.
+    -to create class we use class keyword
+
+2.object:
+    -it is an instance of class
+    -it allows us to access the data members and member funciton outside class
+    syntax:
+        let objName = new CLass()
+
+3.constructor:
+    -it is special memeber function of class
+    -it will execute automatically when class object ger created or initialized
+    -in ts constructor name must be only constructor.
+    
+
+
+TASK
+------------------------------------------------
