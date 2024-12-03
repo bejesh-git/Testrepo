@@ -1,14 +1,18 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Person = void 0;
 var Person = /** @class */ (function () {
-    function Person(id, name, loc) {
-        this.pid = id;
-        this.pname = name;
-        this.plocation = loc;
+    function Person(name, loc, contact) {
+        this.perContact = contact;
+        this.perName = name;
+        this.perLocation = loc;
     }
     Person.prototype.printDetails = function () {
-        console.log("Id : ".concat(this.pid, " Name : ").concat(this.pname, " Location : ").concat(this.plocation));
+        console.log("Name : ".concat(this.perName, " Location : ").concat(this.perLocation, " Contact : ").concat(this.perContact, " "));
     };
     return Person;
 }());
-var personObj = new Person(200, "ajay", "Chennai");
-console.log(personObj.pname);
-personObj.printDetails();
+exports.Person = Person;
+// let personObj = new Person("ajay", "Chennai", 999999999);
+// console.log(personObj.perName);
+// personObj.printDetails();

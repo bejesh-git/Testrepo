@@ -1,0 +1,107 @@
+*********
+2/12/2024
+*********
+
+*React -it is a javascript library.
+        -it is used to create rich user interface
+        -it create single page applicaton(SPA)
+
+*pre-requisit techlology
+    -HTML, CSS, JS(basicJS, ES5, ES6, OOPs)
+
+*S/W pre-requisit
+    -nodejs
+        -node -v
+        -npm -v
+    -text Editor
+
+
+*3 ways to Create a react Project
+    1. by using npm : need to install configuration file.
+                   1: npm instal/i -g create-react-app
+                   2: create-react-app appname
+                   3: cd appname
+                   4: npm start
+
+    2. by using npx : no need to install configuration file.
+                    1: npx create-react-app appname
+                    2: cd appname
+                    3: npm start
+
+    3. by using vite : it creates a project with minimum packages.
+
+
+
+Parameters                  React               Angular
+Library/Framework           Library             Framework
+Data Binding                one-way             Two-way Databinding
+dom                         virtual dom         browser dom
+technology                  XML+JS              HTML+Ts
+performance                 Faster              slightly slower
+Developer                   Facebook            Google
+
+
+
+
+*react folder structure
+    -node_module : all the dependencies and development dependencies will be installed in this folder
+    -package.json : list of all the dependencies entry can be found here
+    -package-lock.json : detailed description of all the dependencies entry can be found here
+    -public: it contain static data and file in it.
+
+
+*react is component basis technology
+    -component: it is partial part of react project
+                -which we can resuse throught react project
+                -it can be any part of react project
+
+-in react App.js is is root component
+
+*Types of component
+    1. function component : when you main focus is on UI design
+    2. class component : when you have to implement complex logic we use class component.
+
+*JSX - javascript + XML
+    -it allows us to write HTML code on react.
+    -it makes react code easy.
+    -in JSX we have to rap multiple element inside one parent element.
+    -parent element must be any block element <div><h2><p>, etc
+
+*props - Properties
+    - it is a parameter or functional parameter which is used to pass data within componenets
+    - propes return data in object format
+    -we can access props in function component by writing props.propsname
+    -we can access props in Class component by writing this.props.propsname
+
+*method and event in react
+
+*state : 
+    -it is used to handle essential data in class component
+    -it return us object type of data
+    -in class component we write state inside constructor
+    -if you want to use state in function component, for that we use stateHook(>v16.0)
+
+*setState : it is used to manipulate state data inside class component.
+
+*how to use bootstrap in react
+    -1: npm i bootstrap
+    -2: go to index.js and import the parth
+    -3. use bootstrap classes
+
+
+render : display component output or view on browser
+*conditional rendering : display component on the basis of condition
+    1. use of if else : if condition is true then if block will render otherwise else block will render
+    2. element as variable : in variable we store data and display inside tag and return it
+    3. use of ternary operator : short hand syntax for if else. condition ? true : false
+    4. use of short-circuit : if condition is true then and only then it will displey output
+
+
+
+*Three ways to use css:
+1. internal css: 
+2. external css
+3. module css : -it is used when we have to design for a particuler component
+                -we save file with fileName.module.css
+
+

@@ -1,23 +1,23 @@
 class Person{
 
-    pid:number;
-    pname:string;
-    plocation:string;
+    perName:string;
+    perLocation:string;
+    perContact:number;
 
-    constructor(id:number, name:string, loc:string){
-        this.pid = id;
-        this.pname = name;
-        this.plocation = loc;
+    constructor(name:string, loc:string, contact:number){
+        this.perContact = contact;
+        this.perName = name;
+        this.perLocation = loc;
     }
 
     printDetails(){
-        console.log(`Id : ${this.pid} Name : ${this.pname} Location : ${this.plocation}`);
+        console.log(`Name : ${this.perName} Location : ${this.perLocation} Contact : ${this.perContact} `);
     }
 
 }
+// let personObj = new Person("ajay", "Chennai", 999999999);
 
+// console.log(personObj.perName);
+// personObj.printDetails();
 
-let personObj = new Person(200, "ajay", "Chennai");
-
-console.log(personObj.pname);
-personObj.printDetails();
+export default Person;
