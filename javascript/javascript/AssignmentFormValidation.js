@@ -48,7 +48,7 @@ function validateData() {
         window.alert("Password required");
         return false;
     }
-    if(!/^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&-+=()])(?!.*\s).{8,20}$/.test(upswd)){
+    if(!/^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&-+=()])(?!.*\s).{8,15}$/.test(upswd)){
         window.alert("In Valid Password");
         checkMatch();
         return false;
@@ -69,7 +69,7 @@ function validateData() {
                                                 else{ document.getElementById('cond4').className = "right";}
         if(!(/^(?!.*\s).*$/.test(upswd))) { document.getElementById('cond5').className = "wrong";}
                                                 else{ document.getElementById('cond5').className = "right";}
-        if(!upswd.match("^.{8,20}$"))    { document.getElementById('cond6').className = "wrong";}
+        if(!upswd.match("^.{8,15}$"))    { document.getElementById('cond6').className = "wrong";}
                                                 else{ document.getElementById('cond6').className = "right";}
     }
     
