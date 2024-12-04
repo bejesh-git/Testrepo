@@ -1,11 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
 import ClassCom from './component/ClassCom';
+import ClickCounterComp from './component/ClickCounterComp';
 import ConditionalRendering from './component/ConditionalRendering';
 import CssComp from './component/CssComp';
+import ErrorBoundaryComp from './component/ErrorBoundaryComp';
 import EventComp from './component/EventCom';
 import FunctionCom from './component/FunctionCom';
+import HowerCounterCom from './component/HowerCounterCom';
+import MyHocComp from './component/MyHocComp';
+import MyImagesCom from './component/MyImagesCom';
 import MyStateComp from './component/MyStateComp';
+import ParentComp from './component/ParentComp';
+import UserComp from './component/UserComp';
+import VirtualDOM from './component/VirtualDOM';
 import BejeshFunComp from './task/BejeshFunComp';
 import MyCounterComp from './task/MyCounterComp';
 
@@ -35,12 +43,33 @@ function App() {
       {/* <ClassCom fname="Sriram" post="Software developer"/> */}
 
       {/* <EventComp /> */}
-      <MyCounterComp />
+      {/* <MyCounterComp /> */}
       {/* <MyStateComp /> */}
 
       {/* <ConditionalRendering /> */}
 
-      <CssComp />
+      {/* <CssComp /> */}
+
+      {/* <ParentComp gender="Male" contact={9804543222}/> */}
+
+      {/* <ClickCounterComp /> */}
+
+      {/* <HowerCounterCom /> */}
+
+      {/* <MyImagesCom /> */}
+
+      {/* <ErrorBoundaryComp >
+        <UserComp user = "Bejesh"/>
+      </ErrorBoundaryComp>
+      <ErrorBoundaryComp>
+        <UserComp user = "Raheem"/>
+      </ErrorBoundaryComp>
+      <ErrorBoundaryComp>
+        <UserComp user = "Anbu"/>
+      </ErrorBoundaryComp> */}
+
+        <VirtualDOM />
+
 
     </div>
   );

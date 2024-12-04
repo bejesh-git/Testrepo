@@ -9,5 +9,5 @@
 
 .special:hover{
     /* transform: rotate3d(180deg); */
-    transform:skew(90deg);
+    transform:rotateY(180deg);
 }

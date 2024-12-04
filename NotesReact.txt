@@ -105,3 +105,48 @@ render : display component output or view on browser
                 -we save file with fileName.module.css
 
 
+
+
+*********
+4/12/2024
+*********
+
+*Fragment in react:
+    - it is an alternative option for jsx.
+    - it remove unwanted element from DOM hierarchy
+    
+
+*component interacion:
+    -passing data from parent component to child
+    -while performing commponent Interaction in between component they must have parent child relation
+    -how establish parent child relation in between component, first we have to import child component in parent component and then write child component name as tag in parent component
+
+*passing state data as props
+*passing function as props
+
+
+*pure component in Class Component
+    -it is used to prevenent unnecessary re-redendaring of class component by performing shalow comparission
+    -to achieve this we have to extend class component with PureComponent class.
+    syntax: class MyPureComp extends PureComponent;
+
+*rect.Memo():
+    -it is use to prevent uncecessary re-rendering the funciton component by performing shallow comparission
+    -to achive we have to pass function component name as argument ro React.memo() Methof=d.
+    syntax: export default React.memo(MyMemoCom);
+
+*HOC : Higher Order Component
+    - when we have to share same business logic with multiple component , we use HOC.
+    -in this we share business logic from function component to other components.
+
+*ErrorBoundary
+    - it is react component which is used to handle error occure in component tree while component rendering.
+    - to handle it, we use two class componenet life cycle method
+        1. getDerivedStateFromError(): when error occur in component it execute automaically
+        2. componentDidCatch() : i twill display error log(error information)
+
+
+*virtual DOM:
+    -insted of manipulating browser dom directly react creates virtual DOM in its memory. where it does all the necessary changes before making on the browser DOM
+    -react only render the code which has been change.
+    -thats why react is faster

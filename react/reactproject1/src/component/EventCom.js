@@ -16,13 +16,13 @@ class EventComp extends Component{
 
     render(){
         return (
-            <div>
+            <>
                 <h2>Event Component</h2>
                 <button type="button" onClick={this.greeting}>Greet</button>
                 <button type="button" onDoubleClick={()=>this.welcome("AJay","Anbu","Raheem")}>welcome</button>
 
                 <p class="event-para" onMouseOver={()=>this.welcome("Abdur","Niyaz","Mahammad")}>Hover Over me</p>
-            </div>
+            </>
         );
     }
     

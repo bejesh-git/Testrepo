@@ -1,6 +1,7 @@
-import React from "react";
+import React, { Fragment } from "react";
 import cssFile from "../css/csscomp2.module.css"
 import "../css/csscomp.css";
+import ChildCom from "./ChildCom";
 
 
 class CssComp extends React.Component{
@@ -14,7 +15,7 @@ class CssComp extends React.Component{
     }
     render(){
         return(
-            <div>
+            <Fragment>
                 <h2 style={{color:"blue"}}>Css Componenet</h2>
                 <p style={this.circle}>Content</p>
 
@@ -22,7 +23,9 @@ class CssComp extends React.Component{
                 <p className="txtDange">external 2</p>
                 <div className={cssFile.special}>Module Css</div>
 
-            </div>
+                
+
+            </Fragment>
         );
     }
 }
