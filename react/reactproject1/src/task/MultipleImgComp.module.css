@@ -1,0 +1,20 @@
+.container {
+    width: 500px;
+    margin: auto;
+}
+
+.container button {
+    width: 100px;
+}
+
+.con2Img {
+    height: 300px;
+    width: inherit;
+    padding: 0px;
+}
+
+.center_row {
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+}
