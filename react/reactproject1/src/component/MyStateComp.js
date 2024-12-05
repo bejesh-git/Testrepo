@@ -10,6 +10,8 @@ class MyStateComp extends Component {
         }
     }
 
+
+
     changeState = () => {
         this.setState((preState) => ({empSal:preState.empSal+5000}));
     }

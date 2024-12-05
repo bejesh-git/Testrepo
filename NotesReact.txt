@@ -150,3 +150,78 @@ render : display component output or view on browser
     -insted of manipulating browser dom directly react creates virtual DOM in its memory. where it does all the necessary changes before making on the browser DOM
     -react only render the code which has been change.
     -thats why react is faster
+
+
+*Routing in react:
+    -Navigation of component.
+    -by writing routing path name in browser url to display component output/view
+    -we use react-router-dom library in react to perform routing.
+    npm install react-router-dom@latest
+    npm install react-router-dom@6
+
+1. createBrowserDOM(): it is a method takes array of object type of data 
+                        -in its object we use two property path, element.
+                        -in this method we definr all types of routing
+2. RouterProvider():    it help us to render output of all routing componrnt on browser
+
+
+*types of routing
+1. naming routing: display component output after writting component path name in browser url
+2.default routing: display component output without writing writing routing path name.
+3.parameterize routing(:): display component output after passing paremeter with routing path name.
+4. wild-card(*): when user write wrong path name in browser url then we decide what componenet to display.
+                -it should be always written in the lat
+5.child-routing: display one routing inside another another
+                -to perform child routing we use children property in object which array of object value.
+                -to display child routing output we have to add <Outlet> library in parent routing component.
+
+
+
+*class component lifecycle methods
+    -it comes with four phases
+        1.Mounting Phase : 
+            i. constructor : when class object initialized constructor gets executed automaticallly
+            ii. getDerivedStateFromProps : it is a static method which execute automaticallly, and it is used to set values comming from props to state
+            iii. render :  it is responsible to render component data
+            iv. componentDidMount : it executes immedietly after render method.
+        2.Update Phase : when dom maipulation is development
+            i. shouldComponentUpdate : it decide whether component will update or not.
+                                        it return boolen value
+            ii. getSnapShotbeforeUpdate : i return previous data of props and state before upation of it.
+            iii. render
+            iv. componentDidUpdate : it will return updated values of state and props
+
+        3.Unmounting Phase: when component is deleted
+            i. componentWillUnmount : it just call before compoenent deleted, it is used to disconnect component connection with other component
+            
+        4.Error Phase
+            i. getDerivedStateFromError : it execute automaically when erroe occur in components
+            ii. componentDidCatch : it return error log
+
+*Hooks in react:
+    -it allows us to use class component feature in function component.
+    -by using hooks we can use state in function component.
+    -in react hooks are introduced in react v16.0
+
+    rules:
+        -Hooks work only in function compnent.
+        -Hooks always use in top-level component
+        -hooks can not be render conditionally
+
+    Hooks : 
+        1. useState Hook :  -if you want to use state in a function component
+                            -it return two values, 1. currentState 2. function to update state data
+                            syntax : const [currentState, functionToUpdateState] = useState(value);
+        2. useEffect Hook : -it will handle work of componentDidMount, componentDidUpdate, componentWillmount
+                            -it takes two values 1.call back function , 2. dependencies
+                            suntax: useEffect(()=>, dependencies)
+                                case 1: with no dependency value - infinite loop when state gets changed
+                                case 2: when we pass blank array as dependency value
+                                case 3: when we have to exucute useEffect as we want - we pass value in dependency
+
+
+        3. useContext Hook
+        4. useRef Hook
+        5. useReducer Hook
+        6. useCall Hook
+        7. useMemo Hook

@@ -73,9 +73,10 @@ function App() {
 
         {/* <VirtualDOM /> */}
 
-        {/* <ToggleImgComp /> */}
-        {/* <MultipleImgComp /> */}
-        {/* <EmpDetails /> */}
+
+        {/* <ToggleImgComp />
+        <MultipleImgComp />
+        <EmpDetails /> */}
 
     </div>
   );
