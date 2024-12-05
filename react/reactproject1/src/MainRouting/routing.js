@@ -13,6 +13,7 @@ import LoginComp from "../Layout/LoginComp"
 import MainDashBoard from "../Layout/MainDashBoard";
 import MyFavColorComp from "../component/MyFavColorComp";
 import FormValComp from "../component/FormValComp";
+import FormValidationComp from "../task/FormValidationComp";
 
 
 const routing = createBrowserRouter([
@@ -26,7 +27,8 @@ const routing = createBrowserRouter([
             { path: "", element: <App /> },
             
             { path: "favcolor", element: <MyFavColorComp newColor="red"/> },
-            { path: "formval", element: <FormValComp newColor="red"/> },
+            { path: "formval", element: <FormValComp /> },
+            { path: "formassign", element: <FormValidationComp /> },
 
             // Naming Routing
             { path: "task/1", element: <ToggleImgComp /> },

@@ -14,6 +14,7 @@ const NavComp = () =>{
             
             <Link to="reacthooks" className="btn btn-outline-info me-2">ReactHooks</Link>
             <Link to="formval" className="btn btn-outline-info me-2">Form Vali</Link>
+            <Link to="formassign" className="btn btn-outline-info me-2">Form Assignment</Link>
         </div>
     );
 }
