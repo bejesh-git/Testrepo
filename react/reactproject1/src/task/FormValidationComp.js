@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import rightImg from "../asserts/images/right.png"
 import wrongImg from "../asserts/images/wrong.png"
 
-import "./FormValidationComp.module.css"
 
 function FormValidationComp() {
 

@@ -14,6 +14,9 @@ import MainDashBoard from "../Layout/MainDashBoard";
 import MyFavColorComp from "../component/MyFavColorComp";
 import FormValComp from "../component/FormValComp";
 import FormValidationComp from "../task/FormValidationComp";
+import ProductDashComp from "../CRUD/ProductDashComp";
+import ProductAddComp from "../CRUD/ProductAddComp";
+import ProductEditComp from "../CRUD/ProductEditComp";
 
 
 const routing = createBrowserRouter([
@@ -29,6 +32,11 @@ const routing = createBrowserRouter([
             { path: "favcolor", element: <MyFavColorComp newColor="red"/> },
             { path: "formval", element: <FormValComp /> },
             { path: "formassign", element: <FormValidationComp /> },
+            
+            { path: "product", element: <ProductDashComp />},
+            { path: "addproduct", element: <ProductAddComp /> },
+                { path: "editproduct/:id", element: <ProductEditComp /> },
+            
 
             // Naming Routing
             { path: "task/1", element: <ToggleImgComp /> },

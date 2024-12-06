@@ -212,7 +212,7 @@ render : display component output or view on browser
         1. useState Hook :  -if you want to use state in a function component
                             -it return two values, 1. currentState 2. function to update state data
                             syntax : const [currentState, functionToUpdateState] = useState(value);
-        2. useEffect Hook : -it will handle work of componentDidMount, componentDidUpdate, componentWillmount
+        2. useEffect Hook : -it will handle work of componentDidMount, componentDidUpdate, componentWillunmount
                             -it takes two values 1.call back function , 2. dependencies
                             suntax: useEffect(()=>, dependencies)
                                 case 1: with no dependency value - infinite loop when state gets changed
@@ -225,3 +225,31 @@ render : display component output or view on browser
         5. useReducer Hook
         6. useCall Hook
         7. useMemo Hook
+
+
+*CRUD
+-REST Fake API
+
+*Axios Library : It is used to make request from React app to server
+    -npm install axios
+
+*json-server : it is dummy server, which gives server environment to database
+    -npm install json-server
+
+*json-database : 
+
+*how to start json-server and upload the db.json
+json-server --watch -p 8888 db.json
+
+
+
+
+*GET request : to fetch data from server
+
+____________
+*Material UI : it provide inbuilt component, which makes react project attractive as well as icons
+------------
+www.mui.com
+npm install @mui/material @emotion/react @emotion/styled
+*Material icons
+npm install @mui/icons-material
