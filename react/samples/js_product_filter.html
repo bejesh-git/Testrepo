@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+  </head>
+  <body >
+
+    <div id="product-container"></div>
+
+
+    
+  
+  <script>
+    let MATERIAL = {
+      GOLD : "gold",
+      SILVER : "silver",
+      DIAMOND : "diamond"
+    }
+   
+    let CATEGORY = {
+      RING : "ring",
+      NECKLACE : "necklace",
+      BRACELETS : "bracelet",
+      EARRING : "earing",
+      PENDANT : "pendant"
+    }
+
+    let TAGS = {
+      LATEST : "latest",
+      TRENDING : "trending",
+    }
+
+    let TYPE = {
+      CASUAL : "casual",
+      BRIDAL : "bridal",
+      ANTIQUE : "antique"
+    }
+
+	let products = [
+    //Diamond bracelet
+    { id:"db1", material : MATERIAL.DIAMOND, category : CATEGORY.BRACELETS, tags:`${TAGS.LATEST}` + `${TAGS.TRENDING}`, type : `${TYPE.CASUAL}`, price:56000 },
+    { id:"db2", material : MATERIAL.DIAMOND, category : CATEGORY.BRACELETS, tags:`${TAGS.LATEST}`, type : `${TYPE.CASUAL}`, price:59000 },
+    { id:"db3", material : MATERIAL.DIAMOND, category : CATEGORY.BRACELETS, tags:`${TAGS.LATEST}` + `${TAGS.TRENDING}`, type : `${TYPE.BRIDAL}`, price:55000 },
+    { id:"db4", material : MATERIAL.DIAMOND, category : CATEGORY.BRACELETS, tags:``, type : `${TYPE.CASUAL}`, price:57500 },
+    { id:"db5", material : MATERIAL.DIAMOND, category : CATEGORY.BRACELETS, tags:`${TAGS.LATEST}` + `${TAGS.TRENDING}`, type : `${TYPE.CASUAL}`, price:52000 },
+    { id:"db6", material : MATERIAL.DIAMOND, category : CATEGORY.BRACELETS, tags:``, type : `${TYPE.ANTIQUE}`, price:60000 },
+    { id:"db7", material : MATERIAL.DIAMOND, category : CATEGORY.BRACELETS, tags:`${TAGS.TRENDING}`, type : `${TYPE.CASUAL}`, price:56300 },
+    { id:"db8", material : MATERIAL.DIAMOND, category : CATEGORY.BRACELETS, tags:`${TAGS.LATEST}` + `${TAGS.TRENDING}`, type : `${TYPE.BRIDAL}`, price:53000 },
+    
+    //Diamond Earings
+    { id:"de1", material : MATERIAL.DIAMOND, category : CATEGORY.EARRING, tags:`${TAGS.LATEST}` + `${TAGS.TRENDING}`, type : `${TYPE.BRIDAL}`, price:43000 },
+    { id:"de2", material : MATERIAL.DIAMOND, category : CATEGORY.EARRING, tags:`${TAGS.TRENDING}`, type : `${TYPE.BRIDAL}`, price:46000 },
+    { id:"de3", material : MATERIAL.DIAMOND, category : CATEGORY.EARRING, tags:`${TAGS.LATEST}` , type : `${TYPE.CASUAL}`, price:49000 },
+    { id:"de4", material : MATERIAL.DIAMOND, category : CATEGORY.EARRING, tags:``, type : `${TYPE.ANTIQUE}`, price:39000 },
+    { id:"de5", material : MATERIAL.DIAMOND, category : CATEGORY.EARRING, tags:``, type : `${TYPE.BRIDAL}`, price:51000 },
+    { id:"de6", material : MATERIAL.DIAMOND, category : CATEGORY.EARRING, tags:`${TAGS.LATEST}` + `${TAGS.TRENDING}`, type : `${TYPE.CASUAL}`, price:42500 },
+    { id:"de7", material : MATERIAL.DIAMOND, category : CATEGORY.EARRING, tags:`${TAGS.TRENDING}`, type : `${TYPE.BRIDAL}`, price:56300 },
+    { id:"de8", material : MATERIAL.DIAMOND, category : CATEGORY.EARRING, tags:`${TAGS.TRENDING}`, type : `${TYPE.CASUAL}`, price:49400 },
+    { id:"de9", material : MATERIAL.DIAMOND, category : CATEGORY.EARRING, tags:``, type : `${TYPE.BRIDAL}`, price:32000 },
+    { id:"de10", material : MATERIAL.DIAMOND, category : CATEGORY.EARRING, tags:`${TAGS.LATEST}` + `${TAGS.TRENDING}`, type : `${TYPE.BRIDAL}`, price:45700 },
+    { id:"de11", material : MATERIAL.DIAMOND, category : CATEGORY.EARRING, tags:`${TAGS.LATEST}` , type : `${TYPE.CASUAL}`, price:50100 },
+    { id:"de12", material : MATERIAL.DIAMOND, category : CATEGORY.EARRING, tags:``, type : `${TYPE.CASUAL}`, price:53000 },
+    { id:"de13", material : MATERIAL.DIAMOND, category : CATEGORY.EARRING, tags:``, type : `${TYPE.BRIDAL}`, price:48900 },
+    { id:"de14", material : MATERIAL.DIAMOND, category : CATEGORY.EARRING, tags:`${TAGS.TRENDING}`, type : `${TYPE.ANTIQUE}`, price:43900 },
+    
+    // Diamond Necklace
+    { id:"dn1", material : MATERIAL.DIAMOND, category : CATEGORY.NECKLACE, tags:``, type : `${TYPE.CASUAL}`, price:71000 },
+    { id:"dn2", material : MATERIAL.DIAMOND, category : CATEGORY.NECKLACE, tags:`${TAGS.TRENDING}`, type : `${TYPE.CASUAL}`, price:72000 },
+    { id:"dn3", material : MATERIAL.DIAMOND, category : CATEGORY.NECKLACE, tags:``, type : `${TYPE.CASUAL}`, price:67400 },
+    { id:"dn4", material : MATERIAL.DIAMOND, category : CATEGORY.NECKLACE, tags:``, type : `${TYPE.CASUAL}`, price:74000 },
+    { id:"dn5", material : MATERIAL.DIAMOND, category : CATEGORY.NECKLACE, tags:`${TAGS.TRENDING}`, type : `${TYPE.ANTIQUE}`, price:69000 },
+    { id:"dn6", material : MATERIAL.DIAMOND, category : CATEGORY.NECKLACE, tags:`${TAGS.LATEST}` , type : `${TYPE.CASUAL}`, price:66000 },
+    { id:"dn7", material : MATERIAL.DIAMOND, category : CATEGORY.NECKLACE, tags:``, type : `${TYPE.CASUAL}`, price:73500 },
+    { id:"dn8", material : MATERIAL.DIAMOND, category : CATEGORY.NECKLACE, tags:`${TAGS.LATEST}` , type : `${TYPE.CASUAL}`, price:80000 },
+    { id:"dn9", material : MATERIAL.DIAMOND, category : CATEGORY.NECKLACE, tags:``, type : `${TYPE.CASUAL}`, price:74999 },
+    { id:"dn10", material : MATERIAL.DIAMOND, category : CATEGORY.NECKLACE, tags:``, type : `${TYPE.BRIDAL}`, price:86000 },
+    { id:"dn11", material : MATERIAL.DIAMOND, category : CATEGORY.NECKLACE, tags:``, type : `${TYPE.CASUAL}`, price:77000 },
+    { id:"dn12", material : MATERIAL.DIAMOND, category : CATEGORY.NECKLACE, tags:`${TAGS.LATEST}` + `${TAGS.TRENDING}`, type : `${TYPE.CASUAL}`, price:82400 },
+    { id:"dn13", material : MATERIAL.DIAMOND, category : CATEGORY.NECKLACE, tags:``, type : `${TYPE.CASUAL}`, price:99000 },
+    { id:"dn14", material : MATERIAL.DIAMOND, category : CATEGORY.NECKLACE, tags:`${TAGS.TRENDING}`, type : `${TYPE.BRIDAL}`, price:79499 },
+    { id:"dn15", material : MATERIAL.DIAMOND, category : CATEGORY.NECKLACE, tags:``, type : `${TYPE.CASUAL}`, price:87000 },
+    { id:"dn16", material : MATERIAL.DIAMOND, category : CATEGORY.NECKLACE, tags:``, type : `${TYPE.ANTIQUE}`, price:68500 },
+    { id:"dn17", material : MATERIAL.DIAMOND, category : CATEGORY.NECKLACE, tags:`${TAGS.TRENDING}`, type : `${TYPE.CASUAL}`, price:70500 },
+    
+    // diamond pendant
+    { id:"dp1", material : MATERIAL.DIAMOND, category : CATEGORY.PENDANT, type : `${TYPE.BRIDAL}`, price:30000, tags:``},
+    { id:"dp2", material : MATERIAL.DIAMOND, category : CATEGORY.PENDANT, type : `${TYPE.CASUAL}`, price:31000, tags:`${TAGS.LATEST}` + `${TAGS.TRENDING}`},
+    { id:"dp3", material : MATERIAL.DIAMOND, category : CATEGORY.PENDANT, type : `${TYPE.ANTIQUE}`, price:27999, tags:``},
+    { id:"dp4", material : MATERIAL.DIAMOND, category : CATEGORY.PENDANT, type : `${TYPE.CASUAL}`, price:21500, tags:`${TAGS.LATEST}` },
+    { id:"dp5", material : MATERIAL.DIAMOND, category : CATEGORY.PENDANT, type : `${TYPE.ANTIQUE}`, price:21000, tags:`${TAGS.TRENDING}`},
+    { id:"dp6", material : MATERIAL.DIAMOND, category : CATEGORY.PENDANT, type : `${TYPE.BRIDAL}`, price:26000, tags:``},
+    { id:"dp7", material : MATERIAL.DIAMOND, category : CATEGORY.PENDANT, type : `${TYPE.CASUAL}`, price:31500, tags:``},
+    { id:"dp8", material : MATERIAL.DIAMOND, category : CATEGORY.PENDANT, type : `${TYPE.ANTIQUE}`, price:20000, tags:`${TAGS.LATEST}` + `${TAGS.TRENDING}`},
+    { id:"dp9", material : MATERIAL.DIAMOND, category : CATEGORY.PENDANT, type : `${TYPE.CASUAL}`, price:24500, tags:``},
+    { id:"dp10", material : MATERIAL.DIAMOND, category : CATEGORY.PENDANT, type : `${TYPE.BRIDAL}`, price:29999, tags:``},
+    { id:"dp11", material : MATERIAL.DIAMOND, category : CATEGORY.PENDANT, type : `${TYPE.CASUAL}`, price:22500, tags:+ `${TAGS.TRENDING}`},
+    { id:"dp12", material : MATERIAL.DIAMOND, category : CATEGORY.PENDANT, type : `${TYPE.ANTIQUE}`, price:82400, tags:``},
+    { id:"dp13", material : MATERIAL.DIAMOND, category : CATEGORY.PENDANT, type : `${TYPE.BRIDAL}`, price:25300, tags:`${TAGS.LATEST}` },
+    { id:"dp14", material : MATERIAL.DIAMOND, category : CATEGORY.PENDANT, type : `${TYPE.CASUAL}`, price:24500, tags:``},
+    { id:"dp15", material : MATERIAL.DIAMOND, category : CATEGORY.PENDANT, type : `${TYPE.CASUAL}`, price:21500, tags:`${TAGS.LATEST}` + `${TAGS.TRENDING}`},
+    { id:"dp16", material : MATERIAL.DIAMOND, category : CATEGORY.PENDANT, type : `${TYPE.ANTIQUE}`, price:21000, tags:``},
+    { id:"dp17", material : MATERIAL.DIAMOND, category : CATEGORY.PENDANT, type : `${TYPE.CASUAL}`, price:23000, tags:``},
+    { id:"dp18", material : MATERIAL.DIAMOND, category : CATEGORY.PENDANT, type : `${TYPE.CASUAL}`, price:27000, tags:`${TAGS.LATEST}` },
+    { id:"dp19", material : MATERIAL.DIAMOND, category : CATEGORY.PENDANT, type : `${TYPE.BRIDAL}`, price:22000, tags:``},
+    
+    //diamond ring
+    { id:"dr1", material : MATERIAL.DIAMOND, category : CATEGORY.RING, type : `${TYPE.BRIDAL}`, price:55000, tags:``},
+    { id:"dr2", material : MATERIAL.DIAMOND, category : CATEGORY.RING, type : `${TYPE.CASUAL}`, price:57000, tags:`${TAGS.LATEST}` },
+    { id:"dr3", material : MATERIAL.DIAMOND, category : CATEGORY.RING, type : `${TYPE.ANTIQUE}`, price:84000, tags:``},
+    { id:"dr4", material : MATERIAL.DIAMOND, category : CATEGORY.RING, type : `${TYPE.CASUAL}`, price:56000, tags:``},
+    { id:"dr5", material : MATERIAL.DIAMOND, category : CATEGORY.RING, type : `${TYPE.BRIDAL}`, price:58900, tags: `${TAGS.TRENDING}`},
+    { id:"dr6", material : MATERIAL.DIAMOND, category : CATEGORY.RING, type : `${TYPE.CASUAL}`, price:66800, tags:``},
+    { id:"dr7", material : MATERIAL.DIAMOND, category : CATEGORY.RING, type : `${TYPE.BRIDAL}`, price:61500, tags:`${TAGS.LATEST}` },
+    { id:"dr8", material : MATERIAL.DIAMOND, category : CATEGORY.RING, type : `${TYPE.CASUAL}`, price:59999, tags:``},
+    { id:"dr9", material : MATERIAL.DIAMOND, category : CATEGORY.RING, type : `${TYPE.CASUAL}`, price:67300, tags:`${TAGS.TRENDING}`},
+    { id:"dr10", material : MATERIAL.DIAMOND, category : CATEGORY.RING, type : `${TYPE.ANTIQUE}`, price:81000, tags:``},
+    { id:"dr11", material : MATERIAL.DIAMOND, category : CATEGORY.RING, type : `${TYPE.CASUAL}`, price:79400, tags:`${TAGS.LATEST}` },
+    { id:"dr12", material : MATERIAL.DIAMOND, category : CATEGORY.RING, type : `${TYPE.CASUAL}`, price:66300, tags:``},
+    { id:"dr13", material : MATERIAL.DIAMOND, category : CATEGORY.RING, type : `${TYPE.ANTIQUE}`, price:76000, tags:`${TAGS.LATEST}` + `${TAGS.TRENDING}`},
+    { id:"dr14", material : MATERIAL.DIAMOND, category : CATEGORY.RING, type : `${TYPE.BRIDAL}`, price:58000, tags:``},
+    { id:"dr15", material : MATERIAL.DIAMOND, category : CATEGORY.RING, type : `${TYPE.CASUAL}`, price:55600, tags:``},
+    { id:"dr16", material : MATERIAL.DIAMOND, category : CATEGORY.RING, type : `${TYPE.ANTIQUE}`, price:66200, tags:``},
+    { id:"dr17", material : MATERIAL.DIAMOND, category : CATEGORY.RING, type : `${TYPE.CASUAL}`, price:49999, tags:`${TAGS.LATEST}` },
+    { id:"dr18", material : MATERIAL.DIAMOND, category : CATEGORY.RING, type : `${TYPE.CASUAL}`, price:50000, tags:``},
+    { id:"dr19", material : MATERIAL.DIAMOND, category : CATEGORY.RING, type : `${TYPE.CASUAL}`, price:34600, tags:``},
+    { id:"dr20", material : MATERIAL.DIAMOND, category : CATEGORY.RING, type : `${TYPE.BRIDAL}`, price:60000, tags:`${TAGS.LATEST}` },
+
+
+
+    //GOLD bracelet
+    { id:"gb1", material : MATERIAL.GOLD, category : CATEGORY.BRACELETS, tags:`${TAGS.LATEST}` + `${TAGS.TRENDING}`, type : `${TYPE.CASUAL}`, price:56000 },
+    { id:"gb2", material : MATERIAL.GOLD, category : CATEGORY.BRACELETS, tags:`${TAGS.LATEST}`, type : `${TYPE.CASUAL}`, price:59000 },
+    { id:"gb3", material : MATERIAL.GOLD, category : CATEGORY.BRACELETS, tags:`${TAGS.LATEST}` + `${TAGS.TRENDING}`, type : `${TYPE.BRIDAL}`, price:55000 },
+    { id:"gb4", material : MATERIAL.GOLD, category : CATEGORY.BRACELETS, tags:``, type : `${TYPE.CASUAL}`, price:57500 },
+    { id:"gb5", material : MATERIAL.GOLD, category : CATEGORY.BRACELETS, tags:`${TAGS.LATEST}` + `${TAGS.TRENDING}`, type : `${TYPE.CASUAL}`, price:52000 },
+    { id:"gb6", material : MATERIAL.GOLD, category : CATEGORY.BRACELETS, tags:``, type : `${TYPE.ANTIQUE}`, price:60000 },
+    { id:"gb7", material : MATERIAL.GOLD, category : CATEGORY.BRACELETS, tags:`${TAGS.TRENDING}`, type : `${TYPE.CASUAL}`, price:56300 },
+    { id:"gb8", material : MATERIAL.GOLD, category : CATEGORY.BRACELETS, tags:`${TAGS.LATEST}` + `${TAGS.TRENDING}`, type : `${TYPE.BRIDAL}`, price:53000 },
+    { id:"gb9", material : MATERIAL.GOLD, category : CATEGORY.BRACELETS, tags:``, type : `${TYPE.ANTIQUE}`, price:57000 },
+    { id:"gb10", material : MATERIAL.GOLD, category : CATEGORY.BRACELETS, tags:``, type : `${TYPE.CASUAL}`, price:55400 },
+    { id:"gb11", material : MATERIAL.GOLD, category : CATEGORY.BRACELETS, tags:``, type : `${TYPE.BRIDAL}`, price:49200 },
+    { id:"gb12", material : MATERIAL.GOLD, category : CATEGORY.BRACELETS, tags:``, type : `${TYPE.CASUAL}`, price:48000 },
+    { id:"gb13", material : MATERIAL.GOLD, category : CATEGORY.BRACELETS, tags:`${TAGS.TRENDING}`, type : `${TYPE.CASUAL}`, price:51000 },
+    
+    //gold Earings
+    { id:"ge1", material : MATERIAL.GOLD, category : CATEGORY.EARRING, tags:`${TAGS.LATEST}` , type : `${TYPE.BRIDAL}`, price:43000 },
+    { id:"ge2", material : MATERIAL.GOLD, category : CATEGORY.EARRING, tags:`${TAGS.TRENDING}`, type : `${TYPE.BRIDAL}`, price:46000 },
+    { id:"ge3", material : MATERIAL.GOLD, category : CATEGORY.EARRING, tags:`${TAGS.LATEST}` , type : `${TYPE.CASUAL}`, price:49000 },
+    { id:"ge4", material : MATERIAL.GOLD, category : CATEGORY.EARRING, tags:``, type : `${TYPE.ANTIQUE}`, price:39000 },
+    { id:"ge5", material : MATERIAL.GOLD, category : CATEGORY.EARRING, tags:``, type : `${TYPE.BRIDAL}`, price:51000 },
+    { id:"ge6", material : MATERIAL.GOLD, category : CATEGORY.EARRING, tags:``, type : `${TYPE.CASUAL}`, price:42500 },
+    { id:"ge7", material : MATERIAL.GOLD, category : CATEGORY.EARRING, tags:`${TAGS.TRENDING}`, type : `${TYPE.BRIDAL}`, price:56300 },
+    { id:"ge8", material : MATERIAL.GOLD, category : CATEGORY.EARRING, tags:``, price:49400 },
+    { id:"ge9", material : MATERIAL.GOLD, category : CATEGORY.EARRING, tags:``, type : `${TYPE.BRIDAL}`, price:32000 },
+    { id:"ge10", material : MATERIAL.GOLD, category : CATEGORY.EARRING, tags:`${TAGS.LATEST}` + `${TAGS.TRENDING}`, type : `${TYPE.BRIDAL}`, price:45700 },
+    { id:"ge11", material : MATERIAL.GOLD, category : CATEGORY.EARRING, tags:`${TAGS.LATEST}` , type : `${TYPE.CASUAL}`, price:50100 },
+    { id:"ge12", material : MATERIAL.GOLD, category : CATEGORY.EARRING, tags:``, type : `${TYPE.CASUAL}`, price:53000 },
+    { id:"ge13", material : MATERIAL.GOLD, category : CATEGORY.EARRING, tags:``, type : `${TYPE.BRIDAL}`, price:48900 },
+    { id:"ge14", material : MATERIAL.GOLD, category : CATEGORY.EARRING, tags:`${TAGS.TRENDING}`, type : `${TYPE.ANTIQUE}`, price:43900 },
+    
+    // gold Necklace
+    { id:"gn1", material : MATERIAL.GOLD, category : CATEGORY.NECKLACE, tags:``, type : `${TYPE.CASUAL}`, price:71000 },
+    { id:"gn2", material : MATERIAL.GOLD, category : CATEGORY.NECKLACE, tags:`${TAGS.TRENDING}`, type : `${TYPE.CASUAL}`, price:72000 },
+    { id:"gn3", material : MATERIAL.GOLD, category : CATEGORY.NECKLACE, tags:``, type : `${TYPE.CASUAL}`, price:67400 },
+    { id:"gn4", material : MATERIAL.GOLD, category : CATEGORY.NECKLACE, tags:``, type : `${TYPE.CASUAL}`, price:74000 },
+    { id:"gn5", material : MATERIAL.GOLD, category : CATEGORY.NECKLACE, tags:`${TAGS.TRENDING}`, type : `${TYPE.ANTIQUE}`, price:69000 },
+    { id:"gn6", material : MATERIAL.GOLD, category : CATEGORY.NECKLACE, tags:`${TAGS.LATEST}` , type : `${TYPE.CASUAL}`, price:66000 },
+    { id:"gn7", material : MATERIAL.GOLD, category : CATEGORY.NECKLACE, tags:``, type : `${TYPE.CASUAL}`, price:73500 },
+    { id:"gn8", material : MATERIAL.GOLD, category : CATEGORY.NECKLACE, tags:`${TAGS.LATEST}` , type : `${TYPE.CASUAL}`, price:80000 },
+    { id:"gn9", material : MATERIAL.GOLD, category : CATEGORY.NECKLACE, tags:``, type : `${TYPE.CASUAL}`, price:74999 },
+    { id:"gn10", material : MATERIAL.GOLD, category : CATEGORY.NECKLACE, tags:``, type : `${TYPE.BRIDAL}`, price:86000 },
+    { id:"gn11", material : MATERIAL.GOLD, category : CATEGORY.NECKLACE, tags:``, type : `${TYPE.CASUAL}`, price:77000 },
+    { id:"gn12", material : MATERIAL.GOLD, category : CATEGORY.NECKLACE, tags:`${TAGS.LATEST}` + `${TAGS.TRENDING}`, type : `${TYPE.CASUAL}`, price:82400 },
+    { id:"gn13", material : MATERIAL.GOLD, category : CATEGORY.NECKLACE, tags:``, type : `${TYPE.CASUAL}`, price:99000 },
+    { id:"gn14", material : MATERIAL.GOLD, category : CATEGORY.NECKLACE, tags:`${TAGS.TRENDING}`, type : `${TYPE.BRIDAL}`, price:79499 },
+    { id:"gn15", material : MATERIAL.GOLD, category : CATEGORY.NECKLACE, tags:``, type : `${TYPE.CASUAL}`, price:87000 },
+    { id:"gn16", material : MATERIAL.GOLD, category : CATEGORY.NECKLACE, tags:``, type : `${TYPE.ANTIQUE}`, price:68500 },
+    { id:"gn17", material : MATERIAL.GOLD, category : CATEGORY.NECKLACE, tags:`${TAGS.TRENDING}`, type : `${TYPE.CASUAL}`, price:70500 },
+    { id:"gn17", material : MATERIAL.GOLD, category : CATEGORY.NECKLACE, tags:``, price:73500 },
+    { id:"gn17", material : MATERIAL.GOLD, category : CATEGORY.NECKLACE, tags:``, price:69499 },
+    { id:"gn17", material : MATERIAL.GOLD, category : CATEGORY.NECKLACE, tags:``, price:71000 },
+    
+    // gold pendant
+    { id:"gp1", material : MATERIAL.GOLD, category : CATEGORY.PENDANT, type : `${TYPE.BRIDAL}`, price:30000, tags:``},
+    { id:"gp2", material : MATERIAL.GOLD, category : CATEGORY.PENDANT, type : `${TYPE.ANTIQUE}`, price:31000, tags:`${TAGS.LATEST}` + `${TAGS.TRENDING}`},
+    { id:"gp3", material : MATERIAL.GOLD, category : CATEGORY.PENDANT, type : `${TYPE.CASUAL}`, price:27999, tags:``},
+    { id:"gp4", material : MATERIAL.GOLD, category : CATEGORY.PENDANT, type : `${TYPE.BRIDAL}`, price:21500, tags:`${TAGS.LATEST}` },
+    { id:"gp5", material : MATERIAL.GOLD, category : CATEGORY.PENDANT, type : `${TYPE.ANTIQUE}`, price:21000, tags:`${TAGS.TRENDING}`},
+    { id:"gp6", material : MATERIAL.GOLD, category : CATEGORY.PENDANT, type : `${TYPE.ANTIQUE}`, price:26000, tags:``},
+    { id:"gp7", material : MATERIAL.GOLD, category : CATEGORY.PENDANT, type : `${TYPE.BRIDAL}`, price:31500, tags:``},
+    { id:"gp8", material : MATERIAL.GOLD, category : CATEGORY.PENDANT, type : `${TYPE.CASUAL}`, price:20000, tags:`${TAGS.LATEST}` + `${TAGS.TRENDING}`},
+    { id:"gp9", material : MATERIAL.GOLD, category : CATEGORY.PENDANT, type : `${TYPE.ANTIQUE}`, price:24500, tags:``},
+    { id:"gp10", material : MATERIAL.GOLD, category : CATEGORY.PENDANT, type : `${TYPE.CASUAL}`, price:29999, tags:``},
+    { id:"gp11", material : MATERIAL.GOLD, category : CATEGORY.PENDANT, type : `${TYPE.CASUAL}`, price:22500, tags:+ `${TAGS.TRENDING}`},
+    { id:"gp12", material : MATERIAL.GOLD, category : CATEGORY.PENDANT, type : `${TYPE.ANTIQUE}`, price:82400, tags:``},
+    { id:"gp13", material : MATERIAL.GOLD, category : CATEGORY.PENDANT, type : `${TYPE.CASUAL}`, price:25300, tags:`${TAGS.LATEST}` },
+    
+    //gold ring
+    { id:"gr1", material : MATERIAL.GOLD, category : CATEGORY.RING, type : `${TYPE.BRIDAL}`, price:55000, tags:``},
+    { id:"gr2", material : MATERIAL.GOLD, category : CATEGORY.RING, type : `${TYPE.CASUAL}`, price:57000, tags:`${TAGS.LATEST}` },
+    { id:"gr3", material : MATERIAL.GOLD, category : CATEGORY.RING, type : `${TYPE.ANTIQUE}`, price:84000, tags:``},
+    { id:"gr4", material : MATERIAL.GOLD, category : CATEGORY.RING, type : `${TYPE.CASUAL}`, price:56000, tags:``},
+    { id:"gr5", material : MATERIAL.GOLD, category : CATEGORY.RING, type : `${TYPE.BRIDAL}`, price:58900, tags: `${TAGS.TRENDING}`},
+    { id:"gr6", material : MATERIAL.GOLD, category : CATEGORY.RING, type : `${TYPE.CASUAL}`, price:66800, tags:``},
+    { id:"gr7", material : MATERIAL.GOLD, category : CATEGORY.RING, type : `${TYPE.BRIDAL}`, price:61500, tags:`${TAGS.LATEST}` },
+    { id:"gr8", material : MATERIAL.GOLD, category : CATEGORY.RING, type : `${TYPE.CASUAL}`, price:59999, tags:``},
+    { id:"gr9", material : MATERIAL.GOLD, category : CATEGORY.RING, type : `${TYPE.CASUAL}`, price:67300, tags:`${TAGS.TRENDING}`},
+    { id:"gr10", material : MATERIAL.GOLD, category : CATEGORY.RING, type : `${TYPE.ANTIQUE}`, price:81000, tags:``},
+    { id:"gr11", material : MATERIAL.GOLD, category : CATEGORY.RING, type : `${TYPE.CASUAL}`, price:79400, tags:`${TAGS.LATEST}` },
+    { id:"gr12", material : MATERIAL.GOLD, category : CATEGORY.RING, type : `${TYPE.CASUAL}`, price:66300, tags:``},
+    { id:"gr13", material : MATERIAL.GOLD, category : CATEGORY.RING, type : `${TYPE.ANTIQUE}`, price:76000, tags:`${TAGS.LATEST}` + `${TAGS.TRENDING}`},
+    { id:"gr14", material : MATERIAL.GOLD, category : CATEGORY.RING, type : `${TYPE.BRIDAL}`, price:58000, tags:``},
+    { id:"gr15", material : MATERIAL.GOLD, category : CATEGORY.RING, type : `${TYPE.CASUAL}`, price:55600, tags:``},
+    { id:"gr16", material : MATERIAL.GOLD, category : CATEGORY.RING, type : `${TYPE.ANTIQUE}`, price:66200, tags:``},
+    { id:"gr17", material : MATERIAL.GOLD, category : CATEGORY.RING, type : `${TYPE.CASUAL}`, price:49999, tags:`${TAGS.LATEST}` },
+    { id:"gr18", material : MATERIAL.GOLD, category : CATEGORY.RING, type : `${TYPE.CASUAL}`, price:50000, tags:``},
+    { id:"gr19", material : MATERIAL.GOLD, category : CATEGORY.RING, type : `${TYPE.CASUAL}`, price:34600, tags:``},
+    { id:"gr20", material : MATERIAL.GOLD, category : CATEGORY.RING, type : `${TYPE.BRIDAL}`, price:60000, tags:`${TAGS.LATEST}` },
+    
+    
+    
+    //silver bracelet
+    { id:"sb1", material : MATERIAL.SILVER, category : CATEGORY.BRACELETS, tags:`${TAGS.LATEST}` + `${TAGS.TRENDING}`, type : `${TYPE.CASUAL}`, price:56000 },
+    { id:"sb2", material : MATERIAL.SILVER, category : CATEGORY.BRACELETS, tags:`${TAGS.LATEST}`, type : `${TYPE.CASUAL}`, price:59000 },
+    { id:"sb3", material : MATERIAL.SILVER, category : CATEGORY.BRACELETS, tags:`${TAGS.LATEST}` + `${TAGS.TRENDING}`, type : `${TYPE.BRIDAL}`, price:55000 },
+    { id:"sb4", material : MATERIAL.SILVER, category : CATEGORY.BRACELETS, tags:``, type : `${TYPE.CASUAL}`, price:57500 },
+    { id:"sb5", material : MATERIAL.SILVER, category : CATEGORY.BRACELETS, tags:`${TAGS.LATEST}` + `${TAGS.TRENDING}`, type : `${TYPE.CASUAL}`, price:52000 },
+    { id:"sb6", material : MATERIAL.SILVER, category : CATEGORY.BRACELETS, tags:``, type : `${TYPE.ANTIQUE}`, price:60000 },
+    { id:"sb7", material : MATERIAL.SILVER, category : CATEGORY.BRACELETS, tags:`${TAGS.TRENDING}`, type : `${TYPE.CASUAL}`, price:56300 },
+    { id:"sb8", material : MATERIAL.SILVER, category : CATEGORY.BRACELETS, tags:`${TAGS.LATEST}` + `${TAGS.TRENDING}`, type : `${TYPE.BRIDAL}`, price:53000 },
+    { id:"sb9", material : MATERIAL.SILVER, category : CATEGORY.BRACELETS, tags:``, type : `${TYPE.ANTIQUE}`, price:57000 },
+    { id:"sb10", material : MATERIAL.SILVER, category : CATEGORY.BRACELETS, tags:``, type : `${TYPE.CASUAL}`, price:55400 },
+    { id:"sb11", material : MATERIAL.SILVER, category : CATEGORY.BRACELETS, tags:``, type : `${TYPE.BRIDAL}`, price:49200 },
+    { id:"sb12", material : MATERIAL.SILVER, category : CATEGORY.BRACELETS, tags:``, type : `${TYPE.CASUAL}`, price:48000 },
+    
+    //silver Earings
+    { id:"se1", material : MATERIAL.SILVER, category : CATEGORY.EARRING, tags:`${TAGS.LATEST}` , type : `${TYPE.BRIDAL}`, price:43000 },
+    { id:"se2", material : MATERIAL.SILVER, category : CATEGORY.EARRING, tags:`${TAGS.TRENDING}`, type : `${TYPE.BRIDAL}`, price:46000 },
+    { id:"se3", material : MATERIAL.SILVER, category : CATEGORY.EARRING, tags:`${TAGS.LATEST}` , type : `${TYPE.CASUAL}`, price:49000 },
+    { id:"se4", material : MATERIAL.SILVER, category : CATEGORY.EARRING, tags:``, type : `${TYPE.ANTIQUE}`, price:39000 },
+    { id:"se5", material : MATERIAL.SILVER, category : CATEGORY.EARRING, tags:``, type : `${TYPE.BRIDAL}`, price:51000 },
+    { id:"se6", material : MATERIAL.SILVER, category : CATEGORY.EARRING, tags:``, type : `${TYPE.CASUAL}`, price:42500 },
+    { id:"se7", material : MATERIAL.SILVER, category : CATEGORY.EARRING, tags:`${TAGS.TRENDING}`, type : `${TYPE.BRIDAL}`, price:56300 },
+    { id:"se8", material : MATERIAL.SILVER, category : CATEGORY.EARRING, tags:``, price:49400 },
+    { id:"se9", material : MATERIAL.SILVER, category : CATEGORY.EARRING, tags:``, type : `${TYPE.BRIDAL}`, price:32000 },
+    { id:"se10", material : MATERIAL.SILVER, category : CATEGORY.EARRING, tags:`${TAGS.LATEST}` + `${TAGS.TRENDING}`, type : `${TYPE.BRIDAL}`, price:45700 },
+    { id:"se11", material : MATERIAL.SILVER, category : CATEGORY.EARRING, tags:`${TAGS.LATEST}` , type : `${TYPE.CASUAL}`, price:50100 },
+    { id:"se12", material : MATERIAL.SILVER, category : CATEGORY.EARRING, tags:``, type : `${TYPE.CASUAL}`, price:53000 },
+    { id:"se13", material : MATERIAL.SILVER, category : CATEGORY.EARRING, tags:``, type : `${TYPE.BRIDAL}`, price:48900 },
+    { id:"se14", material : MATERIAL.SILVER, category : CATEGORY.EARRING, tags:`${TAGS.TRENDING}`, type : `${TYPE.ANTIQUE}`, price:43900 },
+    { id:"se14", material : MATERIAL.SILVER, category : CATEGORY.EARRING, tags:`${TAGS.TRENDING}`, type : `${TYPE.ANTIQUE}`, price:43900 },
+    
+    // silver Necklace
+    { id:"sn1", material : MATERIAL.SILVER, category : CATEGORY.NECKLACE, tags:``, type : `${TYPE.CASUAL}`, price:71000 },
+    { id:"sn2", material : MATERIAL.SILVER, category : CATEGORY.NECKLACE, tags:`${TAGS.TRENDING}`, type : `${TYPE.CASUAL}`, price:72000 },
+    { id:"sn3", material : MATERIAL.SILVER, category : CATEGORY.NECKLACE, tags:``, type : `${TYPE.CASUAL}`, price:67400 },
+    { id:"sn4", material : MATERIAL.SILVER, category : CATEGORY.NECKLACE, tags:``, type : `${TYPE.CASUAL}`, price:74000 },
+    { id:"sn5", material : MATERIAL.SILVER, category : CATEGORY.NECKLACE, tags:`${TAGS.TRENDING}`, type : `${TYPE.ANTIQUE}`, price:69000 },
+    { id:"sn6", material : MATERIAL.SILVER, category : CATEGORY.NECKLACE, tags:`${TAGS.LATEST}` , type : `${TYPE.CASUAL}`, price:66000 },
+    { id:"sn7", material : MATERIAL.SILVER, category : CATEGORY.NECKLACE, tags:``, type : `${TYPE.CASUAL}`, price:73500 },
+    { id:"sn8", material : MATERIAL.SILVER, category : CATEGORY.NECKLACE, tags:`${TAGS.LATEST}` , type : `${TYPE.CASUAL}`, price:80000 },
+    { id:"sn9", material : MATERIAL.SILVER, category : CATEGORY.NECKLACE, tags:``, type : `${TYPE.CASUAL}`, price:74999 },
+    { id:"sn10", material : MATERIAL.SILVER, category : CATEGORY.NECKLACE, tags:``, type : `${TYPE.BRIDAL}`, price:86000 },
+    { id:"sn11", material : MATERIAL.SILVER, category : CATEGORY.NECKLACE, tags:``, type : `${TYPE.CASUAL}`, price:77000 },
+    { id:"sn12", material : MATERIAL.SILVER, category : CATEGORY.NECKLACE, tags:`${TAGS.LATEST}` + `${TAGS.TRENDING}`, type : `${TYPE.CASUAL}`, price:82400 },
+    
+    // silver pendant
+    { id:"sp1", material : MATERIAL.SILVER, category : CATEGORY.PENDANT, type : `${TYPE.BRIDAL}`, price:30000, tags:``},
+    { id:"sp2", material : MATERIAL.SILVER, category : CATEGORY.PENDANT, type : `${TYPE.ANTIQUE}`, price:31000, tags:`${TAGS.LATEST}` + `${TAGS.TRENDING}`},
+    { id:"sp3", material : MATERIAL.SILVER, category : CATEGORY.PENDANT, type : `${TYPE.CASUAL}`, price:27999, tags:``},
+    { id:"sp4", material : MATERIAL.SILVER, category : CATEGORY.PENDANT, type : `${TYPE.BRIDAL}`, price:21500, tags:`${TAGS.LATEST}` },
+    { id:"sp5", material : MATERIAL.SILVER, category : CATEGORY.PENDANT, type : `${TYPE.ANTIQUE}`, price:21000, tags:`${TAGS.TRENDING}`},
+    { id:"sp6", material : MATERIAL.SILVER, category : CATEGORY.PENDANT, type : `${TYPE.ANTIQUE}`, price:26000, tags:``},
+    { id:"sp7", material : MATERIAL.SILVER, category : CATEGORY.PENDANT, type : `${TYPE.BRIDAL}`, price:31500, tags:``},
+    { id:"sp8", material : MATERIAL.SILVER, category : CATEGORY.PENDANT, type : `${TYPE.CASUAL}`, price:20000, tags:`${TAGS.LATEST}` + `${TAGS.TRENDING}`},
+    { id:"sp9", material : MATERIAL.SILVER, category : CATEGORY.PENDANT, type : `${TYPE.ANTIQUE}`, price:24500, tags:``},
+    { id:"sp10", material : MATERIAL.SILVER, category : CATEGORY.PENDANT, type : `${TYPE.CASUAL}`, price:29999, tags:``},
+    { id:"sp11", material : MATERIAL.SILVER, category : CATEGORY.PENDANT, type : `${TYPE.CASUAL}`, price:22500, tags:+ `${TAGS.TRENDING}`},
+    { id:"sp12", material : MATERIAL.SILVER, category : CATEGORY.PENDANT, type : `${TYPE.ANTIQUE}`, price:82400, tags:``},
+    { id:"sp13", material : MATERIAL.SILVER, category : CATEGORY.PENDANT, type : `${TYPE.CASUAL}`, price:25300, tags:`${TAGS.LATEST}` },
+    { id:"sp14", material : MATERIAL.SILVER, category : CATEGORY.PENDANT, type : `${TYPE.CASUAL}`, price:29999, tags:``},
+    { id:"sp15", material : MATERIAL.SILVER, category : CATEGORY.PENDANT, type : `${TYPE.CASUAL}`, price:22500, tags:+ `${TAGS.TRENDING}`},
+    { id:"sp16", material : MATERIAL.SILVER, category : CATEGORY.PENDANT, type : `${TYPE.ANTIQUE}`, price:82400, tags:``},
+    { id:"sp17", material : MATERIAL.SILVER, category : CATEGORY.PENDANT, type : `${TYPE.CASUAL}`, price:25300, tags:`${TAGS.LATEST}` },
+    
+    //silver ring
+    { id:"sr1", material : MATERIAL.SILVER, category : CATEGORY.RING, type : `${TYPE.BRIDAL}`, price:55000, tags:``},
+    { id:"sr2", material : MATERIAL.SILVER, category : CATEGORY.RING, type : `${TYPE.CASUAL}`, price:57000, tags:`${TAGS.LATEST}` },
+    { id:"sr3", material : MATERIAL.SILVER, category : CATEGORY.RING, type : `${TYPE.ANTIQUE}`, price:84000, tags:``},
+    { id:"sr4", material : MATERIAL.SILVER, category : CATEGORY.RING, type : `${TYPE.CASUAL}`, price:56000, tags:``},
+    { id:"sr5", material : MATERIAL.SILVER, category : CATEGORY.RING, type : `${TYPE.BRIDAL}`, price:58900, tags: `${TAGS.TRENDING}`},
+    { id:"sr6", material : MATERIAL.SILVER, category : CATEGORY.RING, type : `${TYPE.CASUAL}`, price:66800, tags:``},
+    { id:"sr7", material : MATERIAL.SILVER, category : CATEGORY.RING, type : `${TYPE.BRIDAL}`, price:61500, tags:`${TAGS.LATEST}` },
+    { id:"sr8", material : MATERIAL.SILVER, category : CATEGORY.RING, type : `${TYPE.CASUAL}`, price:59999, tags:``},
+    { id:"sr9", material : MATERIAL.SILVER, category : CATEGORY.RING, type : `${TYPE.CASUAL}`, price:67300, tags:`${TAGS.TRENDING}`},
+    { id:"sr10", material : MATERIAL.SILVER, category : CATEGORY.RING, type : `${TYPE.ANTIQUE}`, price:81000, tags:``},
+    { id:"sr11", material : MATERIAL.SILVER, category : CATEGORY.RING, type : `${TYPE.CASUAL}`, price:79400, tags:`${TAGS.LATEST}` },
+    { id:"sr12", material : MATERIAL.SILVER, category : CATEGORY.RING, type : `${TYPE.CASUAL}`, price:66300, tags:``},
+    { id:"sr13", material : MATERIAL.SILVER, category : CATEGORY.RING, type : `${TYPE.ANTIQUE}`, price:76000, tags:`${TAGS.LATEST}` + `${TAGS.TRENDING}`},
+    { id:"sr14", material : MATERIAL.SILVER, category : CATEGORY.RING, type : `${TYPE.BRIDAL}`, price:58000, tags:``},
+    { id:"sr15", material : MATERIAL.SILVER, category : CATEGORY.RING, type : `${TYPE.CASUAL}`, price:55600, tags:``},
+    { id:"sr16", material : MATERIAL.SILVER, category : CATEGORY.RING, type : `${TYPE.ANTIQUE}`, price:66200, tags:``},
+    { id:"sr17", material : MATERIAL.SILVER, category : CATEGORY.RING, type : `${TYPE.CASUAL}`, price:49999, tags:`${TAGS.LATEST}` },
+    { id:"sr18", material : MATERIAL.SILVER, category : CATEGORY.RING, type : `${TYPE.CASUAL}`, price:50000, tags:``},
+    { id:"sr19", material : MATERIAL.SILVER, category : CATEGORY.RING, type : `${TYPE.CASUAL}`, price:34600, tags:``},
+    { id:"sr20", material : MATERIAL.SILVER, category : CATEGORY.RING, type : `${TYPE.BRIDAL}`, price:60000, tags:`${TAGS.LATEST}` },
+
+
+
+
+
+
+  ];
+		
+
+  
+
+  products.forEach(product => { 
+    product.imagename = `${product.material}_${product.category}_${product.id}`
+  });
+
+  let jsondata = JSON.stringify(products);
+
+  console.log(jsondata);
+
+		// console.log(products);
+		// let resultimg = products.filter((val, index)=>{
+    //   return val.material == MATERIAL.GOLD && val.category == CATEGORY.RING;
+    // }).map((val, index)=>{return val.imagename});
+
+    // console.log(resultimg);
+
+    // let productContainer = document.getElementById("product-container");
+    // resultimg.forEach((imagename) => { 
+    //   let imgDiv = document.createElement("div"); 
+    //   imgDiv.style.width = "200px"; 
+    //   imgDiv.style.height = "max-content"; 
+    //   let img = document.createElement("img"); 
+    //   img.src = `./goldring/${imagename}`; 
+    //   img.alt = imagename; 
+    //   imgDiv.appendChild(img); 
+    //   productContainer.appendChild(imgDiv); 
+    // });
+
+  </script>
+
+  </body>
+</html>

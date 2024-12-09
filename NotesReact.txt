@@ -220,9 +220,23 @@ render : display component output or view on browser
                                 case 3: when we have to exucute useEffect as we want - we pass value in dependency
 
 
-        3. useContext Hook
-        4. useRef Hook
-        5. useReducer Hook
+        3. useContext Hook : it is used to share the state value of parent componet to all the child and grandchild component.
+                                step 1: create a state in parent  component.
+                                step 2: Create a export global Context object for React.createContext()
+                                step 3: wrap the child element with Context.Provider tag with value attribute and [state, setstate] as value.
+                                step 3: import the Context form parent and assign it as a state using useContext(Context).
+        4. useRef Hook  :   -it can be used to access DOM elements directly.
+                            -it can used as a state and it will not re-render the component like state.
+                            suntax: const value = useRef(["initial value"])
+
+        5. useReducer Hook  :   it is used to manage state an re-render whenever the state value changes
+                                -can perform set actions on state and change the state
+                                suntax: const [state, dispatch] = useReducer(reduce, {key : value})
+                                        function reduce(state, action){
+                                            return changedState
+                                        }
+                                -dispatch is a function with one parameter
+                                -it always calls the reduce passing the parameter as action value
         6. useCall Hook
         7. useMemo Hook
 
