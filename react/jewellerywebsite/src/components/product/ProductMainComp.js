@@ -51,7 +51,7 @@ function ProductMainComp() {
                     <div className="col-4">
                         <div class="card mb-3" >
                             <div class="card-body" style={{ overflow: "hidden" }}>
-                                <h5 class="card-title">Silver {"  "} <Link to={`/index/material/${MATERIAL.GOLD}`}>Click Here</Link></h5>
+                                <h5 class="card-title">Silver {"  "} <Link to={`/index/material/${MATERIAL.SILVER}`}>Click Here</Link></h5>
                                 <Link to={`/index/material/${MATERIAL.SILVER}`} >
                                     <img src={IMAGE.materialsilver} style={sideimagestyle}></img><br></br>
                                 </Link>
@@ -62,7 +62,7 @@ function ProductMainComp() {
                     <div className="col-4">
                         <div class="card mb-3" >
                             <div class="card-body" style={{ overflow: "hidden" }}>
-                                <h5 class="card-title">Diamond {"  "} <Link to={`/index/material/${MATERIAL.GOLD}`}>Click Here</Link></h5>
+                                <h5 class="card-title">Diamond {"  "} <Link to={`/index/material/${MATERIAL.DIAMOND}`}>Click Here</Link></h5>
                                 <Link to={`/index/material/${MATERIAL.DIAMOND}`} >
                                     <img src={IMAGE.materialdiamond} style={sideimagestyle}></img><br></br>
                                 </Link>

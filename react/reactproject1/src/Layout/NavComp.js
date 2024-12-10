@@ -1,7 +1,18 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import LogoutIcon from '@mui/icons-material/Logout';
 
 
 const NavComp = () =>{
+    
+    const nav = useNavigate();
+
+    const loggout = () => {
+        if (window.confirm("Do you want to loggout?")) {
+            sessionStorage.clear();
+            nav("/")
+        }
+    }
+
     return(
         <div>
             {/* <h2>Nav Comp</h2> */}
@@ -17,6 +28,10 @@ const NavComp = () =>{
             <Link to="formassign" className="btn btn-outline-info me-2">Form Assignment</Link>
             
             <Link to="product" className="btn btn-outline-info me-2">Product</Link>
+            
+            <Link to="caurosal" className="btn btn-outline-info me-2">Caurosal</Link>
+            <Link to="datalist" className="btn btn-outline-info me-2">Datalist</Link>
+            <button  className="btn btn-outline-info me-2" onClick={loggout} style={{float:"right"}}><LogoutIcon/></button>
         </div>
     );
 }

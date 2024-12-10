@@ -17,6 +17,11 @@ import FormValidationComp from "../task/FormValidationComp";
 import ProductDashComp from "../CRUD/ProductDashComp";
 import ProductAddComp from "../CRUD/ProductAddComp";
 import ProductEditComp from "../CRUD/ProductEditComp";
+import ProtectedRouting from "./ProtectedRouting";
+
+import LoggoutComp from "./LoggoutComp"
+import MyCaurosalComp from "../component/MyCaurosalComp";
+import DataListComp from "../reduxCode/DataListComp";
 
 
 const routing = createBrowserRouter([
@@ -24,7 +29,8 @@ const routing = createBrowserRouter([
     { path: "", element: <LoginComp /> },
     { path: "loggin", element: <LoginComp /> },
     {
-        path: "dashboard", element: <MainDashBoard />, children: [
+        // path: "dashboard", element: <MainDashBoard />, children: [
+        path: "dashboard", element: <ProtectedRouting Component={MainDashBoard}/>, children: [
 
             // default Routing
             { path: "", element: <App /> },
@@ -35,13 +41,17 @@ const routing = createBrowserRouter([
             
             { path: "product", element: <ProductDashComp />},
             { path: "addproduct", element: <ProductAddComp /> },
-                { path: "editproduct/:id", element: <ProductEditComp /> },
+            { path: "editproduct/:id", element: <ProductEditComp /> },
+            { path: "loggout", element: <LoggoutComp /> },
+            { path: "caurosal", element: <MyCaurosalComp /> },
+                
             
 
             // Naming Routing
             { path: "task/1", element: <ToggleImgComp /> },
             { path: "task/2", element: <MultipleImgComp /> },
             { path: "task/3", element: <EmpDetails /> },
+            { path: "datalist", element: <DataListComp /> },
 
 
             // Child Routing

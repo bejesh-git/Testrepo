@@ -1,9 +1,12 @@
 import { Outlet } from "react-router-dom";
 import NavComp from "./NavComp"
-import FooterComp from "./FooterComp"
+import FooterComp from "./FooterComp";
 
 function MainDashBoard() {
-    return ( 
+
+    
+
+    return (
         <div className="container">
             {/* <h2 >Dash Board</h2>  */}
             <div className="card border-info mt-5">
@@ -15,7 +18,7 @@ function MainDashBoard() {
                 </div>
                 <div className="card-footer border-info">
                     <FooterComp />
-                </div>                
+                </div>
             </div>
         </div>
     );

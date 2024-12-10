@@ -10,7 +10,7 @@ function ProductMaterialComp() {
 
     useEffect(() => {
         getData();
-        setTimeout(()=>setIsTime(true),1000);
+        setTimeout(()=>setIsTime(true),3000);
     }, [])
 
     const getData = () =>{
