@@ -2,6 +2,7 @@ import axios from "axios";
 import "../css/LoginCom.css"
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import { POST } from "../shared/service/HTTP.service";
 
 const LoginComp = () => {
 
@@ -11,9 +12,17 @@ const LoginComp = () => {
     const uidRef = useRef();
     const upswdRef = useRef();
     
+    
+
     const checkData = () => {
-        axios.get("http://localhost:8888/user").then((res)=>{
-            console.log(res.data);
+        // axios.get("http://localhost:8888/user").then((res)=>{
+        //     console.log(res.data);
+
+        POST("http://localhost:8888/user", empObj ), then((res)=>{
+            if(response?.access){
+                handle
+            }
+        })
             
             let enteredPassword = upswdRef.current.value;
             let enteredUserId = uidRef.current.value;
@@ -39,6 +48,8 @@ const LoginComp = () => {
 
         }).catch((error)=>{});
     }
+
+    
 
     return (
         <div >
