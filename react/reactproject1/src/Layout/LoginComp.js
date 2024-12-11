@@ -15,14 +15,14 @@ const LoginComp = () => {
     
 
     const checkData = () => {
-        // axios.get("http://localhost:8888/user").then((res)=>{
-        //     console.log(res.data);
+        axios.get("http://localhost:8888/user").then((res)=>{
+            console.log(res.data);
 
-        POST("http://localhost:8888/user", empObj ), then((res)=>{
-            if(response?.access){
-                handle
-            }
-        })
+        // POST("http://localhost:8888/user", empObj ), then((res)=>{
+        //     if(response?.access){
+        //         handle
+        //     }
+        // })
             
             let enteredPassword = upswdRef.current.value;
             let enteredUserId = uidRef.current.value;

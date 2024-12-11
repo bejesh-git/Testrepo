@@ -3,7 +3,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import { GET, DELETE, PUT, POST } from "../../shared/service/HTTP.service";
 
-const API_URL = "http://localhost:9999/products";
+const API_URL = "http://localhost:8888/products";
 
 export const fetchData = createAsyncThunk("api/fetchDate" , async ()=>{
     let response = await GET(API_URL);
@@ -43,6 +43,39 @@ const apiSlice = createSlice({
             state.data = action.payload;
         })
         .addCase(fetchData.rejected, (state, action)=>{
+            state.status = "failed";
+            state.error = action.error.message;
+        })
+        .addCase(deleteData.pending, (state)=>{
+            state.status="loading";
+        })
+        .addCase(deleteData.fulfilled, (state, action)=>{
+            state.status="success";
+            state.data = action.payload;
+        })
+        .addCase(deleteData.rejected, (state, action)=>{
+            state.status = "failed";
+            state.error = action.error.message;
+        })
+        .addCase(postData.pending, (state)=>{
+            state.status="loading";
+        })
+        .addCase(postData.fulfilled, (state, action)=>{
+            state.status="success";
+            state.data = action.payload;
+        })
+        .addCase(postData.rejected, (state, action)=>{
+            state.status = "failed";
+            state.error = action.error.message;
+        })
+        .addCase(putData.pending, (state)=>{
+            state.status="loading";
+        })
+        .addCase(putData.fulfilled, (state, action)=>{
+            state.status="success";
+            state.data = action.payload;
+        })
+        .addCase(putData.rejected, (state, action)=>{
             state.status = "failed";
             state.error = action.error.message;
         })

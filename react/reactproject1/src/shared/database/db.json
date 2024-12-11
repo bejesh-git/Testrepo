@@ -1,55 +1,5 @@
 {
-  "products": [
-    {
-      "id": "1001",
-      "pname": "Laptop",
-      "pprice": 55000,
-      "pcompany": "Dell",
-      "pquantity": 20
-    },
-    {
-      "id": "1002",
-      "pname": "Monitor",
-      "pprice": 5000,
-      "pcompany": "Acer",
-      "pquantity": 19
-    },
-    {
-      "id": "1003",
-      "pname": "Keyboard",
-      "pprice": 500,
-      "pcompany": "logitech",
-      "pquantity": 24
-    },
-    {
-      "id": "1004",
-      "pname": "Mouse",
-      "pprice": 100,
-      "pcompany": "Razer",
-      "pquantity": 11
-    },
-    {
-      "id": "1005",
-      "pname": "Speaker",
-      "pprice": 3000,
-      "pcompany": "Boat",
-      "pquantity": 13
-    },
-    {
-      "id": "1006",
-      "pname": "UPS",
-      "pprice": 30000,
-      "pcompany": "Dell",
-      "pquantity": "50"
-    },
-    {
-      "id": "29b8",
-      "pname": "Ram",
-      "pquantity": "20",
-      "pcompany": "GSkill",
-      "pprice": "4000"
-    }
-  ],
+  "products": [],
   "user": [
     {
       "id": "1",
