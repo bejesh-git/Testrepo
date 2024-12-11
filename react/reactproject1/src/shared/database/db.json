@@ -1,5 +1,34 @@
 {
-  "products": [],
+  "products": [
+    {
+      "id": "1003",
+      "pname": "Keyboard",
+      "pprice": 500,
+      "pcompany": "logitech",
+      "pquantity": 24
+    },
+    {
+      "id": "1004",
+      "pname": "Mouse",
+      "pprice": 100,
+      "pcompany": "Razer",
+      "pquantity": 11
+    },
+    {
+      "id": "1005",
+      "pname": "Speaker",
+      "pprice": 3000,
+      "pcompany": "Boat",
+      "pquantity": 13
+    },
+    {
+      "id": "1006",
+      "pname": "UPS",
+      "pprice": 30000,
+      "pcompany": "Dell",
+      "pquantity": 5
+    }
+  ],
   "user": [
     {
       "id": "1",

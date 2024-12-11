@@ -1,0 +1,9 @@
+<p>databinding works!</p>
+<p><strong>{{myName}}</strong></p>
+<img class="image" [src]="colosseumImgpath" [alt]="colosseumImgname">
+<img class="image" [src]="redeemerstatueImgpath" [alt]="redeemerstatueImgname"> <br>
+
+<button type="button" (click)="greeting('Bejesh Sriram')"> Click here</button>
+
+<!-- 2-way databinding -->
+ <input type="text"  [(ngModel)]="inputData"> {{inputData}}

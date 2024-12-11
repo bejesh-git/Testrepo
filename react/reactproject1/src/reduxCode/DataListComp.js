@@ -14,13 +14,13 @@ function DataListComp() {
     const error = useSelector((state) => state.api.error);
     useEffect(() => {
         dispatch(fetchData());
-        console.log(window.location.pathname);
     }, [])
-
-
+    
+    
     const deleteFun = (id) => {
         // window.alert(`Delete button clicked ${id}`);
         dispatch(deleteData(id));
+        dispatch(fetchData());
     }
 
 

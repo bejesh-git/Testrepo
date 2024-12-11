@@ -49,9 +49,8 @@ const apiSlice = createSlice({
         .addCase(deleteData.pending, (state)=>{
             state.status="loading";
         })
-        .addCase(deleteData.fulfilled, (state, action)=>{
+        .addCase(deleteData.fulfilled, (state)=>{
             state.status="success";
-            state.data = action.payload;
         })
         .addCase(deleteData.rejected, (state, action)=>{
             state.status = "failed";

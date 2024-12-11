@@ -1,0 +1,34 @@
+<p>directive works!</p>
+ <h2 *ngIf="isCond1">Heading 1</h2>
+ <h2 *ngIf="isCond2">Heading 2</h2>
+<div *ngIf="isCond3;then truepart;else falsepart" [ngStyle]= "myStyle"></div>
+
+
+ <ng-template #truepart>
+    this is true part
+</ng-template>
+<ng-template #falsepart>
+     this is false part
+ </ng-template>
+
+<ul >
+    <li *ngFor="let course of courses" [ngClass] = "myClass">{{course}}</li>
+</ul>
+
+
+<div [ngSwitch] = "myCourse" >
+    <div *ngSwitchCase="'React'">You have selected React</div>
+    <div *ngSwitchCase="'Angular'">You have selected Angular</div>
+    <div *ngSwitchCase="'Python'">You have selected Python</div>
+    <div *ngSwitchCase="'DotNet'">You have selected DotNet</div>
+    <div *ngSwitchCase="'Java'">You have selected Java</div>
+    <div *ngSwitchDefault>Invalid Choise</div>
+</div>
+
+<div [ngSwitch] = "myCourse">
+    <div *ngFor="let course of courses">
+        <div *ngSwitchCase="course">You have selected {{course}}</div>
+    </div>
+    <div *ngSwitchDefault>Invalid Choise</div>
+    
+</div>
