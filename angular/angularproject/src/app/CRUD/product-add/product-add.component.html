@@ -1,0 +1,23 @@
+<p>product-add works!</p>
+<button type="button" routerLink="/maindash/productdash" class="btn btn-danger">Cancel</button>
+<div class="container">
+    <form #pdata = "ngForm" (ngSubmit)="addData(pdata.value)">
+        <div>
+            <label for="">Name : </label>
+            <input type="text" class="form-control" name="pname" ngModel>
+        </div>
+        <div>
+            <label for="">Price : </label>
+            <input type="text" class="form-control" name="pprice" ngModel>
+        </div>
+        <div>
+            <label for="">Company : </label>
+            <input type="text" class="form-control" name="pcompany" ngModel>
+        </div>
+        <div>
+            <label for="">Quantity : </label>
+            <input type="text" class="form-control" name="pquantity" ngModel>
+        </div>
+        <button type="submit" class="btn btn-outline-dark m-2">Add</button>
+    </form>
+</div>

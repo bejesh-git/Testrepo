@@ -11,6 +11,10 @@ import { MaindashboardComponent } from './layout/maindashboard/maindashboard.com
 import { ChangeimageComponent } from './TASK/changeimage/changeimage.component';
 import { ToggleimageComponent } from './TASK/toggleimage/toggleimage.component';
 import { BikescarsComponent } from './TASK/bikescars/bikescars.component';
+import { ItemComponent } from './item/item.component';
+import { ProductDashComponent } from './CRUD/product-dash/product-dash.component';
+import { ProductEditComponent } from './CRUD/product-edit/product-edit.component';
+import { ProductAddComponent } from './CRUD/product-add/product-add.component';
 
 export const routes: Routes = [
     // {path:"" , component:LoginComponent},
@@ -21,14 +25,22 @@ export const routes: Routes = [
                 {path:"utdf", component:UtdfComponent},
                 {path:"rtf", component:RtfComponent},
         ]},
+        
+        {path:"items" , component:ItemComponent},
+        {path:"productdash" , component:ProductDashComponent},
+        {path:"productedit/:id" , component:ProductEditComponent},
+        {path:"productadd" , component:ProductAddComponent},
+        
+        
+        
+        {path:"task1" , component:ToggleimageComponent},
+        {path:"task2" , component:ChangeimageComponent},
+        {path:"task3" , component:BikescarsComponent},
     ]},
 
     {path:"databinding" , component:DatabindingComponent},
     {path:"mypipe" , component:MypipesComponent},
     
     
-    {path:"task1" , component:ToggleimageComponent},
-    {path:"task2" , component:ChangeimageComponent},
-    {path:"task3" , component:BikescarsComponent},
     {path:"**" , component:PagenotfoundComponent},
 ];

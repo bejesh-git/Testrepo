@@ -117,3 +117,55 @@ forms[angform, utdf, rtf, ]
         5. child routing
         6. wild-card routing
 
+
+----------
+12/12/2024
+----------
+
+*How to navigate in angular
+    -to perform component navigation we have to use routerLink property with anchor tag, after inporting RouterLink.
+
+*angular form
+    -there are two types of forms:
+        1. UTDF : use template driven form
+            -when we have crated simple form validation in that case we use it.
+            -to prtform validation we have to use ngModel directory with input element
+            -in this ngForm directory will hold data of all element in it
+            -in utdf form validation code reside in html file
+
+        2. RTF : reactive template form
+            -when we have to write complex logic to perform form validation in that case we use rtf.
+            -to use rtf form validation first we have to inport ReactiveFormsModule from FormsModule in component.
+            -in this we use mainly two classes 
+            -in rtf form validation code reside in ts file
+                i. FormGroup : it will hold information of all input element
+                ii.FormControl : it will hold information of individual input element
+
+ngUntouched     ngprestine      nginvalid
+ngtouched     ngDirty      ngvalid
+
+classlife cycle methods.
+1. ngOnInit
+
+
+
+
+
+
+*Service : 
+    -in angular service in a special class with special/extra power
+    -it is used for multiple uses,
+        1.to share a data with multiple components
+        2.we can implement business logic in it
+        3.we can perform external communication(database connection)
+
+*how to create service  
+    -npx ng service serviceName.
+
+*how to access data from service into angular component
+    -if you want to access service data into angular component for this first we have to import service in component ts file and create instance of service class.
+
+*How to make fake API request from Angular to server
+    - to send request from angular service to server for this wer have to ceate HTTPClient class in service constructor. but HTTPClient class is not a part of core angular. It is part of HttpClientModule,
+    -so first we have to import providerHttpClient as well as withJsonpSupport in app.config.ts file and make entry  of these library in provider array.
+    =>provideHttpClient(withJsonpSupport()),
