@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ChangeImageComponent } from './change-image.component';
+import { BikescarsComponent } from './bikescars.component';
 
-describe('ChangeImageComponent', () => {
-  let component: ChangeImageComponent;
-  let fixture: ComponentFixture<ChangeImageComponent>;
+describe('BikescarsComponent', () => {
+  let component: BikescarsComponent;
+  let fixture: ComponentFixture<BikescarsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ChangeImageComponent]
+      imports: [BikescarsComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ChangeImageComponent);
+    fixture = TestBed.createComponent(BikescarsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

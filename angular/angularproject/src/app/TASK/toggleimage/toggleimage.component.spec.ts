@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ToggleImageComponent } from './toggle-image.component';
+import { ToggleimageComponent } from './toggleimage.component';
 
-describe('ToggleImageComponent', () => {
-  let component: ToggleImageComponent;
-  let fixture: ComponentFixture<ToggleImageComponent>;
+describe('ToggleimageComponent', () => {
+  let component: ToggleimageComponent;
+  let fixture: ComponentFixture<ToggleimageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ToggleImageComponent]
+      imports: [ToggleimageComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ToggleImageComponent);
+    fixture = TestBed.createComponent(ToggleimageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

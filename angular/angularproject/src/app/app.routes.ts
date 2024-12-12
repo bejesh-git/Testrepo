@@ -8,6 +8,9 @@ import { AngformComponent } from './forms/angform/angform.component';
 import { UtdfComponent } from './forms/utdf/utdf.component';
 import { RtfComponent } from './forms/rtf/rtf.component';
 import { MaindashboardComponent } from './layout/maindashboard/maindashboard.component';
+import { ChangeimageComponent } from './TASK/changeimage/changeimage.component';
+import { ToggleimageComponent } from './TASK/toggleimage/toggleimage.component';
+import { BikescarsComponent } from './TASK/bikescars/bikescars.component';
 
 export const routes: Routes = [
     // {path:"" , component:LoginComponent},
@@ -24,5 +27,8 @@ export const routes: Routes = [
     {path:"mypipe" , component:MypipesComponent},
     
     
+    {path:"task1" , component:ToggleimageComponent},
+    {path:"task2" , component:ChangeimageComponent},
+    {path:"task3" , component:BikescarsComponent},
     {path:"**" , component:PagenotfoundComponent},
 ];

@@ -1,0 +1,28 @@
+.container{
+    justify-items: center;
+    align-content: space-around;
+    display: grid;
+    height: 400px;
+    width: 400px;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10%;
+}
+
+.toggleimage{
+    border-radius: 25%;
+    box-shadow: 0px 0px 15px black;
+}
+
+.facebook{
+    background-color: blue;
+}
+
+.instagram{
+    background-image: linear-gradient(45deg, #a3005a, #780096);
+ 
+}
+
+.whatsapp{
+    background-color: rgb(22, 194, 136);
+}
