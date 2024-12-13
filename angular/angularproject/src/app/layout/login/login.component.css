@@ -1,0 +1,19 @@
+.container{
+    height: 100vh;
+    width: 100vw;
+    align-content: center;
+    justify-items: center;
+}
+
+.form{
+    width: 300px;
+    padding: 20px;
+    height:170px;
+    border: 1px solid black;
+    align-content: space-evenly;
+}
+
+.form-control{
+    display: block;
+    margin: 5px 0px;
+}

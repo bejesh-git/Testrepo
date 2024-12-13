@@ -169,3 +169,26 @@ classlife cycle methods.
     - to send request from angular service to server for this wer have to ceate HTTPClient class in service constructor. but HTTPClient class is not a part of core angular. It is part of HttpClientModule,
     -so first we have to import providerHttpClient as well as withJsonpSupport in app.config.ts file and make entry  of these library in provider array.
     =>provideHttpClient(withJsonpSupport()),
+
+
+
+*Consurrent Library:
+"json-server" : "cd src/app/shared/database && npx json-server --watch -p 8888 db.json"
+"start-dev" : "npx concurrently \"ng serve -o\"\"npm run json-server\"",
+
+
+
+*guard : inangular guard is used to prevent rendering of routing compnent.
+        -it return boolean value wither trur or false
+        -if it return true then component will render otherwise not
+
+    => ng g guard guardname
+
+
+http-anular-server
+npm isntall -g angular-http-server
+
+
+*testing in angular
+ng test
+

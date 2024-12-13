@@ -15,12 +15,14 @@ import { ItemComponent } from './item/item.component';
 import { ProductDashComponent } from './CRUD/product-dash/product-dash.component';
 import { ProductEditComponent } from './CRUD/product-edit/product-edit.component';
 import { ProductAddComponent } from './CRUD/product-add/product-add.component';
+import { authGuard } from './shared/customguard/auth.guard';
+import { LogoutComponent } from './layout/logout/logout.component';
 
 export const routes: Routes = [
     // {path:"" , component:LoginComponent},
     {path:"" , redirectTo:"login", pathMatch:"full"},
     {path:"login" , component:LoginComponent},
-    {path:"maindash" , component:MaindashboardComponent, children:[
+    {path:"maindash" , component:MaindashboardComponent, canActivate:[authGuard], children:[
             {path:"angform" , component:AngformComponent, children:[
                 {path:"utdf", component:UtdfComponent},
                 {path:"rtf", component:RtfComponent},
@@ -36,6 +38,8 @@ export const routes: Routes = [
         {path:"task1" , component:ToggleimageComponent},
         {path:"task2" , component:ChangeimageComponent},
         {path:"task3" , component:BikescarsComponent},
+
+        
     ]},
 
     {path:"databinding" , component:DatabindingComponent},

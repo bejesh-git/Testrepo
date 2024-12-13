@@ -1,10 +1,10 @@
 {
   "products": [
     {
-      "pname": "del Keyboard",
-      "pprice": 500,
-      "pcompany": "logitech",
-      "pquantity": 24,
+      "pname": "del Keyboard 1",
+      "pprice": "5001",
+      "pcompany": "logitech1",
+      "pquantity": "241",
       "id": "1003"
     },
     {
