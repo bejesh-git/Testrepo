@@ -1,0 +1,9 @@
+.regform{
+    width: 400px;
+}
+
+.container{
+    margin: 50px;
+    display: grid;
+    justify-content: center;
+}
