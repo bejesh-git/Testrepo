@@ -37,6 +37,7 @@ export class RegisterComponent {
       let correctDate = { ...userData, wishlist: [], cart: [] };
       this._dbObj.addValue("user", correctDate).subscribe(() => {
         window.alert("Registration Successfull");
+        sessionStorage.setItem("fname", correctDate.fname);
         sessionStorage.setItem("email", correctDate.email);
         sessionStorage.setItem("password", correctDate.password);
         this._router.navigate(["/"]);

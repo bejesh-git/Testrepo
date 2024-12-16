@@ -1215,71 +1215,58 @@
   ],
   "user": [
     {
-      "id": "d319",
-      "fname": "B",
-      "email": "B",
-      "password": "B",
+      "id": "e786",
+      "fname": "g bejesh sriram",
+      "email": "bejeshsriram2808@gmail.com",
+      "password": "Bejesh_2808",
       "mobile": "08608925121",
       "address": "NO 4/239-A, MADHA KOVIL STREET, NEELANKARAI,CHENNAI",
-      "wishlist": [
-        {
-          "name": "BBQ Baked Chicken Wings (Single)",
-          "isVeg": false,
-          "isNonVeg": true,
-          "isSnack": false,
-          "isDrink": false,
-          "type": "tiffin",
-          "src": "./products/NV-bbq-baked-chicken-wings-single.jpg",
-          "price": 110,
-          "description": "A single serving of our BBQ baked chicken wings, ideal for a quick and tasty bite.",
-          "id": "06f4"
-        }
-      ],
-      "cart": [
-        {
-          "name": "Chicken Sausage",
-          "isVeg": false,
-          "isNonVeg": true,
-          "isSnack": false,
-          "isDrink": false,
-          "type": "tiffin",
-          "src": "./products/NV-chicken-sausage.jpg",
-          "price": 100,
-          "description": "Juicy and savory chicken sausages, perfect for a quick and tasty snack.",
-          "id": "ecf9"
-        },
-        {
-          "name": "Veggie Feast",
-          "isVeg": false,
-          "isNonVeg": true,
-          "isSnack": false,
-          "isDrink": false,
-          "type": "tiffin",
-          "src": "./products/NV-veggie-feast.jpg",
-          "price": 170,
-          "description": "A feast of veggies, offering a delicious and nutritious meal.",
-          "id": "74ad"
-        }
-      ]
-    },
-    {
-      "id": "4e1b",
-      "fname": "",
-      "email": "",
-      "password": "",
-      "mobile": "",
-      "address": "",
       "wishlist": [],
       "cart": []
     },
     {
-      "id": "1c52",
+      "id": "e79b",
       "fname": "g bejesh sriram",
-      "email": "bejeshsriram280@gmail.com",
+      "email": "bejeshsriram2808@gmail.co",
       "password": "Bejesh_2808",
-      "mobile": "",
-      "address": "",
+      "mobile": "08608925121",
+      "address": "NO 4/239-A, MADHA KOVIL STREET, NEELANKARAI,CHENNAI",
       "wishlist": [],
+      "cart": []
+    },
+    {
+      "id": "00fc",
+      "fname": "g bejesh sriram",
+      "email": "bejeshsriram2808@gmail.c",
+      "password": "Bejesh_2808",
+      "mobile": "08608925121",
+      "address": "NO 4/239-A, MADHA KOVIL STREET, NEELANKARAI,CHENNAI",
+      "wishlist": [
+        {
+          "name": "Appam",
+          "isVeg": true,
+          "isNonVeg": false,
+          "isSnack": false,
+          "isDrink": false,
+          "type": "tiffin",
+          "src": "./products/V-appam.jpg",
+          "price": 40,
+          "description": "A soft and fluffy South Indian pancake made from fermented rice batter, perfect for a light meal.",
+          "id": "4640"
+        },
+        {
+          "name": "Chole Poori",
+          "isVeg": true,
+          "isNonVeg": false,
+          "isSnack": false,
+          "isDrink": false,
+          "type": "tiffin",
+          "src": "./products/V-chole-poori.jpg",
+          "price": 70,
+          "description": "A classic North Indian dish of spicy chickpeas served with deep-fried bread.",
+          "id": "6907"
+        }
+      ],
       "cart": []
     }
   ]
