@@ -1,0 +1,89 @@
+=> psql -U postgres
+
+Create Database SampleDb
+=> \c sampledb
+
+*List the database
+=> \l
+
+*PSQL stores database name in small case
+
+pgadmin
+
+
+
+*Create table
+Create Table customers (
+    id integer primary key,
+    firstname varchar(50) not null,
+    lastname varchar(50),
+    email varchar(255) not null,
+    birthday date not null
+)
+
+*Restore database
+=> pg_restore -U  postgres -d dvdrental dedrental.tar
+
+*List of all Tables 
+=> \dt
+
+*desctibe table
+=> \d tablename
+
+
+select version();
+select current_database()
+select inet_server_addr(), inet_server_port();
+select first_name||' '||last_name as firstname from customer;
+
+
+select now();
+select first_name, last_name, email from customer order by first_name;
+select first_name, length(first_name) as length from customer order by length;
+
+Create table sort_demo_nulls(num int);
+insert into sort_demo_nulls 
+values(1), (2), (4)
+
+\pset null null
+select * from customer order by first_name bulls first
+select * from customer order desc by first_name bulls last
+
+
+
+select count(*) from actor
+select distinct category_id from film_category;
+select count(distinct category_id) from film_category;
+
+select first_name , last_name from customer where customer_id > 500;
+select first_name , last_name from customer where customer_id < 100;
+select first_name , last_name from customer where customer_id >= 550;
+select first_name , last_name from customer where customer_id <= 50;
+select first_name , last_name from customer where customer_id <> 10;
+select first_name , last_name from customer where customer_id != 10;
+
+select first_name , last_name from customer where not customer_id != 10;
+select first_name , last_name from customer where customer_id > 300 and customer_id < 350;
+select first_name , last_name from customer where customer_id > 550 or customer_id < 50;
+select first_name , last_name from customer where customer_id in (5, 10, 15, 20);
+select first_name , last_name from customer where customer_id not in (5, 10, 15, 20);
+
+select first_name , last_name from customer where customer_id between 0 and 10;
+select first_name , last_name from customer where customer_id not between 0 and 10;
+select first_name , last_name from customer where first_name like "a%";
+select first_name , last_name from customer where first_name not like "%t";
+select first_name , last_name from customer where first_name not like "%t";
+
+select * from customer where email is null;
+select * from customer where email is not null;
+
+select * from customer limit 5;
+select * from customer limit 5 offset 5;
+select * from customer limit 5, 5;
+
+
+
+
+
+
+
