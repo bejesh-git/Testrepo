@@ -1,0 +1,19 @@
+<!-- <p>navbar works!</p> -->
+
+<div class="container">
+    <button type="button" class="btn btn-outline-danger" routerLink="/">Home</button>
+    <button type="button" class="btn btn-outline-danger" routerLink="/about">About Us</button>
+    <button type="button" class="btn btn-outline-danger button-group" (mouseover)="onMouseOver()" (mouseout)="onMouseOut()">
+        Dishes
+        <div class="popup" [ngStyle]="typeList">
+            <a class="popup-item" routerLink="/products/all">All</a>
+            <a class="popup-item" routerLink="/products/veg">Veg</a>
+            <a class="popup-item" routerLink="/products/nonveg">Non Veg</a>
+            <a class="popup-item" routerLink="/products/starters">Starters</a>
+            <a class="popup-item" routerLink="/products/drinks">Drinks</a>
+        </div>
+    </button>
+    
+
+
+</div>

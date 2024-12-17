@@ -1,0 +1,30 @@
+<div class="container">
+    <p class="heading" class="resulttext">Select Your Favorite</p>
+
+    <div class="buttonGroup">
+        <button type="button" (click)="displayVehicle='bike'" class="btn btn-outline-dark">Bikes 🏍</button>
+        <button type="button" (click)="displayVehicle='car'" class="btn btn-outline-dark">Cars 🏎</button>
+    </div>
+    <div *ngIf="displayVehicle=='bike';then bikestemplate;else carstemplate" class="output">
+
+    </div>
+    <div *ngIf="!!selectedVehicle" class="resulttext">
+        Are you going to buy <strong>{{selectedVehicle | uppercase}}</strong>
+    </div>
+
+
+
+
+
+    <ng-template #bikestemplate>
+        <ul>
+            <li *ngFor="let bike of bikes" (click)="selectedVehicle=bike" class="options">{{bike | uppercase}}</li>
+        </ul>
+    </ng-template>
+
+    <ng-template #carstemplate>
+        <ul>
+            <li *ngFor="let car of cars" (click)="selectedVehicle=car" class="options">{{car | uppercase}}</li>
+        </ul>
+    </ng-template>
+</div>

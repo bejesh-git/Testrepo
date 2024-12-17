@@ -1,0 +1,22 @@
+
+
+
+@media screen and (min-width:600px) {
+    
+    
+}
+
+@media screen and (min-width:1000px) {
+    .carousal-text{
+        width: 400px;
+        background-color: rgb(193, 220, 135);
+        box-shadow: 0px 0px 5px rgb(1, 252, 30);
+        padding: 20px 40px;
+        text-align: justify;
+        position: relative;
+        bottom: 600px;
+        z-index: 11;
+    }
+   
+}
+

@@ -1,0 +1,47 @@
+
+.card {
+    border: none;
+    box-shadow: 0px 1px 2px grey;
+    transition: transform 0.5s ease;
+}
+
+.imgcontainer {
+    overflow: hidden;
+}
+
+
+
+
+.card-body {
+    padding: 5px;
+}
+
+.card-title {
+    font-size: 18px;
+}
+
+.card-text {
+    margin: 2px;
+}
+
+.card {
+    width: 32vw;
+    margin: 0px 6px 16px 2px
+}
+
+.bodycontainer {
+    width: 10vw;
+    float: right;
+}
+
+.imgcontainer {
+    overflow: hidden;
+}
+
+.card-image {
+    height: inherit;
+    width: 20vw;
+    padding: 10px 0px 10px 0px;
+}
+
+

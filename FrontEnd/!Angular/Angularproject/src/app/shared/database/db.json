@@ -1,0 +1,44 @@
+{
+  "products": [
+    {
+      "pname": "del Keyboard 1",
+      "pprice": "5001",
+      "pcompany": "logitech1",
+      "pquantity": "241",
+      "id": "1003"
+    },
+    {
+      "id": "1004",
+      "pname": "Mouse",
+      "pprice": 100,
+      "pcompany": "Razer",
+      "pquantity": 11
+    },
+    {
+      "id": "1005",
+      "pname": "Speaker",
+      "pprice": 3000,
+      "pcompany": "Boat",
+      "pquantity": 13
+    },
+    {
+      "id": "1006",
+      "pname": "UPS",
+      "pprice": 30000,
+      "pcompany": "Dell",
+      "pquantity": 5
+    }
+  ],
+  "user": [
+    {
+      "id": "1",
+      "userid": "admin@gmail.com",
+      "userpass": "admin@123"
+    },
+    {
+      "id": "2",
+      "userid": "hero@gmail.com",
+      "userpass": "hero@123"
+    }
+  ]
+}

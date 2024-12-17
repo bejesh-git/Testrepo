@@ -1,0 +1,6 @@
+<p>Toggle image with the Button</p>
+<div [class]="containerClass">
+    <img [src]="imageSrc" [alt]="imageTitle" class="toggleimage">
+    <div>{{imageTitle}}</div>
+    <button type="button" class="btn btn-outline-warning" (click)="changeImage()">Change</button>
+</div>

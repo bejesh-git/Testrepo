@@ -1,0 +1,98 @@
+.container {
+    padding: 1% 10%;
+}
+
+.btn {
+    width: 75px;
+    margin: 3px 3px;
+    border-width: 2px;
+    border-color: rgb(91, 24, 15);
+    color: rgb(91, 24, 15);
+    font-weight: 500;
+    font-size: 10px;
+    
+}
+
+.popup {
+    display: none;
+    margin-top: 7px;
+    padding: 1%;
+    width: inherit;
+    position: absolute;
+    /* border: 5px solid black; */
+    background-color: rgb(113, 38, 38);
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px black;
+    z-index: 2;
+
+    text-align: left;
+}
+
+.popup-item {
+    margin: 0px;
+    padding: 0px 4%;
+    display: block;
+    text-decoration: none;
+    color: grey;
+    transition: transform 0.5s ease;
+}
+
+.popup-item:hover {
+    transform: translate(5%);
+    /* border: 1px solid rgb(77, 16, 16); */
+    /* box-shadow: 2px 0px 3px black; */
+}
+
+
+
+@media screen and (min-width:576px) {
+    .btn {
+        width: 100px;
+        margin: 3px 3px;
+        border-width: 2px;
+        border-color: rgb(91, 24, 15);
+        color: rgb(91, 24, 15);
+        font-weight: 600;
+        font-size: 12px;
+        
+    }
+    
+    
+}
+
+
+
+
+
+@media screen and (min-width:768px) {
+    .btn {
+        width: 150px;
+        margin: 3px 3px;
+        border-width: 2px;
+        border-color: rgb(91, 24, 15);
+        color: rgb(91, 24, 15);
+        font-weight: 700;
+        font-size: 14px;
+
+    }
+
+}
+
+@media screen and (min-width:1000px) {
+    .btn {
+        width: 150px;
+        margin: 3px 3px;
+        border-width: 2px;
+        border-color: rgb(91, 24, 15);
+        color: rgb(91, 24, 15);
+        font-weight: 900;
+
+    }
+
+
+}
+
+.btn:hover{
+    background-color: rgb(90, 27, 27);
+    color: grey;
+}
