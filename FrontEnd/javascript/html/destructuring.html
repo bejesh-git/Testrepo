@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>destructuring</title>
+</head>
+
+<body>
+    <iframe src="../../Index.html" frameborder="0" width="100%" height="50px"></iframe>
+    <iframe src="./navigation.html" frameborder="0" width="100%" height="100px"></iframe>
+
+
+
+
+    <script>
+
+        let fruits = ['apple', 'orange', 'banana'];
+
+        const [fruits1, fruits2, fruits3] = fruits;
+
+        console.log(fruits1);
+        console.log(fruits2);
+        console.log(fruits3);
+        
+        document.write(fruits1);
+        document.write(fruits2);
+        document.write(fruits3);
+        
+        let emp = {
+            name : "Santhosh",
+            salary : 10000
+        }
+        
+
+        const {name, salary} = emp;
+        console.log(name);
+        console.log(salary);
+        
+        document.write(name);
+        document.write(salary);
+
+
+    </script>
+
+</body>
+
+</html>

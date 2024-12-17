@@ -1,0 +1,115 @@
+##########
+27/11/2024
+##########
+
+
+*CSS :  -it is used to design webapp and to make it responsive
+        -it stand for cancading style sheet
+        -latest version of css is css3
+
+
+Q.Types of css
+or
+Q.how to use css
+
+A.There are three ways to use css
+    1. Inline css:      inside a starting tag we use Style attribute and in that we specify property and value.
+        syntax:         style="property:value;"
+    2. Internal css:    in html file we use Stule tah and in that we select element apply css property.
+        syntax:         selector{
+                            property:value;
+                            property:value;
+                            property:value;
+                        }
+    3. External css:    in this we create a seperate css file and import that css in header part of html file 
+
+
+*selector in css : Selecting an element
+1. Element or tah name selector : In this we use element or tah name to aply css property
+2. Group selector : in this we make group selector to apply css property for multiple elements
+3. Id selector : if you have to apply css property to an single element in that case we use it
+4. Class Selector : if you have to apply a specific css property to a bunch of elements
+5. Universal Selector : if you have to apply css property to all elements
+
+
+
+*border : a line drawm around the element
+
+
+*Box-Model : it contain four point
+1. content :    it can be any image or text
+2. padding :    it is used to clear area between conent and element border
+3. border :     a line drawn around and element
+4. margin :     it is used to clear area around the element border.
+
+
+*position:
+- it is used to move element after applying left, right, top and bottom property value
+- by default every element has position:static
+1. position: static(default)
+2. position: relative; element will move from left, right, top and bottom side
+3. position: absolute; when we wan tto move child element according to its parent element
+4. position: fixed; when we have to fixed on screen window
+5. position: sticky; when we have to stick element on screen window
+
+
+*media query: it is used to apply different style rule to an elemtn according to different screen width;
+
+syntac: @media screen and (screen-width){
+            css code
+            }
+
+
+deivce screen-width >= 1200px xl screen
+deivce screen-width >= 992px lg screen
+deivce screen-width >= 768px md screen
+deivce screen-width >= 576px sm screen
+deivce screen-width < 576px xsm screen
+
+screen width
+1. max-width    :   property will applicable form its minimum width to the maximum width and not above
+2. min- width   :   css property will be applicable fom above minumum width
+
+
+
+
+TASKS:
+
+-----------------------------------------------------
+Position 
+-----------------------------------------------------
+
+
+##########
+28/11/2024
+##########
+
+*box-sizing: it include element border size and element size in its actual width
+            box-sizing:border-box;
+
+
+
+*float  :   it is used to move block element side by side
+            float : left, right, none
+
+
+
+*container classes
+*color classes
+*bg-color classes
+*button classes
+*spinner-border classes
+*image classes
+*table classes
+*how to use carousel
+*how to use nav
+*how to use accordian
+
+
+*Grid : it is use to manage layout of webapp by using inbuilt classes
+- in bootstrap grid provides mainly two classes
+1. row class
+2. col class
+
+
+-in bootstrap grid row we can crate columns with size 12, if column size is exceded more than 12, then column will start from new row.

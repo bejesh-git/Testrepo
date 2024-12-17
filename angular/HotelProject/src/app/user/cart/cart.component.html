@@ -1,0 +1,60 @@
+<!-- <p>cart works!</p> -->
+
+<h2 style="padding: 100px;">Your Cart</h2>
+
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-8">
+            <div class="row" #cartList>
+                <div *ngFor="let product of currentUser.cart" class="card mb-3 col-sm-6 col-xl-4 ">
+                    <div class="row g-0">
+                        <div class="col-md-7 imgcontainer">
+                            <img [src]="product.src" [alt]="product.name" class="card-image">
+                        </div>
+                        <div class="col-md-5 bodycontainer">
+                            <div class="card-body">
+                                <p class="card-title">{{product.name}}</p>
+                                <p class="card-text">&#x20B9;{{product.price}}/-</p>
+                                <button class="btn btn-towish" (click)="removeFromCart(product)" >Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+    </div>
+    <div class="col-2"></div>
+</div>
+
+
+
+<h2 style="padding: 100px;color: brown; text-shadow: 0px 0px 5px black;">Your Wishlists</h2>
+
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-8">
+
+            <div class="row" #wistList>
+                <div *ngFor="let product of currentUser.wishlist" class="card mb-3 col-sm-6 col-xl-4 ">
+                    <div class="row g-0">
+                        <div class="col-md-7 imgcontainer">
+                            <img [src]="product.src" [alt]="product.name" class="card-image">
+                        </div>
+                        <div class="col-md-5 bodycontainer">
+                            <div class="card-body">
+                                <p class="card-title">{{product.name}}</p>
+                                <p class="card-text">&#x20B9;{{product.price}}/-</p>
+                                <button class="btn btn-towish" (click)="removeFromWishlist(product)" >Remove</button> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+    </div>
+    <div class="col-2"></div>
+</div>

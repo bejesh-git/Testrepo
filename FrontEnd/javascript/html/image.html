@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input</title>
+
+
+
+
+
+    <style>
+        .container2 {
+            width: fit-content;
+            margin: 100px auto;
+        }
+
+        #cyclebutton {
+            display: block;
+            margin: auto;
+        }
+
+        #cycleimage {
+            height: 200px;
+            border: 2px solid;
+        }
+    </style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+    <iframe src="../../Index.html" frameborder="0" width="100%" height="50px"></iframe>
+    <iframe src="./navigation.html" frameborder="0" width="100%" height="100px"></iframe>
+
+
+
+
+
+    <div class="container1">
+
+        <button type="button" id="increase" onclick="increase()">+</button>
+        <button type="button" id="decrease" onclick="decrease()">-</button>
+        <br>
+        <img src="../asserts/images/colosseum.webp" alt="" id="img1">   
+
+    </div>
+
+
+    <div class="container2">
+
+        <img src="../asserts/images/bird.jpg" alt="beans" id="cycleimage">
+
+        <button type="button" id="cyclebutton" onclick="cycleimage()">Cycle</button>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+        function increase() {
+            let image = document.getElementById('img1');
+            image.style.width = (image.offsetWidth + 10) + 'px'; // Increase the width by 10 pixels
+
+        }
+        function decrease() {
+            let image = document.getElementById('img1');
+            image.style.width = (image.offsetWidth - 10) + 'px'; // Increase the width by 10 pixels
+
+        }
+
+
+        function cycleimage() {
+            let image = document.getElementById('cycleimage');
+
+            if (image.alt == "beans") {
+                image.src = "../asserts/images/sunset.jpg";
+                image.alt = "carrot";
+            }
+            else {
+                image.src = "../asserts/images/bird.jpg";
+                image.alt = "beans";
+            }
+        }
+
+
+    </script>
+
+</body>
+
+</html>

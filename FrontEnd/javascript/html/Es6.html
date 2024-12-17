@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Es-6</title>
+</head>
+
+<body>
+    <iframe src="../../Index.html" frameborder="0" width="100%" height="50px"></iframe>
+    <iframe src="./navigation.html" frameborder="0" width="100%" height="100px"></iframe>
+
+
+
+
+    <script>
+
+        let frontEnd = ['html','css','javascript',"bootstrap"];
+        let backEnd = ['java', 'python'];
+
+        //concat(): to merge two or more array.
+        document.write("<br>");
+        document.write(frontEnd.concat(backEnd));
+        console.log(frontEnd.concat(backEnd));
+
+        document.write("<br>");
+        document.write(frontEnd.concat(backEnd,"dotNET", "php"));
+        console.log(frontEnd.concat(backEnd,"dotNET", "php"));
+        
+        //spread operator
+        document.write("<br>");
+        document.write([frontEnd, backEnd, "dot Net", "php"]);
+        console.log([frontEnd, backEnd, "dot Net", "php"]);
+        
+        document.write("<br>");
+        document.write([...frontEnd, ...backEnd, "dot Net", "php"]);
+        console.log([...frontEnd, ...backEnd, "dot Net", "php"]);
+
+    </script>
+
+</body>
+
+</html>

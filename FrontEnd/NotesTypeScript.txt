@@ -1,0 +1,87 @@
+-it is compile language
+-it is strict typed language
+
+*Install typescript
+npm i -g typescript
+npx tsc -v
+
+
+*how to execute typescript file
+npx tcs fileName.ts
+
+
+*run js file
+node fileName.js
+
+
+*OOPS
+1-class: 
+    -it is collection of data member and member function
+    -it is template which we re-use.
+    -to create class we use class keyword
+
+2.object:
+    -it is an instance of class
+    -it allows us to access the data members and member funciton outside class
+    syntax:
+        let objName = new CLass()
+
+3.constructor:
+    -it is special memeber function of class
+    -it will execute automatically when class object ger created or initialized
+    -in ts constructor name must be only constructor.
+    
+
+
+TASK
+------------------------------------------------
+
+
+*********
+3/12/2024
+*********
+
+
+*Inheritance
+    -accessing parent class properties into child class.
+    -to preform inheritance between classes we use extends keyword
+    -abstract classes should be implemented cannot be extended
+
+
+*super method
+    -it represent parent class constructor inside child class constructor.
+    -super method must be first statement in child class constructor.
+    
+
+4.encapsulation
+-wrapping of data into single unit
+
+*Access Specifiers
+    -public: we can access class property inside, outside and also from derived class
+    -protected: we can access class property inside and from derived class
+    -private:  we can access class property only inside the class
+
+5. adstraction:
+    -hidding implementation and showing necessary information.
+    -we can achieve this by using interface, abstract class/methods;
+
+6. polymorphism: it is ability to tak emore than one form
+    -method overloading: (runtime)when we have multiple method with same name in same class
+    -method overriding: (compile time)when we have multiple method with same name in different class
+    
+    
+*module
+    -writting ts code in single or multiple file and access it in another file
+    -to achive this we use export and import keywords
+    -to send data we use export keyword
+    -to access it we use import keyword
+
+
+*interface
+    -it is a signature of class
+    -it contain abstract method and constant variable
+    -to create interface we use interface keyword
+    -its child class has the responsiblity to implement the interface.
+    -to implement interface we use IMPLEMENT keyword
+
+

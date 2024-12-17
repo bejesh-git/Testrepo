@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt</title>
+
+    <style>
+        .TraficLight{
+            border: 1px solid black;
+            height: 180px;
+            width: 70px;
+            align-content: center;
+            justify-items: center;
+        }
+
+        #red-light, #yellow-light, #green-light{
+            border: 1px solid black;
+            height: 50px;
+            width: 50px;
+            margin: 3px;
+            border-radius: 50%;
+        }
+
+        .red{
+            background-color: red;
+        }
+        .green{
+            background-color: green;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <iframe src="../../Index.html" frameborder="0" width="100%" height="50px"></iframe>
+    <iframe src="./navigation.html" frameborder="0" width="100%" height="100px"></iframe>
+
+    <button type="button" onclick="checkVowel()">Vowel</button>
+    <button type="button" onclick="checkEvenOdd()">EvenOdd</button>
+    <button type="button" onclick="checkEmail()">Email</button>
+
+
+    <div class="TraficLight">
+        <div class=" " id="red-light"></div>
+        <div class=" " id="yellow-light"></div>
+        <div class=" " id="green-light"></div>
+    </div>
+    
+
+    <script>
+        
+        function checkVowel(){
+            let char = prompt("Enter a Character");
+
+            if(/^[aeiou]$/.test(char.toLowerCase())){
+                window.alert("Vowel");
+            }
+            else{
+                window.alert("Not a Vowel");
+            }
+        }
+
+        function checkEvenOdd(){
+            let number = prompt("Number");
+
+            switch(number%2){
+                case 0:{window.alert("Even");}
+                case 1:{window.alert("Odd");}
+            }
+        }
+
+        function checkEmail(){
+            let email = prompt("Enter Email");
+
+            let atPosition = email.search('@');
+
+            let domain = email.substring(atPosition+1);
+
+            let validDomain = ["gmail.com", "yahoo.com", "changepond.com", "hotmail.com"];
+
+            if(validDomain.includes(domain)){
+                window.alert(domain+ " is Valid");
+            }
+            else{
+                window.alert(domain+ " is not Valid");
+                
+            }
+        }
+
+
+
+        function greet()
+        {
+            window.alert("Finally you stayed in this page for 5seconds")
+        }
+        // setTimeout(greet, 5000);
+
+
+
+        let redLight = document.getElementById('red-light');
+        let yellowLight = document.getElementById('yellow-light');
+        let greenLight = document.getElementById('green-light');
+
+        
+        function setRed(){
+            redLight.className = "red"
+            yellowLight.className = ""
+            greenLight.className = ""
+            setTimeout(setYellow, 3000);
+            
+        }
+        function setYellow(){
+            redLight.className = "";
+            yellowLight.className = "yellow";
+            greenLight.className = "";
+            setTimeout(setGreen, 3000);
+            
+        }
+        function setGreen(){
+            redLight.className = "";
+            yellowLight.className = "";
+            greenLight.className = "green";
+            setTimeout(setRed, 3000);
+
+        }
+        
+        setTimeout(setRed, 1000);
+        
+
+
+
+        
+    </script>
+
+</body>
+
+</html>

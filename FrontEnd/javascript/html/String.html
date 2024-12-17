@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+
+<body>
+    <iframe src="../../Index.html" frameborder="0" width="100%" height="50px"></iframe>
+    <iframe src="./navigation.html" frameborder="0" width="100%" height="100px"></iframe>
+
+
+
+    <script>
+        let msg =  "Welcome you all in Changepond you all are future of Changepond";
+        document.write(` ${msg}  = ${msg.length} <br>`);
+        
+        document.write(` ${msg.toUpperCase()} =  msg.toUpperCase() <br>`);
+        document.write(` ${msg.toLowerCase()} =  msg.toLowerCase() <br>`);
+        
+        document.write(` ${msg.indexOf('C')} =  msg.indexOf('C') <br>`);
+        document.write(` ${msg.indexOf('C', 20)} =  msg.indexOf('C', 20) <br>`);
+        
+        document.write(` ${msg.lastIndexOf('C')} =  msg.lastIndexOf('C') <br>`);
+        document.write(` ${msg.lastIndexOf('C', 30)} =  msg.lastIndexOf('C', 30) <br>`);
+        
+        document.write(` ${msg.search('C')} =  msg.lastIndexOf('C') <br>`);
+        document.write(` ${msg.search('c')} =  msg.lastIndexOf('c') <br>`);
+
+
+        document.write(` ${msg.charAt(25)} =  msg.charAt(25) <br>`);
+        document.write(` ${msg.charCodeAt(25)} =  msg.charCodeAt(25) <br>`);
+        
+        document.write(` ${String.fromCharCode(97)} =  String.fromCharCode(97) <br>`);
+        
+        
+        
+        document.write(` ${msg.slice(15)} =  msg.slice(15) <br>`);
+        document.write(` ${msg.slice(15, 30)} =  msg.slice(15, 30) <br>`);
+        document.write(` ${msg.slice(-20)} =  msg.slice(-20) <br>`);
+        document.write(` ${msg.slice(-20, -5)} =  msg.slice(-20, -5) <br>`);
+        
+        document.write(` ${msg.substring(10)} =  msg.substring(10) <br>`);
+        document.write(` ${msg.substring(10, 25)} =  msg.substring(10, 25) <br>`);
+        
+        document.write(` ${msg.substr(5, 10)} =  msg.substr(5, 10) <br>`);
+        
+        document.write(` ${msg.replace("Changepond", "India")} =  msg.replace("Changepond", "India") <br>`);
+        document.write(` ${msg.replace(/Changepond/i, "India")} =  msg.replace(/Changepond/i, "India") <br>`);
+        document.write(` ${msg.replace(/Changepond/ig, "India")} = msg.replace(/Changepond/ig, "India") <br>`);
+        document.write(` ${msg.replaceAll("Changepond", "India")} =  msg.replaceAll("Changepond", "India") <br>`);
+       
+       
+       
+        document.write(` ${msg.split()} =  msg.split() <br>`);
+        document.write(` ${msg.split(" ")} =  msg.split(" ") <br>`);
+        
+        
+        console.log(msg.split());
+        console.log(msg.split(" "));
+        
+        
+        
+
+
+        
+    </script>
+
+</body>
+
+</html>

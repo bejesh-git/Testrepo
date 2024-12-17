@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <title>Replace</title>
+
+    <style>
+
+        #right-column {
+            align-content: center;
+        }
+
+        #main-container {
+            width: 700px;
+        }
+
+        #inner-row {
+            text-align: center;
+        }
+
+        .btn{
+            width: 150px;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <iframe src="../../Index.html" frameborder="0" width="100%" height="50px"></iframe>
+    <iframe src="./navigation.html" frameborder="0" width="100%" height="150px"></iframe>
+
+
+    <form action="" name="replace_form">
+        <div class="container" id="main-container">
+
+            <div class="row" id="main-row">
+
+                <div class="col-4 " id="left-column">
+                    <textarea name="" id="text-area" class="text-primary" rows="7" cols="25"></textarea>
+                </div>
+
+                <div class="col-8" id="right-column">
+                    <div class="container  " id="right-main-container">
+                        <div class="row gy-4" id="inner-row">
+                            <div class="col-6">
+                                <label for="old-text">Replace :</label>
+                                <input type="text" id="old-text" class="text-primary">
+                            </div>
+                            <div class="col-6">
+                                <label for="new-text">Replace With:</label>
+                                <input type="text" id="new-text" class="text-primary">
+                            </div>
+                            <div class="col-6">
+                                <input type="checkbox" class=""  id="case-toggle" checked>Case Sensitive
+                            </div>
+                            <div class="col-6">
+                                <button type="button" class="btn btn-outline-primary " onclick="replace()">replace</button>
+                            </div>
+                            <div class="col-6">
+                                <button type="button" class="btn btn-outline-primary" onclick="revert()">Revert</button>
+                            </div>
+                            <div class="col-6">
+                                <button type="button" class="btn btn-outline-primary " onclick="replaceAll()">replace all</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </form>
+
+
+
+
+    <script>
+        let backup = "";
+
+        
+        function replace() { 
+            let textBox = document.getElementById('text-area'); 
+            let oldTextBox = document.getElementById('old-text'); 
+            let newTextBox = document.getElementById('new-text'); 
+
+            let text = textBox.value; 
+            backup = textBox.value;
+            let oldText = oldTextBox.value; 
+            let newText = newTextBox.value;
+
+            let caseToggle = document.getElementById('case-toggle');
+            let regex = ""
+            if(caseToggle.checked){
+                regex = new RegExp(oldText, '');
+            }
+            else{
+                regex = new RegExp(oldText, 'i');
+            }   
+            textBox.value = text.replace(regex, newText); 
+        } 
+
+        function replaceAll() { 
+            let textBox = document.getElementById('text-area'); 
+            let oldTextBox = document.getElementById('old-text'); 
+            let newTextBox = document.getElementById('new-text'); 
+
+            let text = textBox.value; 
+            backup = textBox.value;
+            let oldText = oldTextBox.value; 
+            let newText = newTextBox.value;
+
+            let caseToggle = document.getElementById('case-toggle');
+            let regex = ""
+            if(caseToggle.checked){
+                regex = new RegExp(oldText, 'g');
+            }
+            else{
+                regex = new RegExp(oldText, 'ig');
+            }   
+            textBox.value = text.replace(regex, newText); 
+        }
+
+        function revert(){
+            let textBox = document.getElementById('text-area'); 
+            textBox.value = backup;
+        }
+
+    </script>
+</body>
+
+</html>

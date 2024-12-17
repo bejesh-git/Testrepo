@@ -1,0 +1,129 @@
+26/11/2024
+
+*HTML :
+-it is used to create structure of web app.
+-it is use to display data to use on browser.
+-it stand for Hyper Text Markup Language.
+-the latest version of html is HTML%
+
+-it is tag basis language.
+<tag>
+-in html we have two types tag.
+1. paired tag: <startTag> </endingTag>
+2. unpaired tag: <singleTag>
+
+
+*steps to create html file
+step1: create html file filename.html or filename.htm
+step2: write code in it
+step3: execute it on browser
+
+
+
+DOCTYPE html : it tell search engine this is html type of document belongs to version 5
+
+head : it contain external links and meta data in it
+body : write code to display on browser
+
+meta data : meta tag gives us information about data.
+            unicode transformation format in 8 but "UTF-8"
+
+*Element: it ocntains starting tag, ending tag, content in it.
+<startingTag attribute="value> content </endingTag>
+
+*attribute : it provide additional information about tag.
+                -it always written in strating startTag
+                -it comes with key and value pair format.
+
+It html we have two types of element
+1. Block element:   -The element which takes 100% of its screen.
+                    -it Always starts on a new line.
+                    -ex: h1-h6, p, ol, ul, table, form
+
+2. inline element:  -The element which takes required width of it
+                    -it will never start on new line.
+                    -ex: b, i , u ,img, a, span
+
+
+*type of List in html
+1. Ordered List <ol>: Types=> A, B, C, a, b, c, I, II, II, i, ii, iii
+2. Unordered List <ul>: Types=> disc, circle, square, none
+3. Description List <dl>: tags
+                        -dl: description list
+                        -dt: define term
+                        -dd: define definition
+
+
+Q. What is the difference between html and html 5
+or
+Q. What are the features of html5
+1. symantic elements introduced in html5: Element which has a meaning in its name. eg. header, footer, nav, section, main, aside
+2. New input type, new attribute and new tag introduced
+3. No Multimedia element in old version. Which was introduced in html5 (Video, audio)
+4. 'Api's are introduced in html5
+    -Geolocation:   -it return user current location
+                    -if you want to use it, GPS must be installed in the system
+    -Drag and Drop: -g`rabbing an object form one location and put at another location
+    -Web-Worker:    -it is a small javascript code which executes at backend of webpage/ browser without affecting its current execution.
+    -WebStorage:    -it is used to store user data on browser
+                    -there are two types of webstorage
+                        1.local storage - it is used to store user data permanently
+                        2.session storage - it is used to store user data for limited time
+    -SSE(Server Sent Event) -it allows us to get automatic update from server.
+5. tags got removed 
+                    -center, font
+
+
+
+*iframe : it is used to crate small window in webpage
+        -we can use iframe tag for 
+        1. display youtube Video
+        2. display googlemap location
+        3.display contents form other website
+
+
+*link : it is used for navigation
+        -
+
+
+
+HTML TASKS:
+
+-----------------------------------------------------
+Nested List
+-----------------------------------------------------
+Table Creation
+-----------------------------------------------------
+
+
+
+
+
+##########
+27/11/2024
+##########
+
+
+*form : it is used to get data form user
+        -to submit forms data we have two method
+                1. get method:  -form data will be visible in browser URL
+                                -with getmethod we cannot send confidencial data
+                                -there is character limitation with get method to send data through URL
+
+                2. post method: -form data will not be visible to user it will save it in a body object
+                                -with post method we can submit or share confidencial data
+                                -there is no character limitation
+
+
+*Bookmark :     -it will redirect you to a particular part of the webpage
+
+
+
+
+
+
+HTML TASKS:
+
+-----------------------------------------------------
+7 wonders using bookmark
+-----------------------------------------------------

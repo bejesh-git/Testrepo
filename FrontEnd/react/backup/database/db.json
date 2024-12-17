@@ -1,0 +1,2105 @@
+{
+    "products" : [
+        {
+            "id": "db1",
+            "material": "diamond",
+            "category": "bracelets",
+            "tags": "latesttrending",
+            "type": "casual",
+            "price": 56000,
+            "imagename": "diamond_bracelets_db1.jpg"
+        },
+        {
+            "id": "db2",
+            "material": "diamond",
+            "category": "bracelets",
+            "tags": "latest",
+            "type": "casual",
+            "price": 59000,
+            "imagename": "diamond_bracelets_db2.jpg"
+        },
+        {
+            "id": "db3",
+            "material": "diamond",
+            "category": "bracelets",
+            "tags": "latesttrending",
+            "type": "bridal",
+            "price": 55000,
+            "imagename": "diamond_bracelets_db3.jpg"
+        },
+        {
+            "id": "db4",
+            "material": "diamond",
+            "category": "bracelets",
+            "tags": "",
+            "type": "casual",
+            "price": 57500,
+            "imagename": "diamond_bracelets_db4.jpg"
+        },
+        {
+            "id": "db5",
+            "material": "diamond",
+            "category": "bracelets",
+            "tags": "latesttrending",
+            "type": "casual",
+            "price": 52000,
+            "imagename": "diamond_bracelets_db5.jpg"
+        },
+        {
+            "id": "db6",
+            "material": "diamond",
+            "category": "bracelets",
+            "tags": "",
+            "type": "antique",
+            "price": 60000,
+            "imagename": "diamond_bracelets_db6.jpg"
+        },
+        {
+            "id": "db7",
+            "material": "diamond",
+            "category": "bracelets",
+            "tags": "trending",
+            "type": "casual",
+            "price": 56300,
+            "imagename": "diamond_bracelets_db7.jpg"
+        },
+        {
+            "id": "db8",
+            "material": "diamond",
+            "category": "bracelets",
+            "tags": "latesttrending",
+            "type": "bridal",
+            "price": 53000,
+            "imagename": "diamond_bracelets_db8.jpg"
+        },
+        {
+            "id": "de1",
+            "material": "diamond",
+            "category": "earring",
+            "tags": "latesttrending",
+            "type": "bridal",
+            "price": 43000,
+            "imagename": "diamond_earring_de1.jpg"
+        },
+        {
+            "id": "de2",
+            "material": "diamond",
+            "category": "earring",
+            "tags": "trending",
+            "type": "bridal",
+            "price": 46000,
+            "imagename": "diamond_earring_de2.jpg"
+        },
+        {
+            "id": "de3",
+            "material": "diamond",
+            "category": "earring",
+            "tags": "latest",
+            "type": "casual",
+            "price": 49000,
+            "imagename": "diamond_earring_de3.jpg"
+        },
+        {
+            "id": "de4",
+            "material": "diamond",
+            "category": "earring",
+            "tags": "",
+            "type": "antique",
+            "price": 39000,
+            "imagename": "diamond_earring_de4.jpg"
+        },
+        {
+            "id": "de5",
+            "material": "diamond",
+            "category": "earring",
+            "tags": "",
+            "type": "bridal",
+            "price": 51000,
+            "imagename": "diamond_earring_de5.jpg"
+        },
+        {
+            "id": "de6",
+            "material": "diamond",
+            "category": "earring",
+            "tags": "latesttrending",
+            "type": "casual",
+            "price": 42500,
+            "imagename": "diamond_earring_de6.jpg"
+        },
+        {
+            "id": "de7",
+            "material": "diamond",
+            "category": "earring",
+            "tags": "trending",
+            "type": "bridal",
+            "price": 56300,
+            "imagename": "diamond_earring_de7.jpg"
+        },
+        {
+            "id": "de8",
+            "material": "diamond",
+            "category": "earring",
+            "tags": "trending",
+            "type": "casual",
+            "price": 49400,
+            "imagename": "diamond_earring_de8.jpg"
+        },
+        {
+            "id": "de9",
+            "material": "diamond",
+            "category": "earring",
+            "tags": "",
+            "type": "bridal",
+            "price": 32000,
+            "imagename": "diamond_earring_de9.jpg"
+        },
+        {
+            "id": "de10",
+            "material": "diamond",
+            "category": "earring",
+            "tags": "latesttrending",
+            "type": "bridal",
+            "price": 45700,
+            "imagename": "diamond_earring_de10.jpg"
+        },
+        {
+            "id": "de11",
+            "material": "diamond",
+            "category": "earring",
+            "tags": "latest",
+            "type": "casual",
+            "price": 50100,
+            "imagename": "diamond_earring_de11.jpg"
+        },
+        {
+            "id": "de12",
+            "material": "diamond",
+            "category": "earring",
+            "tags": "",
+            "type": "casual",
+            "price": 53000,
+            "imagename": "diamond_earring_de12.jpg"
+        },
+        {
+            "id": "de13",
+            "material": "diamond",
+            "category": "earring",
+            "tags": "",
+            "type": "bridal",
+            "price": 48900,
+            "imagename": "diamond_earring_de13.jpg"
+        },
+        {
+            "id": "de14",
+            "material": "diamond",
+            "category": "earring",
+            "tags": "trending",
+            "type": "antique",
+            "price": 43900,
+            "imagename": "diamond_earring_de14.jpg"
+        },
+        {
+            "id": "dn1",
+            "material": "diamond",
+            "category": "necklace",
+            "tags": "",
+            "type": "casual",
+            "price": 71000,
+            "imagename": "diamond_necklace_dn1.jpg"
+        },
+        {
+            "id": "dn2",
+            "material": "diamond",
+            "category": "necklace",
+            "tags": "trending",
+            "type": "casual",
+            "price": 72000,
+            "imagename": "diamond_necklace_dn2.jpg"
+        },
+        {
+            "id": "dn3",
+            "material": "diamond",
+            "category": "necklace",
+            "tags": "",
+            "type": "casual",
+            "price": 67400,
+            "imagename": "diamond_necklace_dn3.jpg"
+        },
+        {
+            "id": "dn4",
+            "material": "diamond",
+            "category": "necklace",
+            "tags": "",
+            "type": "casual",
+            "price": 74000,
+            "imagename": "diamond_necklace_dn4.jpg"
+        },
+        {
+            "id": "dn5",
+            "material": "diamond",
+            "category": "necklace",
+            "tags": "trending",
+            "type": "antique",
+            "price": 69000,
+            "imagename": "diamond_necklace_dn5.jpg"
+        },
+        {
+            "id": "dn6",
+            "material": "diamond",
+            "category": "necklace",
+            "tags": "latest",
+            "type": "casual",
+            "price": 66000,
+            "imagename": "diamond_necklace_dn6.jpg"
+        },
+        {
+            "id": "dn7",
+            "material": "diamond",
+            "category": "necklace",
+            "tags": "",
+            "type": "casual",
+            "price": 73500,
+            "imagename": "diamond_necklace_dn7.jpg"
+        },
+        {
+            "id": "dn8",
+            "material": "diamond",
+            "category": "necklace",
+            "tags": "latest",
+            "type": "casual",
+            "price": 80000,
+            "imagename": "diamond_necklace_dn8.jpg"
+        },
+        {
+            "id": "dn9",
+            "material": "diamond",
+            "category": "necklace",
+            "tags": "",
+            "type": "casual",
+            "price": 74999,
+            "imagename": "diamond_necklace_dn9.jpg"
+        },
+        {
+            "id": "dn10",
+            "material": "diamond",
+            "category": "necklace",
+            "tags": "",
+            "type": "bridal",
+            "price": 86000,
+            "imagename": "diamond_necklace_dn10.jpg"
+        },
+        {
+            "id": "dn11",
+            "material": "diamond",
+            "category": "necklace",
+            "tags": "",
+            "type": "casual",
+            "price": 77000,
+            "imagename": "diamond_necklace_dn11.jpg"
+        },
+        {
+            "id": "dn12",
+            "material": "diamond",
+            "category": "necklace",
+            "tags": "latesttrending",
+            "type": "casual",
+            "price": 82400,
+            "imagename": "diamond_necklace_dn12.jpg"
+        },
+        {
+            "id": "dn13",
+            "material": "diamond",
+            "category": "necklace",
+            "tags": "",
+            "type": "casual",
+            "price": 99000,
+            "imagename": "diamond_necklace_dn13.jpg"
+        },
+        {
+            "id": "dn14",
+            "material": "diamond",
+            "category": "necklace",
+            "tags": "trending",
+            "type": "bridal",
+            "price": 79499,
+            "imagename": "diamond_necklace_dn14.jpg"
+        },
+        {
+            "id": "dn15",
+            "material": "diamond",
+            "category": "necklace",
+            "tags": "",
+            "type": "casual",
+            "price": 87000,
+            "imagename": "diamond_necklace_dn15.jpg"
+        },
+        {
+            "id": "dn16",
+            "material": "diamond",
+            "category": "necklace",
+            "tags": "",
+            "type": "antique",
+            "price": 68500,
+            "imagename": "diamond_necklace_dn16.jpg"
+        },
+        {
+            "id": "dn17",
+            "material": "diamond",
+            "category": "necklace",
+            "tags": "trending",
+            "type": "casual",
+            "price": 70500,
+            "imagename": "diamond_necklace_dn17.jpg"
+        },
+        {
+            "id": "dp1",
+            "material": "diamond",
+            "category": "pendant",
+            "type": "bridal",
+            "price": 30000,
+            "tags": "",
+            "imagename": "diamond_pendant_dp1.jpg"
+        },
+        {
+            "id": "dp2",
+            "material": "diamond",
+            "category": "pendant",
+            "type": "casual",
+            "price": 31000,
+            "tags": "latesttrending",
+            "imagename": "diamond_pendant_dp2.jpg"
+        },
+        {
+            "id": "dp3",
+            "material": "diamond",
+            "category": "pendant",
+            "type": "antique",
+            "price": 27999,
+            "tags": "",
+            "imagename": "diamond_pendant_dp3.jpg"
+        },
+        {
+            "id": "dp4",
+            "material": "diamond",
+            "category": "pendant",
+            "type": "casual",
+            "price": 21500,
+            "tags": "latest",
+            "imagename": "diamond_pendant_dp4.jpg"
+        },
+        {
+            "id": "dp5",
+            "material": "diamond",
+            "category": "pendant",
+            "type": "antique",
+            "price": 21000,
+            "tags": "trending",
+            "imagename": "diamond_pendant_dp5.jpg"
+        },
+        {
+            "id": "dp6",
+            "material": "diamond",
+            "category": "pendant",
+            "type": "bridal",
+            "price": 26000,
+            "tags": "",
+            "imagename": "diamond_pendant_dp6.jpg"
+        },
+        {
+            "id": "dp7",
+            "material": "diamond",
+            "category": "pendant",
+            "type": "casual",
+            "price": 31500,
+            "tags": "",
+            "imagename": "diamond_pendant_dp7.jpg"
+        },
+        {
+            "id": "dp8",
+            "material": "diamond",
+            "category": "pendant",
+            "type": "antique",
+            "price": 20000,
+            "tags": "latesttrending",
+            "imagename": "diamond_pendant_dp8.jpg"
+        },
+        {
+            "id": "dp9",
+            "material": "diamond",
+            "category": "pendant",
+            "type": "casual",
+            "price": 24500,
+            "tags": "",
+            "imagename": "diamond_pendant_dp9.jpg"
+        },
+        {
+            "id": "dp10",
+            "material": "diamond",
+            "category": "pendant",
+            "type": "bridal",
+            "price": 29999,
+            "tags": "",
+            "imagename": "diamond_pendant_dp10.jpg"
+        },
+        {
+            "id": "dp11",
+            "material": "diamond",
+            "category": "pendant",
+            "type": "casual",
+            "price": 22500,
+            "tags": null,
+            "imagename": "diamond_pendant_dp11.jpg"
+        },
+        {
+            "id": "dp12",
+            "material": "diamond",
+            "category": "pendant",
+            "type": "antique",
+            "price": 82400,
+            "tags": "",
+            "imagename": "diamond_pendant_dp12.jpg"
+        },
+        {
+            "id": "dp13",
+            "material": "diamond",
+            "category": "pendant",
+            "type": "bridal",
+            "price": 25300,
+            "tags": "latest",
+            "imagename": "diamond_pendant_dp13.jpg"
+        },
+        {
+            "id": "dp14",
+            "material": "diamond",
+            "category": "pendant",
+            "type": "casual",
+            "price": 24500,
+            "tags": "",
+            "imagename": "diamond_pendant_dp14.jpg"
+        },
+        {
+            "id": "dp15",
+            "material": "diamond",
+            "category": "pendant",
+            "type": "casual",
+            "price": 21500,
+            "tags": "latesttrending",
+            "imagename": "diamond_pendant_dp15.jpg"
+        },
+        {
+            "id": "dp16",
+            "material": "diamond",
+            "category": "pendant",
+            "type": "antique",
+            "price": 21000,
+            "tags": "",
+            "imagename": "diamond_pendant_dp16.jpg"
+        },
+        {
+            "id": "dp17",
+            "material": "diamond",
+            "category": "pendant",
+            "type": "casual",
+            "price": 23000,
+            "tags": "",
+            "imagename": "diamond_pendant_dp17.jpg"
+        },
+        {
+            "id": "dp18",
+            "material": "diamond",
+            "category": "pendant",
+            "type": "casual",
+            "price": 27000,
+            "tags": "latest",
+            "imagename": "diamond_pendant_dp18.jpg"
+        },
+        {
+            "id": "dp19",
+            "material": "diamond",
+            "category": "pendant",
+            "type": "bridal",
+            "price": 22000,
+            "tags": "",
+            "imagename": "diamond_pendant_dp19.jpg"
+        },
+        {
+            "id": "dr1",
+            "material": "diamond",
+            "category": "ring",
+            "type": "bridal",
+            "price": 55000,
+            "tags": "",
+            "imagename": "diamond_ring_dr1.jpg"
+        },
+        {
+            "id": "dr2",
+            "material": "diamond",
+            "category": "ring",
+            "type": "casual",
+            "price": 57000,
+            "tags": "latest",
+            "imagename": "diamond_ring_dr2.jpg"
+        },
+        {
+            "id": "dr3",
+            "material": "diamond",
+            "category": "ring",
+            "type": "antique",
+            "price": 84000,
+            "tags": "",
+            "imagename": "diamond_ring_dr3.jpg"
+        },
+        {
+            "id": "dr4",
+            "material": "diamond",
+            "category": "ring",
+            "type": "casual",
+            "price": 56000,
+            "tags": "",
+            "imagename": "diamond_ring_dr4.jpg"
+        },
+        {
+            "id": "dr5",
+            "material": "diamond",
+            "category": "ring",
+            "type": "bridal",
+            "price": 58900,
+            "tags": "trending",
+            "imagename": "diamond_ring_dr5.jpg"
+        },
+        {
+            "id": "dr6",
+            "material": "diamond",
+            "category": "ring",
+            "type": "casual",
+            "price": 66800,
+            "tags": "",
+            "imagename": "diamond_ring_dr6.jpg"
+        },
+        {
+            "id": "dr7",
+            "material": "diamond",
+            "category": "ring",
+            "type": "bridal",
+            "price": 61500,
+            "tags": "latest",
+            "imagename": "diamond_ring_dr7.jpg"
+        },
+        {
+            "id": "dr8",
+            "material": "diamond",
+            "category": "ring",
+            "type": "casual",
+            "price": 59999,
+            "tags": "",
+            "imagename": "diamond_ring_dr8.jpg"
+        },
+        {
+            "id": "dr9",
+            "material": "diamond",
+            "category": "ring",
+            "type": "casual",
+            "price": 67300,
+            "tags": "trending",
+            "imagename": "diamond_ring_dr9.jpg"
+        },
+        {
+            "id": "dr10",
+            "material": "diamond",
+            "category": "ring",
+            "type": "antique",
+            "price": 81000,
+            "tags": "",
+            "imagename": "diamond_ring_dr10.jpg"
+        },
+        {
+            "id": "dr11",
+            "material": "diamond",
+            "category": "ring",
+            "type": "casual",
+            "price": 79400,
+            "tags": "latest",
+            "imagename": "diamond_ring_dr11.jpg"
+        },
+        {
+            "id": "dr12",
+            "material": "diamond",
+            "category": "ring",
+            "type": "casual",
+            "price": 66300,
+            "tags": "",
+            "imagename": "diamond_ring_dr12.jpg"
+        },
+        {
+            "id": "dr13",
+            "material": "diamond",
+            "category": "ring",
+            "type": "antique",
+            "price": 76000,
+            "tags": "latesttrending",
+            "imagename": "diamond_ring_dr13.jpg"
+        },
+        {
+            "id": "dr14",
+            "material": "diamond",
+            "category": "ring",
+            "type": "bridal",
+            "price": 58000,
+            "tags": "",
+            "imagename": "diamond_ring_dr14.jpg"
+        },
+        {
+            "id": "dr15",
+            "material": "diamond",
+            "category": "ring",
+            "type": "casual",
+            "price": 55600,
+            "tags": "",
+            "imagename": "diamond_ring_dr15.jpg"
+        },
+        {
+            "id": "dr16",
+            "material": "diamond",
+            "category": "ring",
+            "type": "antique",
+            "price": 66200,
+            "tags": "",
+            "imagename": "diamond_ring_dr16.jpg"
+        },
+        {
+            "id": "dr17",
+            "material": "diamond",
+            "category": "ring",
+            "type": "casual",
+            "price": 49999,
+            "tags": "latest",
+            "imagename": "diamond_ring_dr17.jpg"
+        },
+        {
+            "id": "dr18",
+            "material": "diamond",
+            "category": "ring",
+            "type": "casual",
+            "price": 50000,
+            "tags": "",
+            "imagename": "diamond_ring_dr18.jpg"
+        },
+        {
+            "id": "dr19",
+            "material": "diamond",
+            "category": "ring",
+            "type": "casual",
+            "price": 34600,
+            "tags": "",
+            "imagename": "diamond_ring_dr19.jpg"
+        },
+        {
+            "id": "dr20",
+            "material": "diamond",
+            "category": "ring",
+            "type": "bridal",
+            "price": 60000,
+            "tags": "latest",
+            "imagename": "diamond_ring_dr20.jpg"
+        },
+        {
+            "id": "gb1",
+            "material": "gold",
+            "category": "bracelets",
+            "tags": "latesttrending",
+            "type": "casual",
+            "price": 56000,
+            "imagename": "gold_bracelets_gb1.jpg"
+        },
+        {
+            "id": "gb2",
+            "material": "gold",
+            "category": "bracelets",
+            "tags": "latest",
+            "type": "casual",
+            "price": 59000,
+            "imagename": "gold_bracelets_gb2.jpg"
+        },
+        {
+            "id": "gb3",
+            "material": "gold",
+            "category": "bracelets",
+            "tags": "latesttrending",
+            "type": "bridal",
+            "price": 55000,
+            "imagename": "gold_bracelets_gb3.jpg"
+        },
+        {
+            "id": "gb4",
+            "material": "gold",
+            "category": "bracelets",
+            "tags": "",
+            "type": "casual",
+            "price": 57500,
+            "imagename": "gold_bracelets_gb4.jpg"
+        },
+        {
+            "id": "gb5",
+            "material": "gold",
+            "category": "bracelets",
+            "tags": "latesttrending",
+            "type": "casual",
+            "price": 52000,
+            "imagename": "gold_bracelets_gb5.jpg"
+        },
+        {
+            "id": "gb6",
+            "material": "gold",
+            "category": "bracelets",
+            "tags": "",
+            "type": "antique",
+            "price": 60000,
+            "imagename": "gold_bracelets_gb6.jpg"
+        },
+        {
+            "id": "gb7",
+            "material": "gold",
+            "category": "bracelets",
+            "tags": "trending",
+            "type": "casual",
+            "price": 56300,
+            "imagename": "gold_bracelets_gb7.jpg"
+        },
+        {
+            "id": "gb8",
+            "material": "gold",
+            "category": "bracelets",
+            "tags": "latesttrending",
+            "type": "bridal",
+            "price": 53000,
+            "imagename": "gold_bracelets_gb8.jpg"
+        },
+        {
+            "id": "gb9",
+            "material": "gold",
+            "category": "bracelets",
+            "tags": "",
+            "type": "antique",
+            "price": 57000,
+            "imagename": "gold_bracelets_gb9.jpg"
+        },
+        {
+            "id": "gb10",
+            "material": "gold",
+            "category": "bracelets",
+            "tags": "",
+            "type": "casual",
+            "price": 55400,
+            "imagename": "gold_bracelets_gb10.jpg"
+        },
+        {
+            "id": "gb11",
+            "material": "gold",
+            "category": "bracelets",
+            "tags": "",
+            "type": "bridal",
+            "price": 49200,
+            "imagename": "gold_bracelets_gb11.jpg"
+        },
+        {
+            "id": "gb12",
+            "material": "gold",
+            "category": "bracelets",
+            "tags": "",
+            "type": "casual",
+            "price": 48000,
+            "imagename": "gold_bracelets_gb12.jpg"
+        },
+        {
+            "id": "gb13",
+            "material": "gold",
+            "category": "bracelets",
+            "tags": "trending",
+            "type": "casual",
+            "price": 51000,
+            "imagename": "gold_bracelets_gb13.jpg"
+        },
+        {
+            "id": "ge1",
+            "material": "gold",
+            "category": "earring",
+            "tags": "latest",
+            "type": "bridal",
+            "price": 43000,
+            "imagename": "gold_earring_ge1.jpg"
+        },
+        {
+            "id": "ge2",
+            "material": "gold",
+            "category": "earring",
+            "tags": "trending",
+            "type": "bridal",
+            "price": 46000,
+            "imagename": "gold_earring_ge2.jpg"
+        },
+        {
+            "id": "ge3",
+            "material": "gold",
+            "category": "earring",
+            "tags": "latest",
+            "type": "casual",
+            "price": 49000,
+            "imagename": "gold_earring_ge3.jpg"
+        },
+        {
+            "id": "ge4",
+            "material": "gold",
+            "category": "earring",
+            "tags": "",
+            "type": "antique",
+            "price": 39000,
+            "imagename": "gold_earring_ge4.jpg"
+        },
+        {
+            "id": "ge5",
+            "material": "gold",
+            "category": "earring",
+            "tags": "",
+            "type": "bridal",
+            "price": 51000,
+            "imagename": "gold_earring_ge5.jpg"
+        },
+        {
+            "id": "ge6",
+            "material": "gold",
+            "category": "earring",
+            "tags": "",
+            "type": "casual",
+            "price": 42500,
+            "imagename": "gold_earring_ge6.jpg"
+        },
+        {
+            "id": "ge7",
+            "material": "gold",
+            "category": "earring",
+            "tags": "trending",
+            "type": "bridal",
+            "price": 56300,
+            "imagename": "gold_earring_ge7.jpg"
+        },
+        {
+            "id": "ge8",
+            "material": "gold",
+            "category": "earring",
+            "tags": "",
+            "price": 49400,
+            "imagename": "gold_earring_ge8.jpg"
+        },
+        {
+            "id": "ge9",
+            "material": "gold",
+            "category": "earring",
+            "tags": "",
+            "type": "bridal",
+            "price": 32000,
+            "imagename": "gold_earring_ge9.jpg"
+        },
+        {
+            "id": "ge10",
+            "material": "gold",
+            "category": "earring",
+            "tags": "latesttrending",
+            "type": "bridal",
+            "price": 45700,
+            "imagename": "gold_earring_ge10.jpg"
+        },
+        {
+            "id": "ge11",
+            "material": "gold",
+            "category": "earring",
+            "tags": "latest",
+            "type": "casual",
+            "price": 50100,
+            "imagename": "gold_earring_ge11.jpg"
+        },
+        {
+            "id": "ge12",
+            "material": "gold",
+            "category": "earring",
+            "tags": "",
+            "type": "casual",
+            "price": 53000,
+            "imagename": "gold_earring_ge12.jpg"
+        },
+        {
+            "id": "ge13",
+            "material": "gold",
+            "category": "earring",
+            "tags": "",
+            "type": "bridal",
+            "price": 48900,
+            "imagename": "gold_earring_ge13.jpg"
+        },
+        {
+            "id": "ge14",
+            "material": "gold",
+            "category": "earring",
+            "tags": "trending",
+            "type": "antique",
+            "price": 43900,
+            "imagename": "gold_earring_ge14.jpg"
+        },
+        {
+            "id": "gn1",
+            "material": "gold",
+            "category": "necklace",
+            "tags": "",
+            "type": "casual",
+            "price": 71000,
+            "imagename": "gold_necklace_gn1.jpg"
+        },
+        {
+            "id": "gn2",
+            "material": "gold",
+            "category": "necklace",
+            "tags": "trending",
+            "type": "casual",
+            "price": 72000,
+            "imagename": "gold_necklace_gn2.jpg"
+        },
+        {
+            "id": "gn3",
+            "material": "gold",
+            "category": "necklace",
+            "tags": "",
+            "type": "casual",
+            "price": 67400,
+            "imagename": "gold_necklace_gn3.jpg"
+        },
+        {
+            "id": "gn4",
+            "material": "gold",
+            "category": "necklace",
+            "tags": "",
+            "type": "casual",
+            "price": 74000,
+            "imagename": "gold_necklace_gn4.jpg"
+        },
+        {
+            "id": "gn5",
+            "material": "gold",
+            "category": "necklace",
+            "tags": "trending",
+            "type": "antique",
+            "price": 69000,
+            "imagename": "gold_necklace_gn5.jpg"
+        },
+        {
+            "id": "gn6",
+            "material": "gold",
+            "category": "necklace",
+            "tags": "latest",
+            "type": "casual",
+            "price": 66000,
+            "imagename": "gold_necklace_gn6.jpg"
+        },
+        {
+            "id": "gn7",
+            "material": "gold",
+            "category": "necklace",
+            "tags": "",
+            "type": "casual",
+            "price": 73500,
+            "imagename": "gold_necklace_gn7.jpg"
+        },
+        {
+            "id": "gn8",
+            "material": "gold",
+            "category": "necklace",
+            "tags": "latest",
+            "type": "casual",
+            "price": 80000,
+            "imagename": "gold_necklace_gn8.jpg"
+        },
+        {
+            "id": "gn9",
+            "material": "gold",
+            "category": "necklace",
+            "tags": "",
+            "type": "casual",
+            "price": 74999,
+            "imagename": "gold_necklace_gn9.jpg"
+        },
+        {
+            "id": "gn10",
+            "material": "gold",
+            "category": "necklace",
+            "tags": "",
+            "type": "bridal",
+            "price": 86000,
+            "imagename": "gold_necklace_gn10.jpg"
+        },
+        {
+            "id": "gn11",
+            "material": "gold",
+            "category": "necklace",
+            "tags": "",
+            "type": "casual",
+            "price": 77000,
+            "imagename": "gold_necklace_gn11.jpg"
+        },
+        {
+            "id": "gn12",
+            "material": "gold",
+            "category": "necklace",
+            "tags": "latesttrending",
+            "type": "casual",
+            "price": 82400,
+            "imagename": "gold_necklace_gn12.jpg"
+        },
+        {
+            "id": "gn13",
+            "material": "gold",
+            "category": "necklace",
+            "tags": "",
+            "type": "casual",
+            "price": 99000,
+            "imagename": "gold_necklace_gn13.jpg"
+        },
+        {
+            "id": "gn14",
+            "material": "gold",
+            "category": "necklace",
+            "tags": "trending",
+            "type": "bridal",
+            "price": 79499,
+            "imagename": "gold_necklace_gn14.jpg"
+        },
+        {
+            "id": "gn15",
+            "material": "gold",
+            "category": "necklace",
+            "tags": "",
+            "type": "casual",
+            "price": 87000,
+            "imagename": "gold_necklace_gn15.jpg"
+        },
+        {
+            "id": "gn16",
+            "material": "gold",
+            "category": "necklace",
+            "tags": "",
+            "type": "antique",
+            "price": 68500,
+            "imagename": "gold_necklace_gn16.jpg"
+        },
+        {
+            "id": "gn17",
+            "material": "gold",
+            "category": "necklace",
+            "tags": "trending",
+            "type": "casual",
+            "price": 70500,
+            "imagename": "gold_necklace_gn17.jpg"
+        },
+        {
+            "id": "gn17",
+            "material": "gold",
+            "category": "necklace",
+            "tags": "",
+            "price": 73500,
+            "imagename": "gold_necklace_gn17.jpg"
+        },
+        {
+            "id": "gn17",
+            "material": "gold",
+            "category": "necklace",
+            "tags": "",
+            "price": 69499,
+            "imagename": "gold_necklace_gn17.jpg"
+        },
+        {
+            "id": "gn17",
+            "material": "gold",
+            "category": "necklace",
+            "tags": "",
+            "price": 71000,
+            "imagename": "gold_necklace_gn17.jpg"
+        },
+        {
+            "id": "gp1",
+            "material": "gold",
+            "category": "pendant",
+            "type": "bridal",
+            "price": 30000,
+            "tags": "",
+            "imagename": "gold_pendant_gp1.jpg"
+        },
+        {
+            "id": "gp2",
+            "material": "gold",
+            "category": "pendant",
+            "type": "antique",
+            "price": 31000,
+            "tags": "latesttrending",
+            "imagename": "gold_pendant_gp2.jpg"
+        },
+        {
+            "id": "gp3",
+            "material": "gold",
+            "category": "pendant",
+            "type": "casual",
+            "price": 27999,
+            "tags": "",
+            "imagename": "gold_pendant_gp3.jpg"
+        },
+        {
+            "id": "gp4",
+            "material": "gold",
+            "category": "pendant",
+            "type": "bridal",
+            "price": 21500,
+            "tags": "latest",
+            "imagename": "gold_pendant_gp4.jpg"
+        },
+        {
+            "id": "gp5",
+            "material": "gold",
+            "category": "pendant",
+            "type": "antique",
+            "price": 21000,
+            "tags": "trending",
+            "imagename": "gold_pendant_gp5.jpg"
+        },
+        {
+            "id": "gp6",
+            "material": "gold",
+            "category": "pendant",
+            "type": "antique",
+            "price": 26000,
+            "tags": "",
+            "imagename": "gold_pendant_gp6.jpg"
+        },
+        {
+            "id": "gp7",
+            "material": "gold",
+            "category": "pendant",
+            "type": "bridal",
+            "price": 31500,
+            "tags": "",
+            "imagename": "gold_pendant_gp7.jpg"
+        },
+        {
+            "id": "gp8",
+            "material": "gold",
+            "category": "pendant",
+            "type": "casual",
+            "price": 20000,
+            "tags": "latesttrending",
+            "imagename": "gold_pendant_gp8.jpg"
+        },
+        {
+            "id": "gp9",
+            "material": "gold",
+            "category": "pendant",
+            "type": "antique",
+            "price": 24500,
+            "tags": "",
+            "imagename": "gold_pendant_gp9.jpg"
+        },
+        {
+            "id": "gp10",
+            "material": "gold",
+            "category": "pendant",
+            "type": "casual",
+            "price": 29999,
+            "tags": "",
+            "imagename": "gold_pendant_gp10.jpg"
+        },
+        {
+            "id": "gp11",
+            "material": "gold",
+            "category": "pendant",
+            "type": "casual",
+            "price": 22500,
+            "tags": null,
+            "imagename": "gold_pendant_gp11.jpg"
+        },
+        {
+            "id": "gp12",
+            "material": "gold",
+            "category": "pendant",
+            "type": "antique",
+            "price": 82400,
+            "tags": "",
+            "imagename": "gold_pendant_gp12.jpg"
+        },
+        {
+            "id": "gp13",
+            "material": "gold",
+            "category": "pendant",
+            "type": "casual",
+            "price": 25300,
+            "tags": "latest",
+            "imagename": "gold_pendant_gp13.jpg"
+        },
+        {
+            "id": "gr1",
+            "material": "gold",
+            "category": "ring",
+            "type": "bridal",
+            "price": 55000,
+            "tags": "",
+            "imagename": "gold_ring_gr1.jpg"
+        },
+        {
+            "id": "gr2",
+            "material": "gold",
+            "category": "ring",
+            "type": "casual",
+            "price": 57000,
+            "tags": "latest",
+            "imagename": "gold_ring_gr2.jpg"
+        },
+        {
+            "id": "gr3",
+            "material": "gold",
+            "category": "ring",
+            "type": "antique",
+            "price": 84000,
+            "tags": "",
+            "imagename": "gold_ring_gr3.jpg"
+        },
+        {
+            "id": "gr4",
+            "material": "gold",
+            "category": "ring",
+            "type": "casual",
+            "price": 56000,
+            "tags": "",
+            "imagename": "gold_ring_gr4.jpg"
+        },
+        {
+            "id": "gr5",
+            "material": "gold",
+            "category": "ring",
+            "type": "bridal",
+            "price": 58900,
+            "tags": "trending",
+            "imagename": "gold_ring_gr5.jpg"
+        },
+        {
+            "id": "gr6",
+            "material": "gold",
+            "category": "ring",
+            "type": "casual",
+            "price": 66800,
+            "tags": "",
+            "imagename": "gold_ring_gr6.jpg"
+        },
+        {
+            "id": "gr7",
+            "material": "gold",
+            "category": "ring",
+            "type": "bridal",
+            "price": 61500,
+            "tags": "latest",
+            "imagename": "gold_ring_gr7.jpg"
+        },
+        {
+            "id": "gr8",
+            "material": "gold",
+            "category": "ring",
+            "type": "casual",
+            "price": 59999,
+            "tags": "",
+            "imagename": "gold_ring_gr8.jpg"
+        },
+        {
+            "id": "gr9",
+            "material": "gold",
+            "category": "ring",
+            "type": "casual",
+            "price": 67300,
+            "tags": "trending",
+            "imagename": "gold_ring_gr9.jpg"
+        },
+        {
+            "id": "gr10",
+            "material": "gold",
+            "category": "ring",
+            "type": "antique",
+            "price": 81000,
+            "tags": "",
+            "imagename": "gold_ring_gr10.jpg"
+        },
+        {
+            "id": "gr11",
+            "material": "gold",
+            "category": "ring",
+            "type": "casual",
+            "price": 79400,
+            "tags": "latest",
+            "imagename": "gold_ring_gr11.jpg"
+        },
+        {
+            "id": "gr12",
+            "material": "gold",
+            "category": "ring",
+            "type": "casual",
+            "price": 66300,
+            "tags": "",
+            "imagename": "gold_ring_gr12.jpg"
+        },
+        {
+            "id": "gr13",
+            "material": "gold",
+            "category": "ring",
+            "type": "antique",
+            "price": 76000,
+            "tags": "latesttrending",
+            "imagename": "gold_ring_gr13.jpg"
+        },
+        {
+            "id": "gr14",
+            "material": "gold",
+            "category": "ring",
+            "type": "bridal",
+            "price": 58000,
+            "tags": "",
+            "imagename": "gold_ring_gr14.jpg"
+        },
+        {
+            "id": "gr15",
+            "material": "gold",
+            "category": "ring",
+            "type": "casual",
+            "price": 55600,
+            "tags": "",
+            "imagename": "gold_ring_gr15.jpg"
+        },
+        {
+            "id": "gr16",
+            "material": "gold",
+            "category": "ring",
+            "type": "antique",
+            "price": 66200,
+            "tags": "",
+            "imagename": "gold_ring_gr16.jpg"
+        },
+        {
+            "id": "gr17",
+            "material": "gold",
+            "category": "ring",
+            "type": "casual",
+            "price": 49999,
+            "tags": "latest",
+            "imagename": "gold_ring_gr17.jpg"
+        },
+        {
+            "id": "gr18",
+            "material": "gold",
+            "category": "ring",
+            "type": "casual",
+            "price": 50000,
+            "tags": "",
+            "imagename": "gold_ring_gr18.jpg"
+        },
+        {
+            "id": "gr19",
+            "material": "gold",
+            "category": "ring",
+            "type": "casual",
+            "price": 34600,
+            "tags": "",
+            "imagename": "gold_ring_gr19.jpg"
+        },
+        {
+            "id": "gr20",
+            "material": "gold",
+            "category": "ring",
+            "type": "bridal",
+            "price": 60000,
+            "tags": "latest",
+            "imagename": "gold_ring_gr20.jpg"
+        },
+        {
+            "id": "sb1",
+            "material": "silver",
+            "category": "bracelets",
+            "tags": "latesttrending",
+            "type": "casual",
+            "price": 56000,
+            "imagename": "silver_bracelets_sb1.jpg"
+        },
+        {
+            "id": "sb2",
+            "material": "silver",
+            "category": "bracelets",
+            "tags": "latest",
+            "type": "casual",
+            "price": 59000,
+            "imagename": "silver_bracelets_sb2.jpg"
+        },
+        {
+            "id": "sb3",
+            "material": "silver",
+            "category": "bracelets",
+            "tags": "latesttrending",
+            "type": "bridal",
+            "price": 55000,
+            "imagename": "silver_bracelets_sb3.jpg"
+        },
+        {
+            "id": "sb4",
+            "material": "silver",
+            "category": "bracelets",
+            "tags": "",
+            "type": "casual",
+            "price": 57500,
+            "imagename": "silver_bracelets_sb4.jpg"
+        },
+        {
+            "id": "sb5",
+            "material": "silver",
+            "category": "bracelets",
+            "tags": "latesttrending",
+            "type": "casual",
+            "price": 52000,
+            "imagename": "silver_bracelets_sb5.jpg"
+        },
+        {
+            "id": "sb6",
+            "material": "silver",
+            "category": "bracelets",
+            "tags": "",
+            "type": "antique",
+            "price": 60000,
+            "imagename": "silver_bracelets_sb6.jpg"
+        },
+        {
+            "id": "sb7",
+            "material": "silver",
+            "category": "bracelets",
+            "tags": "trending",
+            "type": "casual",
+            "price": 56300,
+            "imagename": "silver_bracelets_sb7.jpg"
+        },
+        {
+            "id": "sb8",
+            "material": "silver",
+            "category": "bracelets",
+            "tags": "latesttrending",
+            "type": "bridal",
+            "price": 53000,
+            "imagename": "silver_bracelets_sb8.jpg"
+        },
+        {
+            "id": "sb9",
+            "material": "silver",
+            "category": "bracelets",
+            "tags": "",
+            "type": "antique",
+            "price": 57000,
+            "imagename": "silver_bracelets_sb9.jpg"
+        },
+        {
+            "id": "sb10",
+            "material": "silver",
+            "category": "bracelets",
+            "tags": "",
+            "type": "casual",
+            "price": 55400,
+            "imagename": "silver_bracelets_sb10.jpg"
+        },
+        {
+            "id": "sb11",
+            "material": "silver",
+            "category": "bracelets",
+            "tags": "",
+            "type": "bridal",
+            "price": 49200,
+            "imagename": "silver_bracelets_sb11.jpg"
+        },
+        {
+            "id": "sb12",
+            "material": "silver",
+            "category": "bracelets",
+            "tags": "",
+            "type": "casual",
+            "price": 48000,
+            "imagename": "silver_bracelets_sb12.jpg"
+        },
+        {
+            "id": "se1",
+            "material": "silver",
+            "category": "earring",
+            "tags": "latest",
+            "type": "bridal",
+            "price": 43000,
+            "imagename": "silver_earring_se1.jpg"
+        },
+        {
+            "id": "se2",
+            "material": "silver",
+            "category": "earring",
+            "tags": "trending",
+            "type": "bridal",
+            "price": 46000,
+            "imagename": "silver_earring_se2.jpg"
+        },
+        {
+            "id": "se3",
+            "material": "silver",
+            "category": "earring",
+            "tags": "latest",
+            "type": "casual",
+            "price": 49000,
+            "imagename": "silver_earring_se3.jpg"
+        },
+        {
+            "id": "se4",
+            "material": "silver",
+            "category": "earring",
+            "tags": "",
+            "type": "antique",
+            "price": 39000,
+            "imagename": "silver_earring_se4.jpg"
+        },
+        {
+            "id": "se5",
+            "material": "silver",
+            "category": "earring",
+            "tags": "",
+            "type": "bridal",
+            "price": 51000,
+            "imagename": "silver_earring_se5.jpg"
+        },
+        {
+            "id": "se6",
+            "material": "silver",
+            "category": "earring",
+            "tags": "",
+            "type": "casual",
+            "price": 42500,
+            "imagename": "silver_earring_se6.jpg"
+        },
+        {
+            "id": "se7",
+            "material": "silver",
+            "category": "earring",
+            "tags": "trending",
+            "type": "bridal",
+            "price": 56300,
+            "imagename": "silver_earring_se7.jpg"
+        },
+        {
+            "id": "se8",
+            "material": "silver",
+            "category": "earring",
+            "tags": "",
+            "price": 49400,
+            "imagename": "silver_earring_se8.jpg"
+        },
+        {
+            "id": "se9",
+            "material": "silver",
+            "category": "earring",
+            "tags": "",
+            "type": "bridal",
+            "price": 32000,
+            "imagename": "silver_earring_se9.jpg"
+        },
+        {
+            "id": "se10",
+            "material": "silver",
+            "category": "earring",
+            "tags": "latesttrending",
+            "type": "bridal",
+            "price": 45700,
+            "imagename": "silver_earring_se10.jpg"
+        },
+        {
+            "id": "se11",
+            "material": "silver",
+            "category": "earring",
+            "tags": "latest",
+            "type": "casual",
+            "price": 50100,
+            "imagename": "silver_earring_se11.jpg"
+        },
+        {
+            "id": "se12",
+            "material": "silver",
+            "category": "earring",
+            "tags": "",
+            "type": "casual",
+            "price": 53000,
+            "imagename": "silver_earring_se12.jpg"
+        },
+        {
+            "id": "se13",
+            "material": "silver",
+            "category": "earring",
+            "tags": "",
+            "type": "bridal",
+            "price": 48900,
+            "imagename": "silver_earring_se13.jpg"
+        },
+        {
+            "id": "se14",
+            "material": "silver",
+            "category": "earring",
+            "tags": "trending",
+            "type": "antique",
+            "price": 43900,
+            "imagename": "silver_earring_se14.jpg"
+        },
+        {
+            "id": "se14",
+            "material": "silver",
+            "category": "earring",
+            "tags": "trending",
+            "type": "antique",
+            "price": 43900,
+            "imagename": "silver_earring_se14.jpg"
+        },
+        {
+            "id": "sn1",
+            "material": "silver",
+            "category": "necklace",
+            "tags": "",
+            "type": "casual",
+            "price": 71000,
+            "imagename": "silver_necklace_sn1.jpg"
+        },
+        {
+            "id": "sn2",
+            "material": "silver",
+            "category": "necklace",
+            "tags": "trending",
+            "type": "casual",
+            "price": 72000,
+            "imagename": "silver_necklace_sn2.jpg"
+        },
+        {
+            "id": "sn3",
+            "material": "silver",
+            "category": "necklace",
+            "tags": "",
+            "type": "casual",
+            "price": 67400,
+            "imagename": "silver_necklace_sn3.jpg"
+        },
+        {
+            "id": "sn4",
+            "material": "silver",
+            "category": "necklace",
+            "tags": "",
+            "type": "casual",
+            "price": 74000,
+            "imagename": "silver_necklace_sn4.jpg"
+        },
+        {
+            "id": "sn5",
+            "material": "silver",
+            "category": "necklace",
+            "tags": "trending",
+            "type": "antique",
+            "price": 69000,
+            "imagename": "silver_necklace_sn5.jpg"
+        },
+        {
+            "id": "sn6",
+            "material": "silver",
+            "category": "necklace",
+            "tags": "latest",
+            "type": "casual",
+            "price": 66000,
+            "imagename": "silver_necklace_sn6.jpg"
+        },
+        {
+            "id": "sn7",
+            "material": "silver",
+            "category": "necklace",
+            "tags": "",
+            "type": "casual",
+            "price": 73500,
+            "imagename": "silver_necklace_sn7.jpg"
+        },
+        {
+            "id": "sn8",
+            "material": "silver",
+            "category": "necklace",
+            "tags": "latest",
+            "type": "casual",
+            "price": 80000,
+            "imagename": "silver_necklace_sn8.jpg"
+        },
+        {
+            "id": "sn9",
+            "material": "silver",
+            "category": "necklace",
+            "tags": "",
+            "type": "casual",
+            "price": 74999,
+            "imagename": "silver_necklace_sn9.jpg"
+        },
+        {
+            "id": "sn10",
+            "material": "silver",
+            "category": "necklace",
+            "tags": "",
+            "type": "bridal",
+            "price": 86000,
+            "imagename": "silver_necklace_sn10.jpg"
+        },
+        {
+            "id": "sn11",
+            "material": "silver",
+            "category": "necklace",
+            "tags": "",
+            "type": "casual",
+            "price": 77000,
+            "imagename": "silver_necklace_sn11.jpg"
+        },
+        {
+            "id": "sn12",
+            "material": "silver",
+            "category": "necklace",
+            "tags": "latesttrending",
+            "type": "casual",
+            "price": 82400,
+            "imagename": "silver_necklace_sn12.jpg"
+        },
+        {
+            "id": "gp1",
+            "material": "silver",
+            "category": "pendant",
+            "type": "bridal",
+            "price": 30000,
+            "tags": "",
+            "imagename": "silver_pendant_gp1.jpg"
+        },
+        {
+            "id": "gp2",
+            "material": "silver",
+            "category": "pendant",
+            "type": "antique",
+            "price": 31000,
+            "tags": "latesttrending",
+            "imagename": "silver_pendant_gp2.jpg"
+        },
+        {
+            "id": "gp3",
+            "material": "silver",
+            "category": "pendant",
+            "type": "casual",
+            "price": 27999,
+            "tags": "",
+            "imagename": "silver_pendant_gp3.jpg"
+        },
+        {
+            "id": "gp4",
+            "material": "silver",
+            "category": "pendant",
+            "type": "bridal",
+            "price": 21500,
+            "tags": "latest",
+            "imagename": "silver_pendant_gp4.jpg"
+        },
+        {
+            "id": "gp5",
+            "material": "silver",
+            "category": "pendant",
+            "type": "antique",
+            "price": 21000,
+            "tags": "trending",
+            "imagename": "silver_pendant_gp5.jpg"
+        },
+        {
+            "id": "gp6",
+            "material": "silver",
+            "category": "pendant",
+            "type": "antique",
+            "price": 26000,
+            "tags": "",
+            "imagename": "silver_pendant_gp6.jpg"
+        },
+        {
+            "id": "gp7",
+            "material": "silver",
+            "category": "pendant",
+            "type": "bridal",
+            "price": 31500,
+            "tags": "",
+            "imagename": "silver_pendant_gp7.jpg"
+        },
+        {
+            "id": "gp8",
+            "material": "silver",
+            "category": "pendant",
+            "type": "casual",
+            "price": 20000,
+            "tags": "latesttrending",
+            "imagename": "silver_pendant_gp8.jpg"
+        },
+        {
+            "id": "gp9",
+            "material": "silver",
+            "category": "pendant",
+            "type": "antique",
+            "price": 24500,
+            "tags": "",
+            "imagename": "silver_pendant_gp9.jpg"
+        },
+        {
+            "id": "gp10",
+            "material": "silver",
+            "category": "pendant",
+            "type": "casual",
+            "price": 29999,
+            "tags": "",
+            "imagename": "silver_pendant_gp10.jpg"
+        },
+        {
+            "id": "gp11",
+            "material": "silver",
+            "category": "pendant",
+            "type": "casual",
+            "price": 22500,
+            "tags": null,
+            "imagename": "silver_pendant_gp11.jpg"
+        },
+        {
+            "id": "gp12",
+            "material": "silver",
+            "category": "pendant",
+            "type": "antique",
+            "price": 82400,
+            "tags": "",
+            "imagename": "silver_pendant_gp12.jpg"
+        },
+        {
+            "id": "gp13",
+            "material": "silver",
+            "category": "pendant",
+            "type": "casual",
+            "price": 25300,
+            "tags": "latest",
+            "imagename": "silver_pendant_gp13.jpg"
+        },
+        {
+            "id": "gp14",
+            "material": "silver",
+            "category": "pendant",
+            "type": "casual",
+            "price": 29999,
+            "tags": "",
+            "imagename": "silver_pendant_gp14.jpg"
+        },
+        {
+            "id": "gp15",
+            "material": "silver",
+            "category": "pendant",
+            "type": "casual",
+            "price": 22500,
+            "tags": null,
+            "imagename": "silver_pendant_gp15.jpg"
+        },
+        {
+            "id": "gp16",
+            "material": "silver",
+            "category": "pendant",
+            "type": "antique",
+            "price": 82400,
+            "tags": "",
+            "imagename": "silver_pendant_gp16.jpg"
+        },
+        {
+            "id": "gp17",
+            "material": "silver",
+            "category": "pendant",
+            "type": "casual",
+            "price": 25300,
+            "tags": "latest",
+            "imagename": "silver_pendant_gp17.jpg"
+        },
+        {
+            "id": "sr1",
+            "material": "silver",
+            "category": "ring",
+            "type": "bridal",
+            "price": 55000,
+            "tags": "",
+            "imagename": "silver_ring_sr1.jpg"
+        },
+        {
+            "id": "sr2",
+            "material": "silver",
+            "category": "ring",
+            "type": "casual",
+            "price": 57000,
+            "tags": "latest",
+            "imagename": "silver_ring_sr2.jpg"
+        },
+        {
+            "id": "sr3",
+            "material": "silver",
+            "category": "ring",
+            "type": "antique",
+            "price": 84000,
+            "tags": "",
+            "imagename": "silver_ring_sr3.jpg"
+        },
+        {
+            "id": "sr4",
+            "material": "silver",
+            "category": "ring",
+            "type": "casual",
+            "price": 56000,
+            "tags": "",
+            "imagename": "silver_ring_sr4.jpg"
+        },
+        {
+            "id": "sr5",
+            "material": "silver",
+            "category": "ring",
+            "type": "bridal",
+            "price": 58900,
+            "tags": "trending",
+            "imagename": "silver_ring_sr5.jpg"
+        },
+        {
+            "id": "sr6",
+            "material": "silver",
+            "category": "ring",
+            "type": "casual",
+            "price": 66800,
+            "tags": "",
+            "imagename": "silver_ring_sr6.jpg"
+        },
+        {
+            "id": "sr7",
+            "material": "silver",
+            "category": "ring",
+            "type": "bridal",
+            "price": 61500,
+            "tags": "latest",
+            "imagename": "silver_ring_sr7.jpg"
+        },
+        {
+            "id": "sr8",
+            "material": "silver",
+            "category": "ring",
+            "type": "casual",
+            "price": 59999,
+            "tags": "",
+            "imagename": "silver_ring_sr8.jpg"
+        },
+        {
+            "id": "sr9",
+            "material": "silver",
+            "category": "ring",
+            "type": "casual",
+            "price": 67300,
+            "tags": "trending",
+            "imagename": "silver_ring_sr9.jpg"
+        },
+        {
+            "id": "sr10",
+            "material": "silver",
+            "category": "ring",
+            "type": "antique",
+            "price": 81000,
+            "tags": "",
+            "imagename": "silver_ring_sr10.jpg"
+        },
+        {
+            "id": "sr11",
+            "material": "silver",
+            "category": "ring",
+            "type": "casual",
+            "price": 79400,
+            "tags": "latest",
+            "imagename": "silver_ring_sr11.jpg"
+        },
+        {
+            "id": "sr12",
+            "material": "silver",
+            "category": "ring",
+            "type": "casual",
+            "price": 66300,
+            "tags": "",
+            "imagename": "silver_ring_sr12.jpg"
+        },
+        {
+            "id": "sr13",
+            "material": "silver",
+            "category": "ring",
+            "type": "antique",
+            "price": 76000,
+            "tags": "latesttrending",
+            "imagename": "silver_ring_sr13.jpg"
+        },
+        {
+            "id": "sr14",
+            "material": "silver",
+            "category": "ring",
+            "type": "bridal",
+            "price": 58000,
+            "tags": "",
+            "imagename": "silver_ring_sr14.jpg"
+        },
+        {
+            "id": "sr15",
+            "material": "silver",
+            "category": "ring",
+            "type": "casual",
+            "price": 55600,
+            "tags": "",
+            "imagename": "silver_ring_sr15.jpg"
+        },
+        {
+            "id": "sr16",
+            "material": "silver",
+            "category": "ring",
+            "type": "antique",
+            "price": 66200,
+            "tags": "",
+            "imagename": "silver_ring_sr16.jpg"
+        },
+        {
+            "id": "sr17",
+            "material": "silver",
+            "category": "ring",
+            "type": "casual",
+            "price": 49999,
+            "tags": "latest",
+            "imagename": "silver_ring_sr17.jpg"
+        },
+        {
+            "id": "sr18",
+            "material": "silver",
+            "category": "ring",
+            "type": "casual",
+            "price": 50000,
+            "tags": "",
+            "imagename": "silver_ring_sr18.jpg"
+        },
+        {
+            "id": "sr19",
+            "material": "silver",
+            "category": "ring",
+            "type": "casual",
+            "price": 34600,
+            "tags": "",
+            "imagename": "silver_ring_sr19.jpg"
+        },
+        {
+            "id": "sr20",
+            "material": "silver",
+            "category": "ring",
+            "type": "bridal",
+            "price": 60000,
+            "tags": "latest",
+            "imagename": "silver_ring_sr20.jpg"
+        }
+    ]
+}

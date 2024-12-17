@@ -1,0 +1,194 @@
+npm install -g @angular/cli
+npm install -g @angular/cli@18
+ng --version
+ng new myangularproject
+ng s/serve -o
+
+==========
+11/12/2024
+==========
+
+*angular : -it is a JS framework.
+            -it provide designing and development platform for creating single page application
+            -latest version is 18
+            -Angular is developed and maintained by google
+
+*S/W pre-requisit:
+        -nodejs
+        -ts
+        -angular
+
+*angular workd on component: 
+    -component : it is partial part of anular project.
+                it contain logical code for angular project.
+                it can be any part of project, which we can reuse multiple time
+
+-In angular root component name is App:
+
+*how to create component in angular
+    -npx ng generate component componentName / npx ng g c componentName
+
+-creating component generates four files
+    1. html
+    2. css
+    3. ts
+    4. spec.ts
+
+-how to get output of individual component
+    1. go to component ts file copy its selector name and write as a tag in app.HTML file.
+    2. import the component in app.ts and append its name in imports Decorator.
+
+
+*Databinding : -getting/ accessing data from one file to another file in same component
+    1. interpolation: {{}} - in this we send data from ts => html
+    2. property binding: [] - in this we set attripute/property values form ts => html
+    3. event binding (): in this we send data fro html => ts
+    4. two-way databinding [()] : in this we can send data from ts <=> html
+            -to perform two-way data binding we have to use ngModel directory, but ngModel directory is not a part of core anfular module, it is part of formsModule ,
+            -for this first we hace to import formsModule in component.ts file.
+
+*directive inAngular
+-it is used o tchange appearance and behavour as  well as preform DOM Manipulation.
+    -there are three types of directives 
+        1. Structural directives : -it is used to perform DOM manipulation in angular.
+                                    -Structural directive are denoted with *
+                                    -Structural directive are *ngIf, *ngFor, *ngSwitchCase
+                                    - we can apply one directive at a time to single element
+                                    -it is part of common module, so first we have to import Common 
+
+                        -ng-template display output based on condition.
+                        -to create a reference variable we use #.
+        2. Attribute directives : 
+                    -ngStyle: it is used to apply property on the basis of condition
+                    -ngClass: it is used to apply css on the basis of condition
+                    -ngModel: it is used to perform 2-way dataBinding
+
+        3. Custom directives : 
+                    -the directive created by developer -> ng g directive directivename
+
+
+
+*use of template refference variable
+
+parent -> @inputdecorator->child
+
+child -> @outputdecorator-> parent
+    - instance of event emitter class
+
+*Input() Decorator - it is used to send the data from parent component to child component
+*Output() Decorator - it is used to send the data from child component to parent component
+
+
+*Pipes :
+    -it is used to transform property value without changing its original value.
+    -it is denoted by vertical "|" sign.
+    - there are three types of pipe inangular.
+        1. inbuilt pipe : pipe provided by angular.
+                            - to use inbuilt pipe we have to import common module
+        2. custom pipe : pipe crated by developer for a specific use
+                            -ng generate pipe [location] pipeName
+                            -ng g p [location] pipeName
+        3. third party pipe : pipes that are already developed by third party vender, first we have to install it and then use it.
+
+
+
+*how to bootstrap in angular
+    -npm install bootstrap
+    -go to angular.json file and in its style array import its path.
+    -restart the angular server.
+
+
+
+Layout [Nav, pagenotfound, maindashboard, footer, login]
+forms[angform, utdf, rtf, ] 
+    -user template driven form
+    -reactive template form
+
+*Routing in angular : 
+    -navigaiton of component
+    - to display component output or navigating component using routing in angular for it we write code in app.routes.ts file
+    -in angular all routing component will display its output below <router-outlet></router-outlet> directory
+    
+    types:
+        1.naming 
+        2. default 
+        3.re-direct routing 
+        4.parameterize routing
+        5. child routing
+        6. wild-card routing
+
+
+----------
+12/12/2024
+----------
+
+*How to navigate in angular
+    -to perform component navigation we have to use routerLink property with anchor tag, after inporting RouterLink.
+
+*angular form
+    -there are two types of forms:
+        1. UTDF : use template driven form
+            -when we have crated simple form validation in that case we use it.
+            -to prtform validation we have to use ngModel directory with input element
+            -in this ngForm directory will hold data of all element in it
+            -in utdf form validation code reside in html file
+
+        2. RTF : reactive template form
+            -when we have to write complex logic to perform form validation in that case we use rtf.
+            -to use rtf form validation first we have to inport ReactiveFormsModule from FormsModule in component.
+            -in this we use mainly two classes 
+            -in rtf form validation code reside in ts file
+                i. FormGroup : it will hold information of all input element
+                ii.FormControl : it will hold information of individual input element
+
+ngUntouched     ngprestine      nginvalid
+ngtouched     ngDirty      ngvalid
+
+classlife cycle methods.
+1. ngOnInit
+
+
+
+
+
+
+*Service : 
+    -in angular service in a special class with special/extra power
+    -it is used for multiple uses,
+        1.to share a data with multiple components
+        2.we can implement business logic in it
+        3.we can perform external communication(database connection)
+
+*how to create service  
+    -npx ng service serviceName.
+
+*how to access data from service into angular component
+    -if you want to access service data into angular component for this first we have to import service in component ts file and create instance of service class.
+
+*How to make fake API request from Angular to server
+    - to send request from angular service to server for this wer have to ceate HTTPClient class in service constructor. but HTTPClient class is not a part of core angular. It is part of HttpClientModule,
+    -so first we have to import providerHttpClient as well as withJsonpSupport in app.config.ts file and make entry  of these library in provider array.
+    =>provideHttpClient(withJsonpSupport()),
+
+
+
+*Consurrent Library:
+"json-server" : "cd src/app/shared/database && npx json-server --watch -p 8888 db.json"
+"start-dev" : "npx concurrently \"ng serve -o\"\"npm run json-server\"",
+
+
+
+*guard : inangular guard is used to prevent rendering of routing compnent.
+        -it return boolean value wither trur or false
+        -if it return true then component will render otherwise not
+
+    => ng g guard guardname
+
+
+http-anular-server
+npm isntall -g angular-http-server
+
+
+*testing in angular
+ng test
+

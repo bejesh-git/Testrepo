@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callback</title>
+</head>
+<body>
+    
+    <iframe src="../../Index.html" frameborder="0" width="100%" height="50px"></iframe>
+    <iframe src="./navigation.html" frameborder="0" width="100%" height="100px"></iframe>
+
+
+
+
+
+
+    <script>
+
+        function greeting(wel=()=>{}){
+            wel();
+            document.write("<h2>Good Evening everyone</h2>")
+        }
+
+        function welcome(){
+            document.write("<h2>Welcome to Changepond</h2>")
+        }
+
+        greeting(welcome);
+        
+              
+
+
+    </script>
+    
+</body>
+</html>

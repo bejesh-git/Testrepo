@@ -1,0 +1,13 @@
+.special{
+    width: 200px;
+    height: 200px;
+    background-color: yellowgreen;
+    border: 3px solid red;
+    transition: transform 2s;
+    margin:auto;
+}
+
+.special:hover{
+    /* transform: rotate3d(180deg); */
+    transform:rotateY(180deg);
+}

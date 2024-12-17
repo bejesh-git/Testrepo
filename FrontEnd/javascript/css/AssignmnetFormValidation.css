@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(139, 218, 250);
+}
+.container{
+    width:450px;
+
+    padding: 15px;
+    background-color: rgb(245, 183, 102);
+
+    box-shadow: 0px 0px 15px black;
+    border-radius: 15px;
+    
+}
+
+.row{
+    margin-top: 10px;
+}
+
+input[type="checkbox"], input[type="radio"]{
+    margin-right:4px;
+}
+input[type="text"]{
+    border: 0px;
+}
+input{
+    box-shadow: 0px 0px 2px rgb(122, 122, 122);
+}
+input:hover{
+    box-shadow: 0px 0px 10px rgb(122, 122, 122);
+}
+
+
+.wrong{
+    text-decoration-line: line-through;
+    color:red;
+}
+.right{
+    color:rgb(50, 231, 14);
+}
+
+
+
+.sub-btn{
+    text-align: center;
+}

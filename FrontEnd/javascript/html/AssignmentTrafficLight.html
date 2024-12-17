@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <title>Replace</title>
+
+
+    <style>
+        .container { 
+            width: 400px;
+            height:400px;
+        }
+
+        .TraficLight {
+            border: 1px solid black;
+            height: 200px;
+            background-color:black;
+            border-radius: 20px;
+            width: 80px;
+            box-shadow: 4px 4px 4px rgb(51, 51, 51);
+            align-content: center;
+            justify-items: center;
+        }
+
+        #red-light,
+        #yellow-light,
+        #green-light {
+            border: none;
+            height: 50px;
+            width: 50px;
+            margin: 3px;
+            border-radius: 50%;
+            box-shadow: 2px 2px 4px rgb(59, 59, 59);
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .idle{
+            background-color: #a7c4ca;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <iframe src="../../Index.html" frameborder="0" width="100%" height="50px"></iframe>
+    <iframe src="./navigation.html" frameborder="0" width="100%" height="150px"></iframe>
+
+
+    <div class="container" id="container">
+        <div class="TraficLight">
+            <div class="idle" id="red-light"></div>
+            <div class="idle" id="yellow-light"></div>
+            <div class="idle" id="green-light"></div>
+        </div>
+    </div>
+
+
+    <script>
+        let redLight = document.getElementById('red-light');
+        let yellowLight = document.getElementById('yellow-light');
+        let greenLight = document.getElementById('green-light');
+        let container = document.getElementById('container');
+
+
+        function setRed() {
+            redLight.className = "red"
+            yellowLight.className = "idle"
+            greenLight.className = "idle"
+            container.style.background = 'url("../asserts/images/fastbike.png") no-repeat center center';
+            container.style.backgroundSize = 'cover';
+            setTimeout(setGreen, 3000);
+            
+        }
+        function setYellow() {
+            redLight.className = "idle";
+            yellowLight.className = "yellow";
+            greenLight.className = "idle";
+            container.style.background = 'url("../asserts/images/fast-bike.gif") no-repeat center center';
+            container.style.backgroundSize = 'cover';
+            setTimeout(setRed, 3000);
+            
+        }
+        function setGreen() {
+            redLight.className = "idle";
+            yellowLight.className = "idle";
+            greenLight.className = "green";
+            container.style.background = 'url("../asserts/images/fast-bike.gif") no-repeat center center';
+            container.style.backgroundSize = 'cover';
+            setTimeout(setYellow, 3000);
+
+        }
+
+        setTimeout(setGreen, 1000);
+    </script>
+</body>
+
+</html>

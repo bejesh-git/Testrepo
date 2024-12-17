@@ -1,0 +1,174 @@
+**********
+28/11/2024
+**********
+
+
+*javascript
+- it is used to add funcationally into webapp
+- it is interpreted language
+- it is loosely typed language:
+    -when we crate a varible in javascriptwe cannot determine what type data it contain, until and unless it is initialized
+    -in javascript variable we can store a multiple type of value sin a variable, that's why javascript is called loosytypes language
+
+Q. Why javascript is a loosely typed language
+
+
+*2 ways to use javascript
+1. internal javascript :  in html file we use script tah and in that we write js code.
+2. external javascript :    in this we cerate a seprate js file and import that js file and import that js file in html file by using script tag
+
+
+
+*How to get output in js
+1. document.write() :   it will display output in html page
+2.window.alert()    :   it will display output in modal poppup window
+3.console.log()     :   it will diaplay output in browser console or in terminal
+4.innerHTML()       :   it will display output inside an element
+
+
+
+
+
+**********
+29/11/2024
+**********
+
+
+
+
+
+1. var: it create function scope variable
+        -we can use variable before its declaration
+        -we can re-declare variable.
+*Hosting- Moves variable declaration to the top
+
+
+2. let : it create block scope variable
+        -we cannot use variable before its declaration
+        -we cannot re-declare variable.
+
+3. const : it create block scope variable
+        -we cannot use variable before its declaration
+        -we cannot re-declare variable.
+        - when we declare a variable, it is compulsory to initialize it.
+        -its data will never change on run time
+
+
+
+*function
+syntax  :   function functionname(){
+    // Logic
+}
+
+functionname();
+
+
+
+*how to change attribtute value by using DOM
+*how to call function by using event
+*how to access data from input control
+
+
+*array: -it is used to store multiple values with same data type.
+        -in array data store on index basis
+        -array index always start from zero index
+        -we can access array vaues otuside by writting array name[index value]
+
+
+
+*object: -it is used to store multiple values with different data type.
+        -in object data store in key and value paires
+        -we can access object vaues otuside by writting object name.key
+
+
+
+*callback function      :       passing funcition name as an argument inside another funciton is called callback funciton
+-to achive asyncronous
+
+
+*date and time
+-if we want to diaplay date and time in javascrit first we have to create a object of data class
+        let objname = new Date();
+
+
+
+*form validation: checking use eneter data is correct or wrong
+
+
+
+TASKS:
+
+-----------------------------------------------------
+Calculator
+-----------------------------------------------------
+display Image
+-----------------------------------------------------
+Array of Objects with id, name, post, salary, gender, age,city, state
+1.display all 100 emp information
+2.display emp information who are manager
+3.display emp information who gender is female
+4.display emp information who age is greater than 55
+5.display emp information who belong to state TN
+-----------------------------------------------------
+passpord , email, contact, gender Validation
+-----------------------------------------------------
+
+
+
+
+
+**********
+02/12/2024
+**********
+
+*String and Methods
+        -string is a collection of character.
+        -in string every character has index value and its start from zero.
+        -in string blank space is also taken in to account
+
+PROPERTY:
+        -length
+
+METHODS:
+        -toUpperCase()
+        -toLowerCase()
+        -indexof(searchinf string[, starIndex]) 
+                -it will search string form left to right and return the first occurence of string-
+                -if not found it return -1
+                -Case Sensitive
+        -lastIndexOf(searchingString[, startIndex])
+                -it will search string form right to left` and return the first occurence of string-
+                -if not found it return -1
+                -Case Sensitive
+        -search(searchString)
+                -it will search string form left to right and return the first occurence of string-
+                -if not found it return -1
+                -it is faster than indexOf()
+                -Case Sensitive
+
+        -slice(startIndex[, endIndex])
+                -it will return part of string from begining string
+                -it will return part of string from begining string
+        -substring
+        -substr
+
+
+
+*ES-5
+        -map
+        -filter
+        -every
+        -some
+        -redure/reduceright
+
+*ES-6
+        -let
+        -const
+        -**
+
+*how to merge two or more arrays
+
+*destructuring : creating constant variable to store data in it
+- we can destructure array and object values;
+
+                

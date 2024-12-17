@@ -1,0 +1,42 @@
+<p>Select an image</p>
+<div class="container">
+    <div [ngSwitch] = "imageNumber">
+        <div *ngSwitchCase = "1">
+            <img src="./images/chichenitza.webp" alt="chichenitza" class="toggleimage">
+            <div>chichenitza</div>
+        </div>
+        <div *ngSwitchCase = "2">
+            <img src="./images/GreatWallOfChina.webp" alt="GreatWallOfChina" class="toggleimage">
+            <div>GreatWallOfChina</div>
+        </div>
+        <div *ngSwitchCase = "3">
+            <img src="./images/machupicchu.webp" alt="machupicchu" class="toggleimage">
+            <div>machupicchu</div>
+        </div>
+        <div *ngSwitchCase = "4">
+            <img src="./images/petrajordan.webp" alt="petrajordan" class="toggleimage">
+            <div>petrajordan</div>
+        </div>
+        <div *ngSwitchCase = "5">
+            <img src="./images/redeemerstatue.webp" alt="redeemerstatue" class="toggleimage">
+            <div>redeemerstatue</div>
+        </div>
+        <div *ngSwitchCase = "6">
+            <img src="./images/tajmaha.webp" alt="tajmaha" class="toggleimage">
+            <div>tajmaha</div>
+        </div>
+        <div *ngSwitchCase = "7">
+            <img src="./images/colosseum.webp" alt="colosseum" class="toggleimage">
+            <div>colosseum</div>
+        </div>
+    </div>
+    <div class="button-group">
+        <button type="button" class="btn btn-outline-warning" (click)="changeImage(1)">chichenitza</button>
+        <button type="button" class="btn btn-outline-warning" (click)="changeImage(2)">GreatWallOfChina</button>
+        <button type="button" class="btn btn-outline-warning" (click)="changeImage(3)">machupicchu</button>
+        <button type="button" class="btn btn-outline-warning" (click)="changeImage(4)">petrajordan</button>
+        <button type="button" class="btn btn-outline-warning" (click)="changeImage(5)">redeemerstatue</button>
+        <button type="button" class="btn btn-outline-warning" (click)="changeImage(6)">tajmaha</button>
+        <button type="button" class="btn btn-outline-warning" (click)="changeImage(7)">colosseum</button>
+    </div>
+</div>

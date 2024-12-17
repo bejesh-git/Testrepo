@@ -1,0 +1,51 @@
+
+.card {
+    padding: 2px;
+    width: 180px;
+    margin: 6px;
+    box-shadow: 0px 0px 10px #000000;
+    overflow: hidden;
+}
+
+.card-img-top {
+    width: max-content;
+    margin: 3px;
+    height: 150px;
+}
+
+.card-title {
+    color: chocolate;
+}
+
+.btn {
+    position: relative;
+}
+
+.row {
+    justify-content: space-around;
+}
+
+.col {
+    width: fit-content;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1199px) {
+    .card {
+        width: 220px;
+    }
+
+    .card-img-top {
+        height: 200px;
+    }
+}

@@ -1,0 +1,7 @@
+<p>child works!</p>
+<div>{{pdata}}</div>
+
+<form>
+    <input type="text" name="parentinput" #childinfo>
+    <button type="button" (click)="sendData(childinfo.value)"> send data</button>
+ </form>

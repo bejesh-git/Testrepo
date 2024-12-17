@@ -1,0 +1,18 @@
+<!-- <p>loggin works!</p> -->
+
+<!-- <p>register works!</p> -->
+
+<div class="container">
+    <form #logForm="ngForm" class="logform" (ngSubmit)="checkUser(logForm.value)">
+        <div>            
+            <label for="" class="form-label">Email </label>
+            <input type="text" class="form-control" name="email" placeholder="e.g., bejeshsriram2808@gmail.com" ngModel>
+        </div>
+        <div>            
+            <label for="" class="form-label">Password </label>
+            <input type="text" class="form-control" name="password" placeholder="**********************" ngModel>
+        </div>
+        <button type="submit" class="btn btn-outline-dark me-3 mt-3">Log in</button>
+        <button type="button" class="btn btn-outline-dark me-3 mt-3" routerLink="/usersignup">Sign up</button>
+    </form>
+</div>

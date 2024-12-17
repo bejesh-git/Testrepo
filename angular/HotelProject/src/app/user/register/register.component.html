@@ -1,0 +1,29 @@
+<!-- <p>register works!</p> -->
+
+<div class="container">
+    <form #regForm="ngForm" class="regform" (ngSubmit)="addUser(regForm.value)">
+        <div>            
+            <label for="" class="form-label">Full Name </label>
+            <input type="text" class="form-control" name="fname" placeholder="e.g., G Bejesh Sriram" ngModel>
+        </div>
+        <div>            
+            <label for="" class="form-label">Email </label>
+            <input type="text" class="form-control" name="email" placeholder="e.g., bejeshsriram2808@gmail.com" ngModel>
+        </div>
+        <div>            
+            <label for="" class="form-label">Password </label>
+            <input type="text" class="form-control" name="password" placeholder="8-20 characters/1 Upper/1 Lower/1 Special Charater" ngModel>
+        </div>
+        <div>            
+            <label for="" class="form-label">Phone Number </label>
+            <input type="text" class="form-control" name="mobile" placeholder="e.g., 8608925111" ngModel>
+        </div>
+        <div>            
+            <label for="" class="form-label">Address </label>
+            <input type="text" class="form-control" name="address" placeholder="Dr. no. , Street Name, Area, City - ***" ngModel>
+        </div>
+
+        <button type="submit" class="btn btn-outline-dark me-3 mt-3" >Register</button>
+        <button type="button" class="btn btn-outline-dark mt-3" routerLink="/userloggin">Loggin</button>
+    </form>
+</div>

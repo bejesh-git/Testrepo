@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="../css/AssignmentCalculator.css">
+
+</head>
+
+<body>
+    <iframe src="../../Index.html" frameborder="0" width="100%" height="50px"></iframe>
+    <iframe src="./navigation.html" frameborder="0" width="100%" height="100px"></iframe>
+
+    <div class="container mt-5">
+        <form action="">
+            <div class="row gy-2">
+                <label for="num1" class="col-6">First Number</label>
+                <input type="text" id="num1" class="col-6">
+                <label for="num2" class="col-6">Second Number</label>
+                <input type="text" id="num2" class="col-6" pattern="^[0-9.]{0,}$">
+            </div>
+            <div class="row">
+                <div class="col-6 col-sm-3">
+                    <button type="button" class="btn btn-outline-info" onclick="buttonClicked('add')">Add</button>
+                </div>
+
+                <div class="col-6 col-sm-3">
+                    <button type="button" class="btn btn-outline-info" onclick="buttonClicked('sub')">Subtract</button>
+                </div>
+
+                <div class="col-6 col-sm-3">
+                    <button type="button" class="btn btn-outline-info" onclick="buttonClicked('mul')">Multiply</button>
+                </div>
+
+                <div class="col-6 col-sm-3">
+                    <button type="button" class="btn btn-outline-info" onclick="buttonClicked('div')">Divide</button>
+                </div>
+
+            </div>
+        </form>
+
+        <div class="result">
+            Result : <span id="value">Result Area</span>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+
+        function buttonClicked(action) {
+            let subresult = document.getElementById('value');
+            let num1 = document.getElementById('num1').value;
+            let num2 = document.getElementById('num2').value;
+
+            if (num1 === "") { 
+                alert("Both input fields must be filled out.");
+                // document.getElementById('num1').focus();
+                document.getElementById('num1').focus();
+                return; 
+            }
+            if (num2 === "") { 
+                alert("Both input fields must be filled out.");
+                document.getElementById('num2').focus();
+                return; 
+            }
+
+            num1 = parseInt(num1)
+            num2 = parseInt(num2)
+
+            if (action == 'add') {
+                subresult.innerHTML = num1 + num2;
+                console.log(num1 + num2);
+            }
+            else if (action == 'mul') {
+                subresult.innerHTML = num1 * num2;
+                console.log(num1 * num2);
+            }
+            else if (action == 'div') {
+                subresult.innerHTML = num1 / num2;
+                console.log(num1 / num2);
+            }
+            else if (action == 'sub') {
+                subresult.innerHTML = num1 - num2;
+                console.log(num1 - num2);
+            }
+        }
+
+    </script>
+</body>
+
+</html>
