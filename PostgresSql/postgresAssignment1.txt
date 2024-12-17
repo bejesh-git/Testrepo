@@ -1,0 +1,25 @@
+select first_name , last_name, customer_id from customer where customer_id > 500;
+select first_name , last_name, customer_id from customer where customer_id < 100;
+select first_name , last_name, customer_id from customer where customer_id >= 550;
+select first_name , last_name, customer_id from customer where customer_id <= 50;
+select first_name , last_name, customer_id from customer where customer_id <> 10;
+select first_name , last_name, customer_id from customer where customer_id != 10;
+
+select first_name , last_name, customer_id from customer where not customer_id != 10;
+select first_name , last_name, customer_id from customer where customer_id > 300 and customer_id < 310;
+select first_name , last_name, customer_id from customer where customer_id > 590 or customer_id < 10;
+select first_name , last_name, customer_id from customer where customer_id in (5, 10, 15, 20);
+select first_name , last_name, customer_id from customer where customer_id not in (5, 10, 15, 20);
+
+select first_name , last_name, customer_id from customer where customer_id between 0 and 10;
+select first_name , last_name, customer_id from customer where customer_id not between 0 and 10;
+select first_name , last_name, customer_id from customer where first_name like 'A%';
+select first_name , last_name, customer_id from customer where first_name ilike 'a%';
+select first_name , last_name, customer_id from customer where first_name not like 'A%t';
+select first_name , last_name, customer_id from customer where first_name not like '%t';
+
+select * from customer where email is null;
+select * from customer where email is not null;
+
+select * from customer limit 5;
+select * from customer limit 5 offset 5;
