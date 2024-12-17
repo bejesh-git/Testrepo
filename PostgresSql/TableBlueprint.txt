@@ -1,0 +1,51 @@
+                                             Table "public.customer"
+   Column    |            Type             | Collation | Nullable |                    Default
+-------------+-----------------------------+-----------+----------+-----------------------------------------------
+ customer_id | integer                     |           | not null | nextval('customer_customer_id_seq'::regclass)
+ store_id    | smallint                    |           | not null |
+ first_name  | character varying(45)       |           | not null |
+ last_name   | character varying(45)       |           | not null |
+ email       | character varying(50)       |           |          |
+ address_id  | smallint                    |           | not null |
+ activebool  | boolean                     |           | not null | true
+ create_date | date                        |           | not null | 'now'::text::date
+ last_update | timestamp without time zone |           |          | now()
+ active      | integer                     |           |          |
+Indexes:
+    "customer_pkey" PRIMARY KEY, btree (customer_id)
+    "idx_fk_address_id" btree (address_id)
+    "idx_fk_store_id" btree (store_id)
+    "idx_last_name" btree (last_name)
+Foreign-key constraints:
+    "customer_address_id_fkey" FOREIGN KEY (address_id) REFERENCES address(address_id) ON UPDATE CASCADE ON DELETE RESTRICT
+Referenced by:
+    TABLE "payment" CONSTRAINT "payment_customer_id_fkey" FOREIGN KEY (customer_id) REFERENCES customer(customer_id) ON UPDATE CASCADE ON DELETE RESTRICT
+    TABLE "rental" CONSTRAINT "rental_customer_id_fkey" FOREIGN KEY (customer_id) REFERENCES customer(customer_id) ON UPDATE CASCADE ON DELETE RESTRICT
+Triggers:
+    last_updated BEFORE UPDATE ON customer FOR EACH ROW EXECUTE FUNCTION last_updated()
+
+
+
+
+
+
+
+
+                                             Table "public.payment"
+    Column    |            Type             | Collation | Nullable |                   Default
+--------------+-----------------------------+-----------+----------+---------------------------------------------
+ payment_id   | integer                     |           | not null | nextval('payment_payment_id_seq'::regclass)
+ customer_id  | smallint                    |           | not null |
+ staff_id     | smallint                    |           | not null |
+ rental_id    | integer                     |           | not null |
+ amount       | numeric(5,2)                |           | not null |
+ payment_date | timestamp without time zone |           | not null |
+Indexes:
+    "payment_pkey" PRIMARY KEY, btree (payment_id)
+    "idx_fk_customer_id" btree (customer_id)
+    "idx_fk_rental_id" btree (rental_id)
+    "idx_fk_staff_id" btree (staff_id)
+Foreign-key constraints:
+    "payment_customer_id_fkey" FOREIGN KEY (customer_id) REFERENCES customer(customer_id) ON UPDATE CASCADE ON DELETE RESTRICT
+    "payment_rental_id_fkey" FOREIGN KEY (rental_id) REFERENCES rental(rental_id) ON UPDATE CASCADE ON DELETE SET NULL
+    "payment_staff_id_fkey" FOREIGN KEY (staff_id) REFERENCES staff(staff_id) ON UPDATE CASCADE ON DELETE RESTRICT

@@ -94,9 +94,230 @@ c.first_name || ' ' || c.last_name as "Customer Name",
 s.first_name || ' ' || s.last_name as "Staff Name",
 p.amount,
 p.payment_date
-from customer c inner join payment p
+from customer c 
+inner join payment p
 on c.customer_id = p.customer_id
 inner join staff s using (staff_id)
 order by payment_date
 limit 5;
 
+select c.customer_id,
+c.first_name || ' ' || c.last_name as "Customer Name",
+s.first_name || ' ' || s.last_name as "Staff Name",
+p.amount,
+p.payment_date,
+r.rental_date
+from customer c 
+inner join payment p
+on c.customer_id = p.customer_id
+inner join staff s using (staff_id)
+inner join rental r using(staff_id)
+order by payment_date
+limit 5;
+
+
+-LEFT JOIN
+select f.film_id, f.title,
+i.inventory_id
+from film f left join inventory i 
+on f.film_id = i.film_id
+where i.inventory_id is null
+order by title
+limit 10;
+
+-RIGHT JOIN
+select f.film_id, f.title,
+i.inventory_id
+from film f right join inventory i 
+on f.film_id = i.film_id
+where f.film_id is null
+order by title
+limit 10;
+
+
+-SELF JOIN
+select f1.title, f2.title, f1.length
+from film f1 inner join film f2
+on f1.length = f2.length;
+
+
+-CROSS JOIN
+select r.last_name, p.amount
+from staff r cross join payment p
+limit 20;
+
+
+
+-GROUP by
+select customer_id, count(customer_id) "total orders",
+sum(amount) as total_payments
+from payment
+where payment_date > '2007-02-16'
+group by customer_id
+having sum(amount) > 100
+order by total_payments
+
+
+select c.first_name || ' ' || c.last_name as "Customer Name",
+c.customer_id, count(c.customer_id) "total orders",
+sum(amount) as total_payments
+from payment p 
+inner join customer c on c.customer_id = p.customer_id
+where payment_date > '2007-02-16'
+group by c.customer_id
+having sum(amount) > 100
+order by total_payments
+limit 10
+offset 5;
+
+
+
+
+find out the sum of amount collected by each staff for each customer
+
+select c.customer_id, 
+c.first_name || ' ' || c.last_name as "Customer Name",
+p.staff_id ,
+s.first_name || ' ' || s.last_name as "Staff Name",
+sum(p.amount),
+count(c.customer_id)
+from customer c
+inner join payment p using (customer_id)
+inner join staff s on p.staff_id = s.staff_id
+group by c.customer_id,"Staff Name", "Customer Name", p.staff_id
+order by c.customer_id
+limit 20;
+
+
+
+select staff_id, customer_id, sum(amount)
+from payment 
+group by staff_id, customer_id;
+
+
+-GROUP SETs
+select staff_id,
+customer_id,
+sum(amount)
+from payment
+group by
+grouping sets(
+    (customer_id, staff_id),
+    (staff_id),
+    (customer_id),
+    ()
+);
+
+
+
+
+
+-SELECT GROUPING
+select 
+grouping(customer_id),
+grouping(staff_id),
+customer_id,
+staff_id,
+sum(amount)
+from payment
+group by
+grouping sets(
+    (customer_id, staff_id),
+    (customer_id),
+    (staff_id),
+    ()
+)
+
+
+
+
+
+select extract(YEAR from rental_date) y,
+extract(MONTH from rental_date) m,
+extract(DAY from rental_date) d,
+count(rental_id)
+from rental
+group by
+rollup (
+    extract(YEAR from rental_date) ,
+extract(MONTH from rental_date) ,
+extract(DAY from rental_date) 
+);
+
+
+
+
+select customer_id , staff_id,
+sum(amount)
+from payment
+group by
+customer_id,
+cude (staff_id)
+order by customer, staff_id;
+
+
+
+
+-COMMON TABLE EXPRESSION
+with action_film as (
+    select f.title,
+    f.length
+    from
+    film f
+    inner join film_category fc using (film_id)
+    inner join category c using (category_id)
+    where c.name = 'Action'
+)
+select * from action_film;
+
+
+
+with film_stats as (
+    -- CTE 1 calculate film staatistics
+    select avg(rental_rate) as avg_rental_rate,
+    max(length) as max_length,
+    min(length) as min_length
+    from film
+), 
+    -- CTE 1 calculate film staatistics
+customer_stats as (
+    select count(distinct customer_id) as total_customers,
+    sum(amount) as total_payments
+    from payment
+)
+    -- CTE Main Query
+    select round((select avg_rental_rate from film_stats), 2) as "Average Rental Rate",
+    (select max_length from film_stats) as "Maximum Movie Length",
+    (select min_length from film_stats) as "Minimum Movie Length",
+    (select total_customers from customer_stats) as "Total Customers",
+    (select total_payments from customer_stats) as "Total Collection";
+
+
+
+
+
+
+
+-CASE   
+select title,
+length,
+case when length >= 120 then 'Long'
+    when length >= 50 then 'Medium'
+    when length <50 then 'Short'
+end  duration
+from film 
+order by title;
+
+
+
+select
+sum(
+    case when rental_rate = 0.99 then 1 else 0 end
+) as "Economy",
+sum(
+    case when rental_rate = 2.99 then 1 else 0 end
+) as "Mass",
+sum(
+    case when rental_rate = 4.99 then 1 else 0 end
+) as "Premium"
+from film;
