@@ -87,3 +87,16 @@ select * from customer limit 5, 5;
 
 
 
+*Joins
+
+select c.customer_id,
+c.first_name || ' ' || c.last_name as "Customer Name",
+s.first_name || ' ' || s.last_name as "Staff Name",
+p.amount,
+p.payment_date
+from customer c inner join payment p
+on c.customer_id = p.customer_id
+inner join staff s using (staff_id)
+order by payment_date
+limit 5;
+
