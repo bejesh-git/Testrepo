@@ -342,7 +342,69 @@ TASK2:
  select first_name, last_name from customer where customer_id = (select customer_id from payment where amount = max(amount));
 
  #CORRELATED SUBQUERY
- select first_name, last_name , 
- (select first_name || ' ' last_name as "Staff Name" from staff where staff_id = customer.staff_id)
- from customer
- limit 10;
+SELECT c.first_name, c.last_name, 
+       (SELECT s.first_name || ' ' || s.last_name 
+        FROM staff s 
+        WHERE s.staff_id = p.staff_id) AS "Staff Name"
+FROM customer c
+JOIN payment p ON c.customer_id = p.customer_id
+LIMIT 10;
+
+#EXISTS
+SELECT first_name, last_name
+FROM customer c
+WHERE EXISTS (
+    SELECT 1
+    FROM payment p
+    WHERE p.customer_id = c.customer_id
+);
+
+
+#NOT EXISTS
+SELECT first_name, last_name
+FROM customer c
+WHERE NOT EXISTS (
+    SELECT 1
+    FROM payment p
+    WHERE p.customer_id = c.customer_id
+);
+
+
+#ANY
+SELECT first_name, last_name
+FROM customer
+WHERE customer_id = ANY (SELECT customer_id FROM payment);
+
+#ALL
+SELECT first_name, last_name
+FROM customer
+WHERE customer_id > ALL (SELECT customer_id FROM payment);
+
+
+#UNION
+SELECT first_name, last_name FROM customer
+UNION
+SELECT first_name, last_name FROM staff;
+
+
+#INTERSECT
+SELECT first_name, last_name FROM customer
+INTERSECT
+SELECT first_name, last_name FROM staff;
+
+
+#EXCEPT
+SELECT first_name, last_name FROM customer
+EXCEPT
+SELECT first_name, last_name FROM staff;
+
+
+#UNON ALL
+SELECT first_name, last_name FROM customer
+UNION ALL
+SELECT first_name, last_name FROM staff;
+
+
+
+
+
