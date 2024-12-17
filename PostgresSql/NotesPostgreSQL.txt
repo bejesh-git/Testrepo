@@ -321,3 +321,28 @@ sum(
     case when rental_rate = 4.99 then 1 else 0 end
 ) as "Premium"
 from film;
+
+
+
+
+
+suqbuery
+correlated suqbuery
+exists, not exists
+any
+all
+
+union intersection
+minus union all
+
+
+TASK2:
+
+# SUBQUERY
+ select first_name, last_name from customer where customer_id = (select customer_id from payment where amount = max(amount));
+
+ #CORRELATED SUBQUERY
+ select first_name, last_name , 
+ (select first_name || ' ' last_name as "Staff Name" from staff where staff_id = customer.staff_id)
+ from customer
+ limit 10;

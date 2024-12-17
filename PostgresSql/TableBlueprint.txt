@@ -49,3 +49,62 @@ Foreign-key constraints:
     "payment_customer_id_fkey" FOREIGN KEY (customer_id) REFERENCES customer(customer_id) ON UPDATE CASCADE ON DELETE RESTRICT
     "payment_rental_id_fkey" FOREIGN KEY (rental_id) REFERENCES rental(rental_id) ON UPDATE CASCADE ON DELETE SET NULL
     "payment_staff_id_fkey" FOREIGN KEY (staff_id) REFERENCES staff(staff_id) ON UPDATE CASCADE ON DELETE RESTRICT
+
+
+
+
+
+                                            Table "public.staff"
+   Column    |            Type             | Collation | Nullable |                 Default
+-------------+-----------------------------+-----------+----------+-----------------------------------------
+ staff_id    | integer                     |           | not null | nextval('staff_staff_id_seq'::regclass)
+ first_name  | character varying(45)       |           | not null |
+ last_name   | character varying(45)       |           | not null |
+ address_id  | smallint                    |           | not null |
+ email       | character varying(50)       |           |          |
+ store_id    | smallint                    |           | not null |
+ active      | boolean                     |           | not null | true
+ username    | character varying(16)       |           | not null |
+ password    | character varying(40)       |           |          |
+ last_update | timestamp without time zone |           | not null | now()
+ picture     | bytea                       |           |          |
+Indexes:
+    "staff_pkey" PRIMARY KEY, btree (staff_id)
+Foreign-key constraints:
+    "staff_address_id_fkey" FOREIGN KEY (address_id) REFERENCES address(address_id) ON UPDATE CASCADE ON DELETE RESTRICT
+Referenced by:
+    TABLE "payment" CONSTRAINT "payment_staff_id_fkey" FOREIGN KEY (staff_id) REFERENCES staff(staff_id) ON UPDATE CASCADE ON DELETE RESTRICT
+    TABLE "rental" CONSTRAINT "rental_staff_id_key" FOREIGN KEY (staff_id) REFERENCES staff(staff_id)
+    TABLE "store" CONSTRAINT "store_manager_staff_id_fkey" FOREIGN KEY (manager_staff_id) REFERENCES staff(staff_id) ON UPDATE CASCADE ON DELETE RESTRICT
+Triggers:
+    last_updated BEFORE UPDATE ON staff FOR EACH ROW EXECUTE FUNCTION last_updated()
+
+
+
+
+
+
+
+
+                                             Table "public.rental"
+    Column    |            Type             | Collation | Nullable |                  Default
+--------------+-----------------------------+-----------+----------+-------------------------------------------
+ rental_id    | integer                     |           | not null | nextval('rental_rental_id_seq'::regclass)
+ rental_date  | timestamp without time zone |           | not null |
+ inventory_id | integer                     |           | not null |
+ customer_id  | smallint                    |           | not null |
+ return_date  | timestamp without time zone |           |          |
+ staff_id     | smallint                    |           | not null |
+ last_update  | timestamp without time zone |           | not null | now()
+Indexes:
+    "rental_pkey" PRIMARY KEY, btree (rental_id)
+    "idx_fk_inventory_id" btree (inventory_id)
+    "idx_unq_rental_rental_date_inventory_id_customer_id" UNIQUE, btree (rental_date, inventory_id, customer_id)
+Foreign-key constraints:
+    "rental_customer_id_fkey" FOREIGN KEY (customer_id) REFERENCES customer(customer_id) ON UPDATE CASCADE ON DELETE RESTRICT
+    "rental_inventory_id_fkey" FOREIGN KEY (inventory_id) REFERENCES inventory(inventory_id) ON UPDATE CASCADE ON DELETE RESTRICT
+    "rental_staff_id_key" FOREIGN KEY (staff_id) REFERENCES staff(staff_id)
+Referenced by:
+    TABLE "payment" CONSTRAINT "payment_rental_id_fkey" FOREIGN KEY (rental_id) REFERENCES rental(rental_id) ON UPDATE CASCADE ON DELETE SET NULL
+Triggers:
+    last_updated BEFORE UPDATE ON rental FOR EACH ROW EXECUTE FUNCTION last_updated()
