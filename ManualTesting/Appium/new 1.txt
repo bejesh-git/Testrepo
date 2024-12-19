@@ -1,0 +1,176 @@
+package Tests;
+
+
+import java.net.URL;
+
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.remote.MobileCapabilityType;
+
+public class BaseClass {
+ 
+    AppiumDriver driver;
+ 
+    @BeforeTest
+    public void setup() {
+        try {
+            DesiredCapabilities caps = new DesiredCapabilities();
+ 
+            // Platform Name
+            caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
+ 
+            // Platform Version
+            caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "14.0");
+ 
+            // Device Name
+            caps.setCapability(MobileCapabilityType.DEVICE_NAME, "Realme gt 6t");
+ 
+            // Unique Device Identifier
+            caps.setCapability(MobileCapabilityType.UDID, "c928f04c"); // Replace with actual UDID
+ 
+            // Automation Name
+            caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
+ 
+            // Appium Server URL
+            URL url = new URL("http://127.0.0.1:4723/wd/hub");
+  
+ 
+            // Initialize the Appium Driver
+//            driver = new AndroidDriver<>(url, caps);
+ 
+        } catch (Exception exp) {
+            System.out.println("Error cause is : " + exp.getCause());
+            System.out.println("Message is : " + exp.getMessage());
+            exp.printStackTrace();
+            throw new RuntimeException("Driver setup failed!");
+        }
+    }
+ 
+    @Test
+    public void testExample() {
+        // Example test logic
+        System.out.println("Driver is running: " + (driver != null));
+    }
+ 
+    @AfterTest
+    public void teardown() {
+        // Quit the driver after tests
+        if (driver != null) {
+            driver.quit();
+        }
+
+
+
+
+
+
+
+"json-server": "cd src/shared/database && json-server --watch -p 8080 db.json",
+    "start-dev": "npx concurrently \"npm start\" \"npm run json-server\"",
+    
+    
+    
+    2.Appium deskstop client download
+https://github.com/appium/appium-desktop/releases/tag/v1.8.2
+download below setup.
+appium-desktop-setup-1.8.2.exe
+148 MBNov 6, 2018
+ 
+ 
+ To update appium : npm install -g npm@10.2.0
+ 
+ 
+ npm install appium-doctor –g
+ 
+ appium-doctor -h
+ 
+ sdkmanager --sdk_root="C:\cmdline-tools" "platform-tools" "platforms;android-30"
+ 
+ AppiumDriver driver;
+ 
+    @BeforeTest
+    public void setup() {
+        try {
+            DesiredCapabilities caps = new DesiredCapabilities();
+ 
+            // Platform Name
+            caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
+ 
+            // Platform Version
+            caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11.0");
+ 
+            // Device Name
+            caps.setCapability(MobileCapabilityType.DEVICE_NAME, "Vivo V20");
+ 
+            // Unique Device Identifier
+            caps.setCapability(MobileCapabilityType.UDID, "123456789ABCDEF"); // Replace with actual UDID
+ 
+            // Automation Name
+            caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
+ 
+            // Appium Server URL
+            URL url = new URL("http://127.0.0.1:4723/wd/hub");
+ 
+            // Initialize the Appium Driver
+            driver = new AndroidDriver<>(url, caps);
+ 
+        } catch (Exception exp) {
+            System.out.println("Error cause is : " + exp.getCause());
+            System.out.println("Message is : " + exp.getMessage());
+            exp.printStackTrace();
+            throw new RuntimeException("Driver setup failed!");
+        }
+    }
+ 
+    @Test
+    public void testExample() {
+        // Example test logic
+        System.out.println("Driver is running: " + (driver != null));
+    }
+ 
+    @AfterTest
+    public void teardown() {
+        // Quit the driver after tests
+        if (driver != null) {
+            driver.quit();
+        }
+    }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<!-- Appium Java Client -->
+    <dependency>
+        <groupId>io.appium</groupId>
+        <artifactId>java-client</artifactId>
+        <version>8.5.1</version>
+    </dependency>
+ 
+    <!-- Selenium -->
+    <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>4.11.0</version>
+    </dependency>
+ 
+        <!-- TestNG -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.8.0</version>
+            <scope>test</scope>
+        </dependency>
+ 
+
+
+</dependencies>
+  

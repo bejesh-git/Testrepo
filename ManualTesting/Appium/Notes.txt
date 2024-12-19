@@ -1,0 +1,12 @@
+https://github.com/appium/appium-desktop/releases/tag/v1.8.2
+appium-desktop-setup-1.8.2.exe
+
+ 
+ To update appium : npm install -g npm@10.2.0
+ 
+ npm install appium-doctor –g
+ appium-doctor -h
+appium-doctor --android
+
+
+sdkmanager "platform-tools" "platforms;android-34"
